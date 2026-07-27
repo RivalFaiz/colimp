@@ -1,0 +1,302 @@
+@ID: SM31
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan fungsi kontinu $f:[0,1]\to\mathbb R$. Buktikan bahwa terdapat suatu $\xi\in[0,1]$ sehingga
+$$
+\int_0^1 f(x)x^2\,dx=\frac13\,f(\xi).
+$$
+
+@ID: SM32
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Misalkan $f:[a,b]\to\mathbb R$ adalah suatu fungsi sehingga $\lim_{x\to c}f(x)$ ada untuk setiap $c\in[a,b]$. Buktikan bahwa $f$ terintegralkan Riemann pada $[a,b]$.
+
+@ID: SM33
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Misalkan $f:\mathbb{R}_+\to\mathbb{R}_+$ adalah fungsi monoton menurun yang didefinisikan pada bilangan real positif dan memenuhi $\int_0^\infty f(x)\,dx<\infty$. Buktikan bahwa $\lim_{x\to\infty}xf(x)=0$.
+
+@ID: SM34
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Misalkan $f$ adalah fungsi kontinu bernilai real yang memenuhi $f(x)\ge0$ untuk semua $x$, dan $\int_0^\infty f(x)\,dx<\infty$. Buktikan bahwa
+$$
+\frac1n\int_0^n xf(x)\,dx\longrightarrow0,\qquad\text{ketika }n\to\infty.
+$$
+
+@ID: SM35
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Misalkan $f$ dan $f'$ kontinu pada $[0,\infty)$, serta memenuhi $f(x)=0$ untuk semua $x\ge 10^{10}$. Buktikan bahwa
+$$
+\int_0^\infty f(x)^2\,dx
+\le
+2
+\sqrt{\int_0^\infty x^2f(x)^2\,dx}
+\sqrt{\int_0^\infty \bigl(f'(x)\bigr)^2\,dx}.
+$$
+
+@ID: SM36
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Buktikan bahwa integral $\int_0^\infty \cos(x^2)\,dx$ dan $\int_0^\infty \sin(x^2)\,dx$ konvergen.
+
+@ID: SM37
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Misalkan $f:[0,1]\to\mathbb R$ adalah fungsi kontinu. Buktikan bahwa $\lim_{n\to\infty}(n+1)\int_0^1x^nf(x)\,dx=f(1)$.
+
+@ID: SM38
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $z_1,z_2,\ldots,z_n$ adalah bilangan kompleks. Buktikan bahwa terdapat suatu himpunan bagian $J\subseteq\{1,2,\ldots,n\}$ sehingga
+$$
+\left|\sum_{j\in J}z_j\right|
+\ge
+\frac{1}{4\sqrt2}
+\sum_{j=1}^n|z_j|.
+$$
+
+@ID: SM39
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $a_1,a_2,\ldots,a_n$ adalah bilangan kompleks. Buktikan bahwa terdapat suatu $x\in[0,1]$ sehingga
+$$
+\left|
+1-\sum_{k=1}^na_ke^{2\pi ikx}
+\right|
+\ge
+1.
+$$
+
+@ID: SM40
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $a$ dan $b$ adalah bilangan kompleks yang bagian realnya tidak positif, yaitu $\operatorname{Re}(a)\le0$ dan $\operatorname{Re}(b)\le0$. Buktikan bahwa $|e^a-e^b|\le|a-b|$.
+
+@ID: SM41
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $f$ adalah fungsi entire yang memenuhi $\operatorname{Re}(f(z))\ge -2$ untuk semua $z\in\mathbb C$. Buktikan bahwa $f$ konstan.
+
+@ID: SM42
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $f$ analitik pada seluruh bidang kompleks dan memenuhi $\dfrac{f(z)}{z}\to0$ ketika $|z|\to\infty$. Buktikan bahwa $f$ konstan.
+
+@ID: SM43
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $f$ adalah fungsi rasional pada bidang kompleks yang tidak mempunyai pole pada $\operatorname{Re}(z)\ge0$. Buktikan bahwa
+$$
+\sup_{\operatorname{Re}(z)\ge0}|f(z)|
+=
+\sup_{\operatorname{Re}(z)=0}|f(z)|.
+$$
+
+@ID: SM44
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $f$ adalah fungsi entire yang memenuhi $|f(z)|=|\sin z|$ untuk semua $z\in\mathbb C$. Buktikan bahwa terdapat suatu konstanta $C$ dengan $|C|=1$ sehingga $f(z)=C\sin z$.
+
+@ID: SM45
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $f$ dan $g$ adalah fungsi entire yang memenuhi $|f(z)|\le|g(z)|$ untuk semua $z\in\mathbb C$. Buktikan bahwa terdapat suatu konstanta $c$ sehingga $f(z)=cg(z)$.
+
+@ID: SM46
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $p$ dan $q$ adalah polinom kompleks tak konstan dengan derajat yang sama, dan semua akar keduanya terletak pada cakram terbuka $|z|<1$. Andaikan $|p(z)|=|q(z)|$ untuk semua $|z|=1$. Buktikan bahwa terdapat suatu konstanta $\lambda$ dengan $|\lambda|=1$ sehingga $q=\lambda p$.
+
+@ID: SM47
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $f$ adalah fungsi entire. Definisikan $\Omega=\mathbb C\setminus(-\infty,0]$, yaitu bidang kompleks dengan sinar $(-\infty,0]$ dihilangkan. Andaikan untuk setiap $z\in\Omega$ berlaku $|f(z)|\le|\log z|$, dengan $\log z$ menyatakan cabang utama logaritma. Tentukan apa yang dapat disimpulkan mengenai fungsi $f$.
+
+@ID: SM48
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $f$ dan $g$ adalah fungsi entire yang memenuhi $\operatorname{Re}(f(z))\le k\,\operatorname{Re}(g(z))$ untuk semua $z\in\mathbb C$, dengan $k$ suatu konstanta real. Buktikan bahwa terdapat konstanta $a,b\in\mathbb C$ sehingga $f(z)=ag(z)+b$.
+
+@ID: SM49
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $f:\mathbb C\to\mathbb C$ adalah fungsi entire, dan misalkan $a>0$, $b>0$.
+
+a) Andaikan $|f(z)|\le a\sqrt{|z|}+b$ untuk semua $z\in\mathbb C$. Buktikan bahwa $f$ konstan.
+
+b) Apa yang dapat disimpulkan mengenai $f$ jika $|f(z)|\le a|z|^{5/2}+b$ untuk semua $z\in\mathbb C$?
+
+@ID: SM50
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $f$ analitik pada seluruh bidang kompleks dan memenuhi
+$$
+\int_0^{2\pi}|f(re^{i\theta})|\,d\theta
+\le
+r^{17/3},
+\qquad
+\forall r>0.
+$$
+Buktikan bahwa $f$ adalah fungsi nol.
+
+@ID: SM51
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Apakah terdapat suatu fungsi $f:\mathbb C\setminus\{0\}\to\mathbb C$ yang analitik pada $\mathbb C\setminus\{0\}$, serta memenuhi $|f(z)|\ge \dfrac{1}{\sqrt{|z|}}$ untuk semua $z\ne0$?
+
+@ID: SM52
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $f$ analitik pada seluruh bidang kompleks dan memenuhi $|f(z)|\le|\operatorname{Re}(z)|^{-1/2}$, untuk setiap $z$ di luar sumbu imajiner. Buktikan bahwa $f$ konstan.
+
+@ID: SM53
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Buktikan bahwa untuk setiap $\lambda>1$, persamaan $ze^{\lambda-z}=1$ memiliki tepat satu akar di dalam cakram $|z|<1$, dan akar tersebut adalah bilangan real.
+
+@ID: SM54
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Buktikan bahwa untuk setiap $a\in\mathbb C$ dan setiap bilangan bulat $n\ge2$, persamaan $1+z+az^n=0$ memiliki paling sedikit satu akar di dalam cakram $|z|\le2$.
+
+@ID: SM55
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Buktikan bahwa polinom $z^4+z^3+1$ memiliki tepat satu akar pada kuadran pertama, yaitu $\{z=x+iy:x>0,\;y>0\}$.
+
+@ID: SM56
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $f$ analitik pada suatu himpunan terbuka yang memuat cakram satuan tertutup. Andaikan $|f(z)|>m$ untuk semua $|z|=1$, dan $|f(0)|<m$. Buktikan bahwa $f$ memiliki paling sedikit satu nol di dalam cakram satuan terbuka $|z|<1$.
+
+@ID: SM57
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $0<a_0\le a_1\le\cdots\le a_n$. Buktikan bahwa persamaan $a_0z^n+a_1z^{n-1}+\cdots+a_n=0$ tidak memiliki akar di dalam cakram $|z|<1$.
+
+@ID: SM58
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Buktikan bahwa polinom $p(z)=z^5-6z+3$ memiliki lima akar kompleks yang berbeda, dan tepat tiga di antaranya (bukan lima) merupakan bilangan real.
+
+@ID: SM59
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $c_0,c_1,\ldots,c_{n-1}$ adalah bilangan kompleks. Buktikan bahwa semua akar dari polinom $z^n+c_{n-1}z^{n-1}+\cdots+c_1z+c_0$ terletak di dalam cakram terbuka yang berpusat di titik asal dan berjari-jari
+$$
+\sqrt{1+|c_{n-1}|^2+\cdots+|c_1|^2+|c_0|^2}.
+$$
+
+@ID: SM60
+@BIDANG: Analisis Kompleks
+@SUMBER: Berkeley
+
+Misalkan $P(x)$ adalah polinom berkoefisien real dengan koefisien utama sama dengan $1$. Andaikan $P(0)=-1$, dan $P(x)$ tidak memiliki akar kompleks di dalam lingkaran satuan. Buktikan bahwa $P(1)=0$.
+
+@ID: SM61
+@BIDANG: Aljabar Linear
+@SUMBER: Berkeley
+
+Misalkan $A$ adalah matriks real berukuran $n\times n$, dan misalkan $A^t$ menyatakan transpose dari $A$. Buktikan bahwa $A^tA$ dan $A^t$ memiliki rank yang sama.
+
+@ID: SM62
+@BIDANG: Aljabar Linear
+@SUMBER: Berkeley
+
+Misalkan $P$ dan $Q$ adalah matriks berukuran $n\times n$ yang memenuhi $P^2=P$, $Q^2=Q$, serta $I-(P+Q)$ invertibel. Buktikan bahwa $\operatorname{rank}(P)=\operatorname{rank}(Q)$.
+
+@ID: SM63
+@BIDANG: Aljabar Linear
+@SUMBER: Berkeley
+
+Misalkan $A$ dan $B$ adalah matriks uniter kompleks berukuran $n\times n$. Buktikan bahwa $|\det(A+B)|\le 2^n$.
+
+@ID: SM64
+@BIDANG: Aljabar Linear
+@SUMBER: 
+
+Misalkan $A$ dan $B$ adalah matriks berukuran $n\times n$ di atas suatu medan $F$. Buktikan bahwa jika $I-AB$ invertibel, maka $I-BA$ juga invertibel dan
+$$
+(I-BA)^{-1}
+=
+I+B(I-AB)^{-1}A.
+$$
+
+@ID: SM65
+@BIDANG: Aljabar Linear
+
+Misalkan $A$ adalah matriks diagonal berukuran $n\times n$ dengan polinom karakteristik $(x-c_1)^{d_1}\cdots(x-c_k)^{d_k}$, di mana $c_1,\ldots,c_k$ saling berbeda. Misalkan $V$ adalah ruang semua matriks $B\in M_n$ yang memenuhi $AB=BA$. Buktikan bahwa
+$$
+\dim(V)
+=
+d_1^2+\cdots+d_k^2.
+$$
+
+@ID: SM66
+@BIDANG: Aljabar Linear
+@SUMBER: 
+
+Misalkan $A$ dan $B$ adalah matriks berukuran $n\times n$ yang memenuhi $A+B=AB$. Buktikan bahwa $AB=BA$.
+
+@ID: SM67
+@BIDANG: Aljabar Linear
+@SUMBER: 
+
+Apakah terdapat matriks persegi $A$ dan $B$ yang memenuhi $AB-BA=I$?
+
+@ID: SM68
+@BIDANG: Aljabar Linear
+@SUMBER: Putnam
+
+Apakah terdapat polinom $a(x)$, $b(x)$, $c(y)$, $d(y)$ sehingga identitas
+$$
+1+xy+x^2y^2
+=
+a(x)c(y)+b(x)d(y)
+$$
+berlaku untuk semua nilai $x,y$?
+
+@ID: SM69
+@BIDANG: Aljabar Linear
+@SUMBER: 
+
+Misalkan $A=(a_{ij})$ adalah matriks real berukuran $n\times n$ yang memenuhi
+$$
+|a_{ii}|
+>
+\sum_{j\ne i}|a_{ij}|,
+\qquad
+\forall\,1\le i\le n.
+$$
+Buktikan bahwa $A$ invertibel.

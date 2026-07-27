@@ -1,0 +1,130 @@
+@ID: SM11
+@BIDANG: Analisis Kompleks
+@SUMBER: Pelatnas IMC 2026
+
+Tentukan semua $z\in\mathbb C$ yang memenuhi
+$$
+\left|z-|z+2|\right|=\left|z+|z-2|\right|.
+$$
+
+@ID: SM12
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan fungsi kontinu $f,g:[0,1]\to[0,\infty)$ yang memenuhi $\sup_{0\le x\le1}f(x)=\sup_{0\le x\le1}g(x)$. Tunjukkan bahwa terdapat $t\in[0,1]$ sehingga $f(t)^2+3f(t)=g(t)^2+3g(t)$.
+
+@ID: SM13
+@BIDANG: Analisis Real
+
+Buktikan bahwa untuk setiap $x>0$ berlaku $\sin x>x-\frac{x^3}{6}$.
+
+@ID: SM14
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan fungsi riil $f$ yang memiliki turunan tingkat dua pada $[a,b]$ dan memenuhi $f''(x)>0$ untuk setiap $x\in[a,b]$. Tentukan semua $c\in[a,b]$ sehingga luas daerah yang dibatasi oleh kurva $y=f(x)$, garis singgung kurva di titik $(c,f(c))$, serta garis $x=a$ dan $x=b$ mencapai nilai minimum.
+
+@ID: SM15
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan fungsi kontinu $f:[0,\infty)\to\mathbb R$. Misalkan $A$ adalah himpunan semua bilangan real $a$ yang dapat ditulis sebagai $a=\lim_{n\to\infty}f(x_n)$ untuk suatu barisan $(x_n)$ di $[0,\infty)$ yang memenuhi $\lim_{n\to\infty}x_n=\infty$. Buktikan bahwa jika $a,b\in A$, maka $[a,b]\subseteq A$.
+
+@ID: SM16
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Misalkan $f(x)$ adalah polinom berkoefisien real dan $a\in\mathbb R$ memenuhi $f(a)\ne0$. Buktikan bahwa terdapat polinom real $g(x)$ sehingga jika $p(x)=f(x)g(x)$, maka $p(a)=1$, $p'(a)=0$, dan $p''(a)=0$.
+
+@ID: SM17
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan fungsi kontinu tak-negatif $f:[0,1]\to\mathbb R$ yang memenuhi $f(t)^2\le1+2\int_0^t f(s)\,ds$ untuk setiap $t\in[0,1]$. Buktikan bahwa $f(t)\le1+t$ untuk setiap $t\in[0,1]$.
+
+@ID: SM18
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Misalkan $\varphi$ merupakan fungsi $C^1$ pada $\mathbb R$ yang memenuhi $\varphi(x)\to a$, $\varphi'(x)\to b$ saat $x\to\infty$. Buktikan bahwa $b=0$.
+
+@ID: SM19
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan fungsi $f:\mathbb{R}\to\mathbb{R}$ yang kontinu seragam dan memenuhi $f(0)=0$. Buktikan bahwa terdapat suatu konstanta $B>0$ sehingga $|f(x)|\le1+B|x|$ untuk setiap $x\in\mathbb{R}$.
+
+@ID: SM20
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan bilangan real $A_1\ge A_2\ge\cdots\ge A_k\ge0$. Tentukan nilai
+$$
+\lim_{n\to\infty}\left(A_1^n+A_2^n+\cdots+A_k^n\right)^{1/n}.
+$$
+
+@ID: SM21
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Hitung nilai
+$$
+L=\lim_{n\to\infty}\left(\frac{n^n}{n!}\right)^{1/n}.
+$$
+
+@ID: SM22
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan barisan $(x_n)$ yang didefinisikan oleh $x_0=1$ dan $x_{n+1}=\frac{3+2x_n}{3+x_n}$ untuk $n\ge0$. Buktikan bahwa barisan $(x_n)$ konvergen, kemudian tentukan limitnya.
+
+@ID: SM23
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan barisan $(x_n)$ yang didefinisikan oleh $x_0=1$ dan $x_{n+1}=\frac{1}{2+x_n}$ untuk $n\ge0$. Buktikan bahwa barisan $(x_n)$ konvergen, kemudian tentukan limitnya.
+
+@ID: SM24
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan barisan bilangan real positif $(a_n)$ yang memenuhi $\sum_{n=1}^\infty a_n<\infty$. Buktikan bahwa terdapat barisan bilangan real positif $(c_n)$ sehingga $\lim_{n\to\infty}c_n=\infty$ dan $\sum_{n=1}^\infty c_na_n<\infty$.
+
+@ID: SM25
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Hitung nilai limit
+$$
+\lim_{n\to\infty}\prod_{k=2}^{n}\cos\frac{\pi}{2^k}.
+$$
+
+@ID: SM26
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan fungsi terdiferensial $f:\mathbb R\to\mathbb R$ yang memenuhi $f'(x)>f(x)$ untuk setiap $x\in\mathbb R$ dan $f(x_0)=0$. Buktikan bahwa $f(x)>0$ untuk setiap $x>x_0$.
+
+@ID: SM27
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan fungsi bernilai real $f$ yang memiliki turunan tingkat dua pada $\mathbb R$ dan memenuhi $f(0)=0$, $f'(0)>0$, serta $f''(x)\ge f(x)$ untuk setiap $x\ge0$. Buktikan bahwa $f(x)>0$ untuk setiap $x>0$.
+
+@ID: SM28
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Buktikan bahwa persamaan $ae^x=1+x+\frac{x^2}{2}$, dengan $a>0$, memiliki tepat satu akar real.
+
+@ID: SM29
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan fungsi kontinu $f:[0,1]\to\mathbb R$ yang memenuhi $f(0)=0$. Andaikan $f$ terdiferensial pada $(0,1)$ dan $0\le f'(x)\le2f(x)$ untuk setiap $x\in(0,1)$. Buktikan bahwa $f(x)\equiv0$.
+
+@ID: SM30
+@BIDANG: Analisis Real
+@SUMBER: Berkeley
+
+Diberikan fungsi kontinu $f:[0,1]\to\mathbb R$ yang memenuhi $f(0)=f(1)=0$. Andaikan $f''$ ada pada $(0,1)$ dan $f''+2f'+f\ge0$. Buktikan bahwa $f(x)\le0$ untuk setiap $x\in[0,1]$.

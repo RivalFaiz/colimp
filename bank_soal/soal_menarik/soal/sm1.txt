@@ -1,0 +1,72 @@
+@ID: SM1
+@BIDANG: Analisis Real
+@SUMBER: Pelatnas IMC 2026
+
+Diberikan fungsi terdiferensial kontinu $f:[0,1]\to\mathbb{R}$ pada $[0,1]$ dengan $f(0)=0$ dan $0<f'(x)\le1$ untuk setiap $x$. Tunjukkan bahwa
+$$
+\left(\int_0^1 f(x)\,dx\right)^2\ge\int_0^1 f(x)^3\,dx.
+$$
+
+@ID: SM2
+@BIDANG: Analisis Real
+@SUMBER: Pelatnas IMC 2026
+
+Diberikan fungsi kontinu $f:[0,1]\to\mathbb{R}$ memenuhi $\int_0^1 f(x)\,dx=\int_0^1 xf(x)\,dx=1$. Tunjukkan bahwa $\int_0^1(f(t))^2\,dt\ge4$.
+
+@ID: SM3
+@BIDANG: Analisis Real
+@SUMBER: Pelatnas IMC 2026
+
+Diberikan fungsi kontinu $f:[0,1]\to\mathbb{R}$ memenuhi $\int_0^1 f(x)\,dx=\int_0^1 xf(x)\,dx$. Tunjukkan bahwa terdapat $c\in(0,1)$ sehingga $f(c)=\int_0^c f(x)\,dx$.
+
+@ID: SM4
+@BIDANG: Analisis Real
+@SUMBER: Pelatnas IMC 2026
+
+Diberikan fungsi kontinu $f:[0,1]\to\mathbb{R}$ memenuhi $\int_x^1 f(t)\,dt\ge\frac{1-x^2}{2}$ untuk setiap $x\in[0,1]$. Tunjukkan bahwa $\int_0^1(f(t))^2\,dt\ge\frac13$.
+
+@ID: SM5
+@BIDANG: Analisis Real
+@SUMBER: Pelatnas IMC 2026
+
+Diberikan fungsi kontinu $f:[0,1]\to\mathbb{R}$. Tunjukkan bahwa
+$$
+\lim_{n\to\infty}\int_0^1 f(x^n)\,dx=f(0).
+$$
+
+@ID: SM6
+@BIDANG: Analisis Real
+@SUMBER: Pelatnas IMC 2026
+
+Diberikan fungsi $f:[0,\infty)\to\mathbb{R}$ yang memiliki turunan tingkat dua dan memenuhi $\lim_{x\to\infty}(f''(x)-f'(x))=L\neq0$. Tunjukkan bahwa terdapat $x_0>0$ sehingga $f(x)\neq0$ untuk setiap $x>x_0$.
+
+@ID: SM7
+@BIDANG: Analisis Real
+@SUMBER: Pelatnas IMC 2026
+
+Diberikan fungsi terdiferensial $f:\mathbb{R}\to\mathbb{R}$ dengan $f(0)=0$ dan $f(x)+f'(x)\le1$ untuk setiap $x\in\mathbb{R}$. Tentukan nilai terbesar yang mungkin untuk $f(1)$.
+
+@ID: SM8
+@BIDANG: Analisis Real
+@SUMBER: Pelatnas IMC 2026
+
+Tentukan semua fungsi terdiferensial $f:\mathbb{R}\to\mathbb{R}$ yang memenuhi
+$$
+\frac{f(b)-f(a)}{b-a}=f'\left(\frac{a+b}{2}\right)
+$$
+untuk setiap $a,b\in\mathbb{R}$ dengan $a<b$.
+
+@ID: SM9
+@BIDANG: Analisis Real
+@SUMBER: Pelatnas IMC 2026
+
+Diberikan fungsi $f:\mathbb{R}\to\mathbb{R}$ yang memiliki turunan tingkat dua kontinu pada $\mathbb{R}$. Jika $f$ dan $f''$ terbatas pada $\mathbb{R}$ dengan $M_0=\sup_{x\in\mathbb{R}}|f(x)|$ dan $M_2=\sup_{x\in\mathbb{R}}|f''(x)|$, tunjukkan bahwa $f'$ juga terbatas pada $\mathbb{R}$ dan berlaku $\sup_{x\in\mathbb{R}}|f'(x)|\le2\sqrt{M_0M_2}$.
+
+@ID: SM10
+@BIDANG: Analisis Kompleks
+@SUMBER: Pelatnas IMC 2026
+
+Jika $u,v,z,w\in\mathbb{C}$, buktikan bahwa
+$$
+2\operatorname{Re}(uz+vw)\le4\left(|u|^2+|v|^2\right)+\frac14\left(|z|^2+|w|^2\right).
+$$

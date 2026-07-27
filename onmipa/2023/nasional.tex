@@ -1,0 +1,95 @@
+@ID: ON23D1P1U
+@BIDANG: Kombinatorika
+Diberikan enam bilangan asli berbeda yang tidak melebihi 426. Buktikan terdapat tiga diantaranya, sebut saja $a, b, c$, yang memenuhi kondisi $a<b+c<4a$.
+
+@ID: ON23D1P2U
+@BIDANG: Analisis Kompleks
+Tunjukkan bahwa tidak terdapat bilangan kompleks $z$ sedemikian sehingga $|z|=1$ dan $z^{2023}+z+1=0$.
+
+@ID: ON23D1P3U
+@BIDANG: Analisis Real
+Diberikan barisan bilangan real $(x_{n})$ dan fungsi bernilai real $f$ dan $g$.
+(a). Jika barisan $(x_{n})$ didefinisikan dengan
+
+$$
+x_{n}=\int_{1}^{n}\frac{\sin(t)}{t^{2}}dt,
+$$
+
+buktikan bahwa $(x_{n})$ konvergen.
+(b). Jika fungsi $f$ kontinu dan $g$ terdiferensial pada $\mathbb{R}$ dengan
+
+$$
+(g^{\prime}(1)-f(1))(f(0)-g^{\prime}(0))>0,
+$$
+
+buktikan bahwa terdapat $c\in(0,1)$ sehingga $g^{\prime}(c)-f(c)=0$.
+
+@ID: ON23D1P4U
+@BIDANG: Struktur Aljabar
+Misalkan $G\subseteq\mathbb{R}^{3}$ adalah grup dengan operasi $*$ ($G$ tidak selalu merupakan subgrup dari $\mathbb{R}^{3}$). Diketahui bahwa untuk hasil kali silang (cross product) di $\mathbb{R}^{3}$ dan untuk setiap $a, b\in G$ berlaku: $a\times b=a*b$ atau $a\times b=0$ (atau keduanya).
+(a). Tunjukkan bahwa untuk setiap $a, b\in G$ berlaku $a\times b=0$.
+(b). Berikan contoh grup $(G, *)$ yang memenuhi sifat di atas dengan $|G|>1$ dan $G$ bukan subgrup dari $\mathbb{R}^{3}$.
+
+@ID: ON23D1P5U
+@BIDANG: Aljabar Linear
+Misalkan $n\ge2$ suatu bilangan asli dan $P_{n}$ adalah ruang polinom dengan koefisien real berderajat paling tinggi $n$. Diberikan polinom tak nol $Q_{0}(x), Q_{1}(x), Q_{2}(x), \dots, Q_{n}(x)$ di $P_{n}$ sehingga $\text{deg}(Q_{j})=j$ untuk $j=0,1,2,\dots,n$, dan
+
+$$
+Q_{j}(2023)=\begin{cases}1,&\text{jika } j=0\\ 0,&\text{jika } j=1,2,\dots,n\end{cases}
+$$
+
+Jika $D:P_{n}\rightarrow P_{n}$ adalah suatu pemetaan linear dengan
+
+$$
+D(Q_{j})=\begin{cases}0,&\text{jika } j=0\\ Q_{j-1},&\text{jika } j=1,2,\dots,n\end{cases}
+$$
+
+buktikan bahwa untuk sebarang polinom $f(x)\in P_{n}$ berlaku
+
+$$
+f(x)=\sum_{j=0}^{n}(D^{j}(f))(2023)\cdot Q_{j}(x)
+$$
+
+Catatan: $D^{j}$ adalah komposisi dari $D$ sebanyak $j$.
+
+@ID: ON23D2P1U
+@BIDANG: Aljabar Linear
+Misalkan $A$ suatu matriks berbentuk
+
+$$
+A=\begin{bmatrix}a&b&b&b\\ b&a&b&b\\ b&b&a&b\\ b&b&b&a\end{bmatrix}
+$$
+
+dengan $a, b$ bilangan real selain nol. Tentukan semua nilai yang mungkin dari $\text{rank}(A)$. Jelaskan jawaban Anda.
+
+@ID: ON23D2P2U
+@BIDANG: Kombinatorika
+Untuk setiap bilangan bulat positif $b$, buktikan bahwa
+
+$$
+\sum_{k=0}^{n}2^{k}\binom{n}{k}\binom{n-k}{\lfloor\frac{n-k}{2}\rfloor}=\binom{2n+1}{n}
+$$
+
+@ID: ON23D2P3U
+@BIDANG: Analisis Kompleks
+Untuk fungsi kompleks $f$ yang analitik pada domain $A\subseteq\mathbb{C}$, didefinisikan $A^{*}=\{\overline{z}|z\in A\}$ dan fungsi $f^{*}:A^{*}\rightarrow\mathbb{C}$ dengan $f^{*}(z)=\overline{f(\overline{z})}$.
+(a). Jika $f(z)=\sin(z)$, maka tunjukkan bahwa $f^{*}(z)=f(z)$ untuk setiap $z\in\mathbb{C}$.
+(b). Buktikan bahwa $(f^{*})^{\prime}(z)=f^{\prime}(\overline{z})$ untuk setiap $z\in A^{*}$.
+
+@ID: ON23D2P4U
+@BIDANG: Analisis Real
+Diketahui bahwa untuk setiap $n\in\mathbb{N}$, fungsi $g_{n}:[a,b]\rightarrow\mathbb{R}$ terintegral Riemann pada $[a,b]$. Jika untuk setiap $n\in\mathbb{N}$ dan untuk setiap $x\in[a,b]$ berlaku $|g_{n}(x)|\le2023$ dan barisan $(g_{n})$ konvergen ke fungsi $g$ yang terintegral Riemann pada $[a,b]$, selidiki apakah
+
+$$
+\lim_{n\rightarrow\infty}\int_{a}^{b}g_{n}(x)dx=\int_{a}^{b}g(x)dx
+$$
+
+Tuliskan penjelasan jawaban Anda.
+
+@ID: ON23D2P5U
+@BIDANG: Struktur Aljabar
+Diberikan suatu ring $(R, +,\cdot)$ dan $\frac{R}{Z_{R}}=\{r+Z_{R}|r\in R\}\cong\mathbb{Z}_{23}\times\mathbb{Z}_{23}$ dengan $Z_{R}=\{s\in R|sr=rs,\forall r\in R\}$. Untuk setiap $x\in R$ didefinisikan $C_{x}=\{r\in R|xr=rx\}$.
+
+(a). Jika $(S,+)$ merupakan subgrup tak-trivial dari $(R,+)$ di mana $Z_{R}$ subset sejati dari $S$, tentukan $\frac{S}{Z_{R}}$.
+
+(b). Jika $C=\{C_{x}|x\in R\}$, tentukan $C$.

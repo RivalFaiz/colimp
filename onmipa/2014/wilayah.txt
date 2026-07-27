@@ -1,0 +1,629 @@
+@ID: OW14D1P1I
+@BIDANG: Struktur Aljabar
+
+Pada suatu daerah, setiap nomor telepon terdiri dari 6 angka yang diawali dengan angka 6. Jika Anda mengajukan pemasangan untuk mendapatkan nomor telepon yang tidak lebih dari 4 angka berbeda, besarnya peluang Anda mendapat nomor yang dimaksud adalah $\ldots$
+
+@ID: OW14D1P2I
+@BIDANG: Struktur Aljabar
+
+Solusi dari fungsi rekursif $f(n+1)=f(n)+2f(n-1)$, $\forall n > 2$, di mana $f(1)=1$, $f(2)=5$ adalah $\ldots$
+
+@ID: OW14D1P3I
+@BIDANG: Struktur Aljabar
+
+Koefisien dari $x^{128}$ dalam ekspansi $\left(\frac{x}{2}-\frac{2}{7x}\right)^{236}$ adalah $\ldots$
+
+@ID: OW14D1P5I
+@BIDANG: Struktur Aljabar
+
+Pada sebuah wahana permainan terdapat 4 jenis koin bernilai 1.000, 5.000, 10.000, dan 25.000. Banyaknya cara untuk mendapatkan 7 koin dengan total nilai 49.000 adalah $\ldots$
+
+@ID: OW14D1P6I
+@BIDANG: Struktur Aljabar
+
+Barisan $(a_n)$ diperoleh dari barisan bilangan asli $1, 2, 3, \ldots$ dengan menghapus suku berbentuk kuadrat dan kubik. Suku $a_{1.000.000}$ adalah $\ldots$
+
+@ID: OW14D1P7I
+@BIDANG: Struktur Aljabar
+
+Diberikan bilangan ganjil $n \ge 5$. Banyaknya permutasi atas himpunan $\{1, 2, \ldots, n\}$ sedemikian sehingga tidak terdapat dua bilangan ganjil yang berurutan adalah $\ldots$
+
+@ID: OW14D1P8I
+@BIDANG: Struktur Aljabar
+
+Untuk bilangan asli $n$, nilai dari
+$$
+3 \cdot 2 \binom{n}{3} + 4 \cdot 3 \binom{n}{4} + \ldots + n(n-1)\binom{n}{n}
+$$
+adalah $\ldots$
+
+@ID: OW14D1P1U
+@BIDANG: Struktur Aljabar
+
+Sebuah titik $(a_1, a_2, \ldots, a_k) \in \mathbb{R}^k$ dikatakan sebuah titik lattice jika $a_i$ adalah bilangan bulat untuk semua $i=1,2,\ldots,k$. Perlihatkan bahwa setiap himpunan $L_k$ yang terdiri dari $2^k+1$ buah titik lattice, terdapat dua titik lattice $l_1, l_2 \in L_k$ sedemikian sehingga titik tengah dari $l_1$ dan $l_2$ adalah titik lattice juga.
+
+@ID: OW14D1P2U
+@BIDANG: Struktur Aljabar
+
+Misalkan $G$ adalah sebuah graf dengan $n$ titik $(v_1, v_2, \ldots, v_n)$. Sebuah matriks ketetanggaan $A=(a_{ij})$ dari graf $G$ didefinisikan sebagai sebuah matriks bujur sangkar berordo $n$ dengan entri
+$$
+a_{ij} = \begin{cases} 1, & \text{bila } \{v_i, v_j\} \text{ adalah sebuah sisi di } G \\ 0, & \text{bila } \{v_i, v_j\} \text{ bukan sebuah sisi di } G \end{cases}
+$$
+Buktikan bahwa entri $a_{ij}^{(m)}$ dari $A^m$ menyatakan banyaknya jalan (walk) dengan panjang $m$ yang menghubungkan titik $v_i$ dan $v_j$.
+
+@ID: OW14D1P3U
+@BIDANG: Struktur Aljabar
+
+Suatu sisi $e$ di graf $G$ dikatakan bridge jika penghapusan sisi $e$ dari graf $G$ mengakibatkan komponen (subgraf terhubung maksimal) dari graf $G$ bertambah. Buktikan bahwa satu sisi $e$ di $G$ adalah bridge jika dan hanya jika $e$ tidak berada di sebuah cycle di $G$.
+
+@ID: OW14D2P1I
+@BIDANG: Aljabar Linear
+
+Misalkan eselon baris tereduksi untuk matriks
+$$
+\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{bmatrix}
+$$
+adalah $\ldots$
+
+@ID: OW14D2P2I
+@BIDANG: Aljabar Linear
+
+Misalkan $W$ ruang vektor atas lapangan kompleks $\mathbb{C}$. Dengan demikian, $W$ juga ruang vektor atas lapangan real $\mathbb{R}$. Jika $\dim_{\mathbb{R}}(W)=2014$, maka $\dim_{\mathbb{C}}(W)=\ldots$
+
+@ID: OW14D2P3I
+@BIDANG: Aljabar Linear
+
+Misalkan $I_n$ adalah matriks identitas di $\mathbb{R}^{n\times n}$ dan $a, b, c, d$ adalah bilangan-bilangan real tak nol. Jika
+$$
+A = \begin{bmatrix} aI_n & bI_n \\ cI_n & dI_n \end{bmatrix} \in \mathbb{R}^{2n\times 2n}
+$$
+maka $\det A = \ldots$
+
+@ID: OW14D2P4I
+@BIDANG: Aljabar Linear
+
+Misalkan $T:\mathbb{R}^2\rightarrow\mathbb{R}^2$ adalah transformasi pencerminan terhadap garis $y=\frac{1}{\sqrt{3}}x$. Untuk sembarang bilangan real $a$, nilai $T(a,2014)=\ldots$
+
+@ID: OW14D2P5I
+@BIDANG: Aljabar Linear
+
+Jika $\begin{pmatrix}3 & 2-a\\ a & 3\end{pmatrix}\in\mathbb{R}^{2\times 2}$ memiliki dua vektor eigen yang saling ortogonal, maka $a=\ldots$
+
+@ID: OW14D2P6I
+@BIDANG: Aljabar Linear
+
+Bilangan $-1$ adalah nilai eigen matriks
+$$
+A = \begin{bmatrix} -1 & 0 & 1 & -1 \\ 1 & -2 & 1 & 0 \\ 1 & -1 & -1 & 1 \\ 1 & -1 & 0 & 1 \end{bmatrix} \in \mathbb{R}^{4\times 4}
+$$
+Dimensi ruang eigen $A$ untuk nilai eigen $-1$ adalah $\ldots$
+
+@ID: OW14D2P7I
+@BIDANG: Aljabar Linear
+
+Di ruang vektor $P_2$ kita definisikan hasil kali dalam
+$$
+\langle p,q \rangle = p(-1)q(-1) + p(0)q(0) + p(1)q(1)
+$$
+untuk setiap $p,q \in P_2$. Salah satu unsur $P_2$ yang normanya $1$ dan ortogonal terhadap kedua polinom $u(x)=x^2-1$ dan $v(x)=x$ adalah $\ldots$
+
+@ID: OW14D2P8I
+@BIDANG: Aljabar Linear
+
+Transformasi linear $T:P_2\rightarrow P_2$ didefinisikan sebagai $T(p)(x)=p(1-x)-p(1+x)$ untuk setiap $p\in P_2$. Sebagai contoh, $T(x^2-1)=-4x$. Himpunan $\{ax^2+bx+c, bx^2+cx+a\}$ merupakan basis $\text{Inti}(T)$ jika $(a,b,c)=\ldots$
+
+@ID: OW14D2P1U
+@BIDANG: Aljabar Linear
+
+Misalkan $V$ adalah ruang hasil kali dalam kompleks berdimensi hingga. Misalkan $u, w\in V$ memenuhi $\langle u,w \rangle \ne 0$. Jika $K=\text{span}\{u\}$ dan $L=\text{span}\{w\}$ buktikan bahwa $V=K^\perp \oplus L$.
+
+@ID: OW14D2P2U
+@BIDANG: Aljabar Linear
+
+Diberikan vektor-vektor tak nol $u, v\in\mathbb{R}^n$. Buktikan bahwa matriks $A=uv^t$ dapat didiagonalkan jika dan hanya jika $u^t v=0$.
+
+@ID: OW14D2P3U
+@BIDANG: Aljabar Linear
+
+Misalkan $B_k = \begin{bmatrix}1 & 1 & \cdots & 1\\ 2 & 2 & \cdots & 2\end{bmatrix} \in\mathbb{R}^{2\times k}$. Definisikan $A_1=[1]$, $A_2=\begin{bmatrix}1 & 1\\ 1 & 2\end{bmatrix}$ dan untuk $n\ge 3$,
+$$
+A_n = \begin{bmatrix} A_2 & B_{n-2} \\ B_{n-2}^t & A_{n-2} \end{bmatrix}
+$$
+Buktikan bahwa $A_n$ tak singular untuk setiap bilangan asli $n$.
+
+@ID: OW14D2P9I
+@BIDANG: Analisis Kompleks
+
+Diketahui polinomial $p(z)$ dan $q(z)$ sehingga berlaku $p(z)\cos^2 z + q(z)\sin^2 z=2$ untuk setiap $z\in\mathbb{C}$. Hitunglah $p(1)+q(1)$.
+
+@ID: OW14D2P10I
+@BIDANG: Analisis Kompleks
+
+Berikan sebuah contoh fungsi analitik tak konstan $f(z)$ di suatu himpunan buka $D\subseteq\mathbb{C}$ sehingga titik limit dari himpunan pembuat nol fungsi $f$ berada di luar $D$.
+
+@ID: OW14D2P11I
+@BIDANG: Analisis Kompleks
+
+Misalkan $f(z)$ fungsi analitik di $|z|<R$ dengan $R>1$. Hitunglah
+$$
+\int_{0}^{2\pi} f(e^{it})\cos^2\left(\frac{1}{2}t\right)dt
+$$
+bila dinyatakan dalam $f(0), f'(0), \ldots$
+
+@ID: OW14D2P12I
+@BIDANG: Analisis Kompleks
+@ID: OW14D1P1I
+@BIDANG: Struktur Aljabar
+
+Pada suatu daerah, setiap nomor telepon terdiri dari $6$ angka yang diawali dengan angka $6$. Jika Anda mengajukan pemasangan untuk mendapatkan nomor telepon yang tidak lebih dari $4$ angka berbeda, besarnya peluang Anda mendapat nomor yang dimaksud adalah $\ldots$
+
+@ID: OW14D1P2I
+@BIDANG: Struktur Aljabar
+
+Solusi dari fungsi rekursif $f(n+1)=f(n)+2f(n-1)$, $\forall n > 2$, di mana $f(1)=1$, $f(2)=5$ adalah $\ldots$
+
+@ID: OW14D1P3I
+@BIDANG: Struktur Aljabar
+
+Koefisien dari $x^{128}$ dalam ekspansi $\left(\frac{x}{2}-\frac{2}{7x}\right)^{236}$ adalah $\ldots$
+
+@ID: OW14D1P4I
+@BIDANG: Struktur Aljabar
+
+Pada sebuah wahana permainan terdapat $4$ jenis koin bernilai $1.000$, $5.000$, $10.000$, dan $25.000$. Banyaknya cara untuk mendapatkan $7$ koin dengan total nilai $49.000$ adalah $\ldots$
+
+@ID: OW14D1P5I
+@BIDANG: Struktur Aljabar
+
+Barisan $(a_n)$ diperoleh dari barisan bilangan asli $1, 2, 3, \ldots$ dengan menghapus suku berbentuk kuadrat dan kubik. Suku $a_{1.000.000}$ adalah $\ldots$
+
+@ID: OW14D1P6I
+@BIDANG: Struktur Aljabar
+
+Diberikan bilangan ganjil $n \ge 5$. Banyaknya permutasi atas himpunan $\{1, 2, \ldots, n\}$ sedemikian sehingga tidak terdapat dua bilangan ganjil yang berurutan adalah $\ldots$
+
+@ID: OW14D1P7I
+@BIDANG: Struktur Aljabar
+
+Untuk bilangan asli $n$, nilai dari
+$$
+3 \cdot 2 \binom{n}{3} + 4 \cdot 3 \binom{n}{4} + \ldots + n(n-1)\binom{n}{n}
+$$
+adalah $\ldots$
+
+@ID: OW14D1P1U
+@BIDANG: Struktur Aljabar
+
+Sebuah titik $(a_1, a_2, \ldots, a_k) \in \mathbb{R}^k$ dikatakan sebuah titik lattice jika $a_i$ adalah bilangan bulat untuk semua $i=1,2,\ldots,k$. Perlihatkan bahwa setiap himpunan $L_k$ yang terdiri dari $2^k+1$ buah titik lattice, terdapat dua titik lattice $l_1, l_2 \in L_k$ sedemikian sehingga titik tengah dari $l_1$ dan $l_2$ adalah titik lattice juga.
+
+@ID: OW14D1P2U
+@BIDANG: Struktur Aljabar
+
+Misalkan $G$ adalah sebuah graf dengan $n$ titik $(v_1, v_2, \ldots, v_n)$. Sebuah matriks ketetanggaan $A=(a_{ij})$ dari graf $G$ didefinisikan sebagai sebuah matriks bujur sangkar berordo $n$ dengan entri
+$$
+a_{ij} = \begin{cases} 1, & \text{bila } \{v_i, v_j\} \text{ adalah sebuah sisi di } G \\ 0, & \text{bila } \{v_i, v_j\} \text{ bukan sebuah sisi di } G \end{cases}
+$$
+Buktikan bahwa entri $a_{ij}^{(m)}$ dari $A^m$ menyatakan banyaknya jalan (walk) dengan panjang $m$ yang menghubungkan titik $v_i$ dan $v_j$.
+
+@ID: OW14D1P3U
+@BIDANG: Struktur Aljabar
+
+Suatu sisi $e$ di graf $G$ dikatakan bridge jika penghapusan sisi $e$ dari graf $G$ mengakibatkan komponen (subgraf terhubung maksimal) dari graf $G$ bertambah. Buktikan bahwa satu sisi $e$ di $G$ adalah bridge jika dan hanya jika $e$ tidak berada di sebuah cycle di $G$.
+
+@ID: OW14D1P8I
+@BIDANG: Analisis Real
+
+Diketahui barisan $(x_n)_{n\ge 0}$ dengan $x_0=0$ dan $x_{n+1}=\frac{3}{2}x_n-\frac{1}{2}x_{n-1}$ untuk $n\ge 1$. Dinyatakan dalam $x_0$ dan $x_1$, nilai $\lim_{n\rightarrow\infty} x_n=\ldots$
+
+@ID: OW14D1P9I
+@BIDANG: Analisis Real
+
+Diketahui $f:[a,b]\rightarrow\mathbb{R}$ merupakan fungsi naik. Fungsi $f$ kontinu di $a$ jika dan hanya jika $f(a)=\ldots$
+
+@ID: OW14D1P10I
+@BIDANG: Analisis Real
+
+Misalkan $f,g:[0,1]\rightarrow\mathbb{R}$ dengan $g(x)>0$ untuk setiap $x\in[0,1]$, maka
+$$
+\lim_{n\rightarrow\infty} \frac{\int_{0}^{1} x^n f(x)dx}{\int_{0}^{1} x^n g(x)dx} = \ldots
+$$
+
+@ID: OW14D1P11I
+@BIDANG: Analisis Real
+
+Untuk $s>0$ dan $t>0$, nilai dari
+$$
+\sum \frac{(s+n)(s+n-1)\cdots(s+1)}{(t+n)(t+n-1)\cdots(t+1)} = \ldots
+$$
+
+@ID: OW14D1P12I
+@BIDANG: Analisis Real
+
+Diketahui $\alpha$ merupakan bilangan irasional dan $\mathbb{Z}$ menyatakan himpunan semua bilangan bulat. Jika $A=\{m+n\alpha : m,n\in\mathbb{Z}\}$, maka klosur dari $A$ adalah $\ldots$
+
+@ID: OW14D1P13I
+@BIDANG: Analisis Real
+
+Jika diketahui fungsi $f:(a,b)\rightarrow\mathbb{R}$ fungsi kontinu dengan $f\left(r+\frac{1}{n}\right)=f(r)$ untuk setiap bilangan rasional $r$ dan bilangan asli $n$, maka $f(x)=\ldots$ untuk setiap $x\in\mathbb{R}$.
+
+@ID: OW14D1P14I
+@BIDANG: Analisis Real
+
+Misalkan $f$ dan $g$ terdefinisi pada interval $I\subseteq\mathbb{R}$, $f''$ dan $g''$ ada dan kontinu pada $I$. Jika $f(c)=g(c)=0$ dan $g''(c)\ne 0$ untuk suatu $c\in I$, maka syarat agar
+$$
+\lim_{x\rightarrow c} \frac{f(x)}{g(x)} = \frac{f''(c)}{g''(c)}
+$$
+adalah $\ldots$
+
+@ID: OW14D1P15I
+@BIDANG: Analisis Real
+
+Misalkan barisan fungsi $(f_n)$ dengan turunan $f_n'$ untuk $n\in\mathbb{N}$. Jika barisan $(f_n')$ konvergen ke fungsi $g$ pada $[a, b]$, maka nilai $\int_{a}^{b} g(t) dt = \ldots$
+
+@ID: OW14D1P4U
+@BIDANG: Analisis Real
+
+Diketahui barisan $(a_n)$ dan didefinisikan barisan $(b_n)$ sebagai berikut:
+$$
+b_n := \frac{a_1-a_2+a_3-a_4+\cdots+(-1)^{n+1}a_n}{n}
+$$
+(a) Buktikan: Jika $a_n\rightarrow 0$, maka $b_n\rightarrow 0$.
+(b) Jika $a_n\rightarrow L$ dengan $L\ne 0$, selidiki kekonvergenan $(b_n)$.
+
+@ID: OW14D1P5U
+@BIDANG: Analisis Real
+
+Jika fungsi $f:[0,1]\rightarrow[0,1]$ memenuhi $|f(x)-f(y)|\le |x-y|$ untuk setiap $x,y\in[0,1]$, buktikan bahwa $F=\{x\in[0,1] : f(x)=x\}$ merupakan singleton atau interval.
+
+@ID: OW14D1P6U
+@BIDANG: Analisis Real
+
+Diketahui fungsi $f:[0,a]\rightarrow[0,\infty)$ kontinu, dengan $f(0)=0$ dan $f$ mempunyai derivatif kanan dengan nilai derivatif kanan di $0$ adalah $0$. Jika
+$$
+f(t)\le\int_{0}^{t}\frac{f(s)}{s}ds
+$$
+untuk setiap $t\in[0,a]$, buktikan bahwa $f$ merupakan fungsi nol pada $[0, a]$.
+
+@ID: OW14D1P16I
+@BIDANG: Kombinatorika
+
+Pada suatu daerah, setiap nomor telepon terdiri dari $6$ angka yang diawali dengan angka $6$. Jika Anda mengajukan pemasangan untuk mendapatkan nomor telepon yang tidak lebih dari $4$ angka berbeda, besarnya peluang Anda mendapat nomor yang dimaksud adalah $\ldots$
+
+@ID: OW14D1P17I
+@BIDANG: Kombinatorika
+
+Solusi dari fungsi rekursif $f(n+1)=f(n)+2f(n-1)$, $\forall n > 2$, di mana $f(1)=1$, $f(2)=5$ adalah $\ldots$
+
+@ID: OW14D1P18I
+@BIDANG: Kombinatorika
+
+Koefisien dari $x^{128}$ dalam ekspansi $\left(\frac{x}{2}-\frac{2}{7x}\right)^{236}$ adalah $\ldots$
+
+@ID: OW14D1P19I
+@BIDANG: Kombinatorika
+
+[Soal pada sumber terpotong/tidak lengkap] $\ldots$ terdiri dari tujuh huruf lainnya merupakan huruf $\ldots$
+
+@ID: OW14D1P20I
+@BIDANG: Kombinatorika
+
+Pada sebuah wahana permainan terdapat $4$ jenis koin bernilai $1.000$, $5.000$, $10.000$, dan $25.000$. Banyaknya cara untuk mendapatkan $7$ koin dengan total nilai $49.000$ adalah $\ldots$
+
+@ID: OW14D1P21I
+@BIDANG: Kombinatorika
+
+Barisan $(a_n)$ diperoleh dari barisan bilangan asli $1,2,3,\ldots$ dengan menghapus suku berbentuk kuadrat dan kubik. Suku $a_{1.000.000}$ adalah $\ldots$
+
+@ID: OW14D1P22I
+@BIDANG: Kombinatorika
+
+Diberikan bilangan ganjil $n\ge 5$. Banyaknya permutasi atas himpunan $\{1, 2, \ldots, n\}$ sedemikian sehingga tidak terdapat dua bilangan ganjil yang berurutan adalah $\ldots$
+
+@ID: OW14D1P23I
+@BIDANG: Kombinatorika
+
+Untuk bilangan asli $n$, nilai dari
+$$
+3\cdot 2\binom{n}{3} + 4\cdot 3\binom{n}{4} + \cdots + n(n-1)\binom{n}{n}
+$$
+adalah $\ldots$
+
+@ID: OW14D1P7U
+@BIDANG: Kombinatorika
+
+Sebuah titik $(a_1,a_2,\cdots,a_k)\in\mathbb{R}^k$ dikatakan sebuah titik lattice jika $a_i$ adalah bilangan bulat untuk semua $i=1,2,\cdots,k$. Perlihatkan bahwa setiap himpunan $L_k$ yang terdiri dari $2^k+1$ buah titik lattice, terdapat dua titik lattice $l_1, l_2 \in L_k$ sedemikian sehingga titik tengah dari $l_1$ dan $l_2$ adalah titik lattice juga.
+
+@ID: OW14D1P8U
+@BIDANG: Kombinatorika
+
+Misalkan $G$ adalah sebuah graf dengan $n$ titik $(v_1,v_2,\cdots,v_n)$. Sebuah matriks ketetanggaan $A=(a_{ij})$ dari graf $G$ didefinisikan sebagai sebuah matriks bujur sangkar berordo $n$ dengan entri
+$$
+a_{ij} = \begin{cases} 1, & \text{bila } \{v_i, v_j\} \text{ adalah sebuah sisi di } G \\ 0, & \text{bila } \{v_i, v_j\} \text{ bukan sebuah sisi di } G \end{cases}
+$$
+Buktikan bahwa entri $a_{ij}^{(m)}$ dari $A^m$ menyatakan banyaknya jalan dengan panjang $m$ yang menghubungkan titik $v_i$ dan $v_j$.
+
+@ID: OW14D1P9U
+@BIDANG: Kombinatorika
+
+Suatu sisi $e$ di graf $G$ dikatakan bridge jika penghapusan sisi $e$ dari graf $G$ mengakibatkan komponen (subgraf terhubung maksimal) dari graf $G$ bertambah. Buktikan bahwa satu sisi $e$ di $G$ adalah bridge jika dan hanya jika $e$ tidak berada di sebuah cycle di $G$.
+
+@ID: OW14D2P1I
+@BIDANG: Aljabar Linear
+
+Misalkan eselon baris tereduksi untuk matriks
+$$
+\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{bmatrix}
+$$
+adalah $\ldots$
+
+@ID: OW14D2P2I
+@BIDANG: Aljabar Linear
+
+Misalkan $W$ ruang vektor atas lapangan kompleks $\mathbb{C}$. Dengan demikian, $W$ juga ruang vektor atas lapangan real $\mathbb{R}$. Jika $\dim_{\mathbb{R}}(W)=2014$, maka $\dim_{\mathbb{C}}(W)=\ldots$
+
+@ID: OW14D2P3I
+@BIDANG: Aljabar Linear
+
+Misalkan $I_n$ adalah matriks identitas di $\mathbb{R}^{n\times n}$ dan $a, b, c, d$ adalah bilangan-bilangan real tak nol. Jika
+$$
+A = \begin{bmatrix} aI_n & bI_n \\ cI_n & dI_n \end{bmatrix} \in \mathbb{R}^{2n\times 2n}
+$$
+maka $\det A = \ldots$
+
+@ID: OW14D2P4I
+@BIDANG: Aljabar Linear
+
+Misalkan $T:\mathbb{R}^2\rightarrow\mathbb{R}^2$ adalah transformasi pencerminan terhadap garis $y=\frac{1}{\sqrt{3}}x$. Untuk sembarang bilangan real $a$, nilai $T(a,2014)=\ldots$
+
+@ID: OW14D2P5I
+@BIDANG: Aljabar Linear
+
+Jika
+$$
+\begin{pmatrix} 3 & 2-a \\ a & 3 \end{pmatrix} \in \mathbb{R}^{2\times 2}
+$$
+memiliki dua vektor eigen yang saling ortogonal, maka $a=\ldots$
+
+@ID: OW14D2P6I
+@BIDANG: Aljabar Linear
+
+Bilangan $-1$ adalah nilai eigen matriks
+$$
+A = \begin{bmatrix} -1 & 0 & 1 & -1 \\ 1 & -2 & 1 & 0 \\ 1 & -1 & -1 & 1 \\ 1 & -1 & 0 & 1 \end{bmatrix} \in \mathbb{R}^{4\times 4}
+$$
+Dimensi ruang eigen $A$ untuk nilai eigen $-1$ adalah $\ldots$
+
+@ID: OW14D2P7I
+@BIDANG: Aljabar Linear
+
+Di ruang vektor $P_2$ kita definisikan hasil kali dalam
+$$
+\langle p,q \rangle = p(-1)q(-1) + p(0)q(0) + p(1)q(1)
+$$
+untuk setiap $p,q \in P_2$. Salah satu unsur $P_2$ yang normanya $1$ dan ortogonal terhadap kedua polinom $u(x)=x^2-1$ dan $v(x)=x$ adalah $\ldots$
+
+@ID: OW14D2P8I
+@BIDANG: Aljabar Linear
+
+Transformasi linear $T:P_2\rightarrow P_2$ didefinisikan sebagai $T(p)(x)=p(1-x)-p(1+x)$ untuk setiap $p\in P_2$. Sebagai contoh, $T(x^2-1)=-4x$. Himpunan $\{ax^2+bx+c, bx^2+cx+a\}$ merupakan basis $\text{Inti}(T)$ jika $(a,b,c)=\ldots$
+
+@ID: OW14D2P1U
+@BIDANG: Aljabar Linear
+
+Misalkan $V$ adalah ruang hasil kali dalam kompleks berdimensi hingga. Misalkan $u, w\in V$ memenuhi $\langle u,w \rangle \ne 0$. Jika $K=\text{span}\{u\}$ dan $L=\text{span}\{w\}$ buktikan bahwa $V=K^\perp \oplus L$.
+
+@ID: OW14D2P2U
+@BIDANG: Aljabar Linear
+
+Diberikan vektor-vektor tak nol $u, v\in\mathbb{R}^n$. Buktikan bahwa matriks $A=uv^t$ dapat didiagonalkan jika dan hanya jika $u^t v=0$.
+
+@ID: OW14D2P3U
+@BIDANG: Aljabar Linear
+
+Misalkan
+$$
+B_k = \begin{bmatrix} 1 & 1 & \cdots & 1 \\ 2 & 2 & \cdots & 2 \end{bmatrix} \in \mathbb{R}^{2\times k}
+$$
+Definisikan $A_1=[1]$, $A_2=\begin{bmatrix}1 & 1\\ 1 & 2\end{bmatrix}$ dan untuk $n\ge 3$,
+$$
+A_n = \begin{bmatrix} A_2 & B_{n-2} \\ B_{n-2}^t & A_{n-2} \end{bmatrix}
+$$
+Buktikan bahwa $A_n$ tak singular untuk setiap bilangan asli $n$.
+
+@ID: OW14D2P9I
+@BIDANG: Analisis Kompleks
+
+Diketahui polinomial $p(z)$ dan $q(z)$ sehingga berlaku $p(z)\cos^2 z + q(z)\sin^2 z=2$ untuk setiap $z\in\mathbb{C}$. Hitunglah $p(1)+q(1)$.
+
+@ID: OW14D2P10I
+@BIDANG: Analisis Kompleks
+
+Berikan sebuah contoh fungsi analitik tak konstan $f(z)$ di suatu himpunan buka $D\subseteq\mathbb{C}$ sehingga titik limit dari himpunan pembuat nol fungsi $f$ berada di luar $D$.
+
+@ID: OW14D2P11I
+@BIDANG: Analisis Kompleks
+
+Misalkan $f(z)$ fungsi analitik di $|z|<R$ dengan $R>1$. Hitunglah
+$$
+\int_{0}^{2\pi} f(e^{it})\cos^2\left(\frac{1}{2}t\right)dt
+$$
+bila dinyatakan dalam $f(0), f'(0), \ldots$
+
+@ID: OW14D2P12I
+@BIDANG: Analisis Kompleks
+
+Misalkan $f(z)=a_0+a_1z+a_2z^2+\cdots$ dan $g(z)=b_{-2}z^{-2}+b_{-1}z^{-1}+b_0+b_1z+b_2z^2+\cdots$. Apabila deret $\sum_{n=0}^{\infty}a_n z^n$ dan $\sum_{n=-2}^{\infty}b_n z^n$ konvergen di $|z|<2$ hitunglah
+$$
+\int_{|z|=1} f(z)g(z)dz
+$$
+
+@ID: OW14D2P4U
+@BIDANG: Analisis Kompleks
+
+Carilah deret Laurent dari fungsi $f(z)=\frac{1}{(z-1)(z-2)}$ yang berlaku di:
+(a) $|z|<1$
+(b) $1<|z|<2$
+(c) $|z|>2$
+
+@ID: OW14D2P5U
+@BIDANG: Analisis Kompleks
+
+Misalkan $u$ fungsi harmonik pada daerah terhubung di bidang kompleks $\mathbb{C}$.
+(a) Buktikan bahwa $f=u_x-iu_y$ merupakan fungsi holomorfik (analitik).
+(b) Misalkan $u=\text{Re}(g)$ bagian real dari fungsi holomorfik (analitik) $g$. Buktikan $g'=f$.
+Misalkan $f(z)=a_0+a_1z+a_2z^2+\cdots$ dan $g(z)=b_{-2}z^{-2}+b_{-1}z^{-1}+b_0+b_1z+b_2z^2+\cdots$. Apabila deret $\sum_{n=0}^{\infty}a_n z^n$ dan $\sum_{n=-2}^{\infty}b_n z^n$ konvergen di $|z|<2$ hitunglah
+$$
+\int_{|z|=1} f(z)g(z)dz
+$$
+
+@ID: OW14D2P4U
+@BIDANG: Analisis Kompleks
+
+Carilah deret Laurent dari fungsi $f(z)=\frac{1}{(z-1)(z-2)}$ yang berlaku di:
+(a) $|z|<1$
+(b) $1<|z|<2$
+(c) $|z|>2$
+
+@ID: OW14D2P5U
+@BIDANG: Analisis Kompleks
+
+Misalkan $u$ fungsi harmonik pada daerah terhubung di bidang kompleks $\mathbb{C}$.
+(a) Buktikan bahwa $f=u_x-iu_y$ merupakan fungsi holomorfik (analitik).
+(b) Misalkan $u=\text{Re}(g)$ bagian real dari fungsi holomorfik (analitik) $g$. Buktikan $g'=f$.
+
+@ID: OW14D1P1I
+@BIDANG: Analisis Real
+
+Diketahui barisan $(x_n)_{n\ge 0}$ dengan $x_0=0$ dan $x_{n+1}=\frac{3}{2}x_n-\frac{1}{2}x_{n-1}$ untuk $n\ge 1$. Dinyatakan dalam $x_0$ dan $x_1$, nilai $\lim_{n\rightarrow\infty} x_n=\ldots$
+
+@ID: OW14D1P2I
+@BIDANG: Analisis Real
+
+Diketahui $f:[a,b]\rightarrow\mathbb{R}$ merupakan fungsi naik. Fungsi $f$ kontinu di $a$ jika dan hanya jika $f(a)=\ldots$
+
+@ID: OW14D1P3I
+@BIDANG: Analisis Real
+
+Misalkan $f,g:[0,1]\rightarrow\mathbb{R}$ dengan $g(x)>0$ untuk setiap $x\in[0,1]$, maka
+$$
+\lim_{n\rightarrow\infty} \frac{\int_{0}^{1} x^n f(x)dx}{\int_{0}^{1} x^n g(x)dx} = \ldots
+$$
+
+@ID: OW14D1P4I
+@BIDANG: Analisis Real
+
+Untuk $s>0$ dan $t>0$, nilai dari
+$$
+\sum \frac{(s+n)(s+n-1)\cdots(s+1)}{(t+n)(t+n-1)\cdots(t+1)} = \ldots
+$$
+
+@ID: OW14D1P5I
+@BIDANG: Analisis Real
+
+Diketahui $\alpha$ merupakan bilangan irasional dan $\mathbb{Z}$ menyatakan himpunan semua bilangan bulat. Jika $A=\{m+n\alpha : m,n\in\mathbb{Z}\}$, maka klosur dari $A$ adalah $\ldots$
+
+@ID: OW14D1P6I
+@BIDANG: Analisis Real
+
+Jika diketahui fungsi $f:(a,b)\rightarrow\mathbb{R}$ fungsi kontinu dengan $f\left(r+\frac{1}{n}\right)=f(r)$ untuk setiap bilangan rasional $r$ dan bilangan asli $n$, maka $f(x)=\ldots$ untuk setiap $x\in\mathbb{R}$.
+
+@ID: OW14D1P7I
+@BIDANG: Analisis Real
+
+Misalkan $f$ dan $g$ terdefinisi pada interval $I\subseteq\mathbb{R}$, $f''$ dan $g''$ ada dan kontinu pada $I$. Jika $f(c)=g(c)=0$ dan $g''(c)\ne 0$ untuk suatu $c\in I$, maka syarat agar
+$$
+\lim_{x\rightarrow c} \frac{f(x)}{g(x)} = \frac{f''(c)}{g''(c)}
+$$
+adalah $\ldots$
+
+@ID: OW14D1P8I
+@BIDANG: Analisis Real
+
+Misalkan barisan fungsi $(f_n)$ dengan turunan $f_n'$ untuk $n\in\mathbb{N}$. Jika barisan $(f_n')$ konvergen ke fungsi $g$ pada $[a, b]$, maka nilai $\int_{a}^{b} g(t) dt = \ldots$
+
+@ID: OW14D1P1U
+@BIDANG: Analisis Real
+
+Diketahui barisan $(a_n)$ dan didefinisikan barisan $(b_n)$ sebagai berikut:
+$$
+b_n := \frac{a_1-a_2+a_3-a_4+\cdots+(-1)^{n+1}a_n}{n}
+$$
+(a) Buktikan: Jika $a_n\rightarrow 0$, maka $b_n\rightarrow 0$.
+(b) Jika $a_n\rightarrow L$ dengan $L\ne 0$, selidiki kekonvergenan $(b_n)$.
+
+@ID: OW14D1P2U
+@BIDANG: Analisis Real
+
+Jika fungsi $f:[0,1]\rightarrow[0,1]$ memenuhi $|f(x)-f(y)|\le |x-y|$ untuk setiap $x,y\in[0,1]$, buktikan bahwa $F=\{x\in[0,1] : f(x)=x\}$ merupakan singleton atau interval.
+
+@ID: OW14D1P3U
+@BIDANG: Analisis Real
+
+Diketahui fungsi $f:[0,a]\rightarrow[0,\infty)$ kontinu, dengan $f(0)=0$ dan $f$ mempunyai derivatif kanan dengan nilai derivatif kanan di $0$ adalah $0$. Jika
+$$
+f(t)\le\int_{0}^{t}\frac{f(s)}{s}ds
+$$
+untuk setiap $t\in[0,a]$, buktikan bahwa $f$ merupakan fungsi nol pada $[0, a]$.
+
+@ID: OW14D1P9I
+@BIDANG: Kombinatorika
+
+Pada suatu daerah, setiap nomor telepon terdiri dari $6$ angka yang diawali dengan angka $6$. Jika Anda mengajukan pemasangan untuk mendapatkan nomor telepon yang tidak lebih dari $4$ angka berbeda, besarnya peluang Anda mendapat nomor yang dimaksud adalah $\ldots$
+
+@ID: OW14D1P10I
+@BIDANG: Kombinatorika
+
+Solusi dari fungsi rekursif $f(n+1)=f(n)+2f(n-1)$, $\forall n > 2$, di mana $f(1)=1$, $f(2)=5$ adalah $\ldots$
+
+@ID: OW14D1P11I
+@BIDANG: Kombinatorika
+
+Koefisien dari $x^{128}$ dalam ekspansi $\left(\frac{x}{2}-\frac{2}{7x}\right)^{236}$ adalah $\ldots$
+
+@ID: OW14D1P12I
+@BIDANG: Kombinatorika
+
+[Soal pada sumber terpotong/tidak lengkap] $\ldots$ terdiri dari tujuh huruf lainnya merupakan huruf $\ldots$
+
+@ID: OW14D1P13I
+@BIDANG: Kombinatorika
+
+Pada sebuah wahana permainan terdapat $4$ jenis koin bernilai $1.000$, $5.000$, $10.000$, dan $25.000$. Banyaknya cara untuk mendapatkan $7$ koin dengan total nilai $49.000$ adalah $\ldots$
+
+@ID: OW14D1P14I
+@BIDANG: Kombinatorika
+
+Barisan $(a_n)$ diperoleh dari barisan bilangan asli $1,2,3,\ldots$ dengan menghapus suku berbentuk kuadrat dan kubik. Suku $a_{1.000.000}$ adalah $\ldots$
+
+@ID: OW14D1P15I
+@BIDANG: Kombinatorika
+
+Diberikan bilangan ganjil $n\ge 5$. Banyaknya permutasi atas himpunan $\{1, 2, \ldots, n\}$ sedemikian sehingga tidak terdapat dua bilangan ganjil yang berurutan adalah $\ldots$
+
+@ID: OW14D1P16I
+@BIDANG: Kombinatorika
+
+Untuk bilangan asli $n$, nilai dari
+$$
+3\cdot 2\binom{n}{3} + 4\cdot 3\binom{n}{4} + \cdots + n(n-1)\binom{n}{n}
+$$
+adalah $\ldots$
+
+@ID: OW14D1P4U
+@BIDANG: Kombinatorika
+
+Sebuah titik $(a_1,a_2,\cdots,a_k)\in\mathbb{R}^k$ dikatakan sebuah titik lattice jika $a_i$ adalah bilangan bulat untuk semua $i=1,2,\cdots,k$. Perlihatkan bahwa setiap himpunan $L_k$ yang terdiri dari $2^k+1$ buah titik lattice, terdapat dua titik lattice $l_1, l_2 \in L_k$ sedemikian sehingga titik tengah dari $l_1$ dan $l_2$ adalah titik lattice juga.
+
+@ID: OW14D1P5U
+@BIDANG: Kombinatorika
+
+Misalkan $G$ adalah sebuah graf dengan $n$ titik $(v_1,v_2,\cdots,v_n)$. Sebuah matriks ketetanggaan $A=(a_{ij})$ dari graf $G$ didefinisikan sebagai sebuah matriks bujur sangkar berordo $n$ dengan entri
+$$
+a_{ij} = \begin{cases} 1, & \text{bila } \{v_i, v_j\} \text{ adalah sebuah sisi di } G \\ 0, & \text{bila } \{v_i, v_j\} \text{ bukan sebuah sisi di } G \end{cases}
+$$
+Buktikan bahwa entri $a_{ij}^{(m)}$ dari $A^m$ menyatakan banyaknya jalan dengan panjang $m$ yang menghubungkan titik $v_i$ dan $v_j$.
+
+@ID: OW14D1P6U
+@BIDANG: Kombinatorika
+
+Suatu sisi $e$ di graf $G$ dikatakan bridge jika penghapusan sisi $e$ dari graf $G$ mengakibatkan komponen (subgraf terhubung maksimal) dari graf $G$ bertambah. Buktikan bahwa satu sisi $e$ di $G$ adalah bridge jika dan hanya jika $e$ tidak berada di sebuah cycle di $G$.

@@ -1,0 +1,168 @@
+@ID: OW12D1P1I
+@BIDANG: Kombinatorika
+
+Suatu perusahaan sepeda akan mengirim $n$ buah sepeda ke dua dealer berbeda. Setiap dealer harus menerima paling sedikit satu sepeda. Banyaknya cara pengiriman yang mungkin adalah $\ldots$
+
+@ID: OW12D1P2I
+@BIDANG: Kombinatorika
+
+Suatu kelas terdiri dari $35$ orang mahasiswa. Banyaknya cara memberi nilai A, B, C, D, F sehingga paling sedikit ada satu nilai A dan paling sedikit ada satu nilai B adalah $\ldots$
+
+@ID: OW12D1P3I
+@BIDANG: Kombinatorika
+
+Diketahui barisan $a_1=14$ dan $a_k=24-5a_{k-1}$ untuk $k>1$. Barisan $a_n$ dapat dituliskan dalam bentuk $a_n=pq^n+r$ dengan $p, q, r$ konstanta. Nilai $p+q+r$ adalah $\ldots$
+
+@ID: OW12D1P4I
+@BIDANG: Kombinatorika
+
+Sebuah barisan terdiri dari $12$ suku dibentuk dari himpunan $\{5,6,7,8,9\}$. Bila setiap angka muncul paling sedikit $2$ kali dan paling banyak $4$ kali, banyaknya barisan yang dapat dibentuk adalah $\ldots$
+
+@ID: OW12D1P5I
+@BIDANG: Kombinatorika
+
+Banyaknya solusi tripel bilangan bulat $(x, y, z)$ yang memenuhi persamaan $x^2+y^2=z^2+3$ adalah $\ldots$
+
+@ID: OW12D1P6I
+@BIDANG: Kombinatorika
+
+Sejumlah $n$ buah buku berbeda akan disusun di dalam $k$ buah lemari berbeda. Banyaknya cara menyusun buku-buku tersebut adalah $\ldots$
+
+@ID: OW12D1P7I
+@BIDANG: Kombinatorika
+
+Pada suatu kotak terdapat $17$ pensil yang terdiri dari $5$ buah pensil HB, $5$ buah pensil 2B, dan $7$ buah pensil 1B. Banyaknya cara memilih $10$ pensil sehingga paling sedikit terpilih $3$ buah pensil 1B adalah $\ldots$
+
+@ID: OW12D1P8I
+@BIDANG: Kombinatorika
+
+Untuk bilangan bulat positif $h$ dan $n$, nilai dari
+$$
+C(h,h)+C(h+1,h)+C(h+2,h)+\cdots+C(h+n,h)
+$$
+adalah sama dengan nilai sebuah koefisien binomial $\ldots$
+
+@ID: OW12D1P9I
+@BIDANG: Analisis Real
+
+Diberikan $D\subseteq\mathbb{R}$ dan fungsi $f, g:D\rightarrow\mathbb{R}$, dengan $f(x)\le g(x)$, untuk setiap $x\in D$. Beri contoh $D$, fungsi $f$, dan $g$ sehingga tidak benar bahwa $\sup\{f(x):x\in D\}\le \inf\{g(x):x\in D\}$.
+
+@ID: OW12D1P10I
+@BIDANG: Analisis Real
+
+Diketahui $\{a_n\}$ barisan bilangan real dengan $a_1>0$ dan $a_{n+1}=\frac{1}{2+a_n}$ untuk setiap $n\ge 2$. Nilai dari $\lim_{n\rightarrow\infty}a_n=\ldots$
+
+@ID: OW12D1P11I
+@BIDANG: Analisis Real
+
+Diketahui fungsi $f:(a,b)\rightarrow\mathbb{R}$ terdiferensial hingga tingkat berapapun di $c\in(a,b)$. Nilai dari
+$$
+\lim_{h\rightarrow 0}\frac{f(c+h)-2f(c)+f(c-h)}{h^2}=\ldots
+$$
+
+@ID: OW12D1P12I
+@BIDANG: Analisis Real
+
+Contoh fungsi $f$ yang memenuhi $|f(x)-f(y)|\le(x-y)^2$ untuk setiap $x, y\in\mathbb{R}$ adalah $\ldots$
+
+@ID: OW12D1P13I
+@BIDANG: Analisis Real
+
+Fungsi $G$ didefinisikan dengan
+$$
+G(x)=\int_0^{\sin x}\cos t \, dt
+$$
+Untuk itu, $G'(x)=\ldots$
+
+@ID: OW12D1P14I
+@BIDANG: Analisis Real
+
+Osilasi fungsi $f$ di titik $x$ dinyatakan dengan $\omega_f(x)$. Diketahui $f:\mathbb{R}\rightarrow\mathbb{R}$ dan $r>0$. Diberikan himpunan $E=\{x\in\mathbb{R} \mid \omega_f(x)\ge r\}$. Klosur dari $E$ adalah $\ldots$
+
+@ID: OW12D1P15I
+@BIDANG: Analisis Real
+
+Untuk nilai $n\rightarrow\infty$, jumlahan
+$$
+\sum_{k=1}^n\sqrt{\frac{1}{n^2+k^2}}
+$$
+konvergen ke $\ldots$
+
+@ID: OW12D1P16I
+@BIDANG: Analisis Real
+
+Bilangan real terkecil $c$ sehingga untuk setiap $x>0$ berlaku $\ln(1001+1011e^x)<c+x$ adalah $\ldots$
+
+@ID: OW12D1P17U
+@BIDANG: Analisis Real
+
+Diketahui $A\subseteq\mathbb{R}$, $x\in A$, dan $y\in A^C$. Gunakan definisi himpunan terbuka untuk menunjukkan himpunan
+$$
+E=\{t\in\mathbb{R}:y+t(x-y)\in A\}
+$$
+terbuka.
+
+@ID: OW12D1P18U
+@BIDANG: Analisis Real
+
+Diketahui fungsi $f_n:[0,1]\rightarrow\mathbb{R}$ kontinu untuk setiap $n\in\mathbb{N}$, dan $f_1\ge f_2\ge f_3\ge \ldots$. Jika untuk setiap $x\in[0,1]$, $\lim_{n\rightarrow\infty}f_n(x)=0$, buktikan bahwa barisan $\{f_n\}$ konvergen seragam ke fungsi nol pada $[0, 1]$.
+
+@ID: OW12D1P19U
+@BIDANG: Analisis Real
+
+Misalkan $f: \mathbb{R}\rightarrow\mathbb{R}$ adalah fungsi yang turunan tingkat duanya ada dan $f''(x)<0$ untuk setiap $x\in\mathbb{R}$. Buktikan bahwa bangun yang dibentuk dari titik-titik $(1,f(1)), (2,f(2)), (3,f(3)),$ dan $(4,f(4))$ bukan jajar genjang.
+
+@ID: OW12D2P20I
+@BIDANG: Analisis Kompleks
+
+Misalkan $z\in\mathbb{C}\setminus\{0\}$. Manakah yang lebih besar antara $\left|\frac{z}{|z|}-1\right|$ dan $|\arg z|$?
+
+@ID: OW12D2P21I
+@BIDANG: Analisis Kompleks
+
+Diberikan $w, z\in\mathbb{C}$ dengan $|w|\ne|z|$. Jika
+$$
+\text{Re}\left(\frac{w+z}{w-z}\right)=\frac{(|w|+|z|)(|w|-|z|)}{2012}
+$$
+maka $|w-z|=\ldots$
+
+@ID: OW12D2P22I
+@BIDANG: Analisis Kompleks
+
+Nilai dari
+$$
+\int_C \frac{1}{1-\cos z} dz
+$$
+dengan $C$ lingkaran berjari-jari $2$ adalah $\ldots$
+
+@ID: OW12D2P23I
+@BIDANG: Analisis Kompleks
+
+Diketahui $f(z)=\sum_{n=0}^\infty c_n z^n$ dengan $c_0=-1, c_1=-1$ dan $c_{n+2}=c_{n+1}+c_n$. Jika $z^2 f(z) = z f(z) - f(z)$, maka bentuk eksplisit dari rumus $f(z)$ adalah $\ldots$
+
+@ID: OW12D2P24I
+@BIDANG: Analisis Kompleks
+
+Diketahui $f$ adalah fungsi analitik pada $\mathbb{C}$, dengan $f(z)\ne 0$ untuk $|z|=1$, dan diketahui juga
+$$
+\int_{|z|=1}\frac{f'(z)}{f(z)}dz=2, \quad \int_{|z|=1}\frac{z f'(z)}{f(z)}dz=0, \quad \text{dan} \quad \int_{|z|=1}\frac{z^2 f'(z)}{f(z)}dz=1
+$$
+Jika $Z$ adalah himpunan semua akar dari $f$ di dalam cakram satuan $|z|<1$, maka $Z=\ldots$
+
+@ID: OW12D2P25U
+@BIDANG: Analisis Kompleks
+
+Diberikan
+$$
+\frac{1}{z^2+z-1}=\sum_{n=0}^\infty c_n z^n
+$$
+(a) Tunjukkan bahwa barisan $\left\{\frac{c_{n+1}}{c_n}\right\}_{n\ge 0}$ konvergen.
+(b) Tentukan titik konvergensinya (atau nilai limitnya).
+
+@ID: OW12D2P26U
+@BIDANG: Analisis Kompleks
+
+Misalkan $f$ fungsi analitik di dalam dan pada lingkaran satuan dengan $|f(z)-z|<|z|$. Buktikan bahwa
+$$
+\left|f'\left(\frac{1}{2}\right)\right|\le 8
+$$

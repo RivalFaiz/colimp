@@ -1,0 +1,813 @@
+@ID: ON24D1P1U
+@BY: Refrain
+@HINT: Gunakan ketaksamaan AM-GM untuk membuktikan bahwa $(a_n)$ turun monoton.
+
+Karena $0<a_n<1$, berlaku
+$a_n-a_{n+1}>0 \iff a_n+(1-a_{n+1})>1$.
+
+Selanjutnya, dari ketaksamaan AM-GM diperoleh
+$$
+a_n+(1-a_{n+1})
+\ge
+2\sqrt{a_n(1-a_{n+1})}
+>
+2\sqrt{\frac14}
+=1.
+$$
+
+Maka $a_n+(1-a_{n+1})>1$, sehingga $a_n>a_{n+1}$ untuk setiap $n$. Jadi, $(a_n)$ merupakan barisan turun monoton.
+
+Karena $0<a_n<1$, barisan $(a_n)$ juga terbatas. Berdasarkan Teorema Kekonvergenan Monoton, $(a_n)$ konvergen. Misalkan $\lim\limits_{n\to\infty}a_n=a$.
+
+Definisikan $b_n=a_n(1-a_{n+1})$. Karena $(a_n)$ konvergen, maka $(b_n)$ juga konvergen dengan limit $a(1-a)$. Dari syarat soal diperoleh $a(1-a)\ge\frac14$.
+
+Selanjutnya,
+$a(1-a)\ge\frac14
+\iff
+\left(a-\frac12\right)^2\le0$.
+
+Karena kuadrat bilangan real selalu tidak negatif, harus berlaku $\left(a-\frac12\right)^2=0$, sehingga $a=\frac12$.
+
+Dengan demikian,
+$$
+\boxed{\lim_{n\to\infty}a_n=\frac12.}
+$$
+
+@ID: ON24D1P3U
+@BIDANG: Kombinatorika
+
+Diberikan barisan Fibonacci $a_1,a_2,a_3,\ldots$ dengan aturan $a_1=a_2=1$ dan
+$$
+a_{n+1}=a_n+a_{n-1},
+$$
+untuk setiap $n>1$. Buktikan bahwa terdapat bilangan pada barisan tersebut yang berakhir dengan $2024$ angka nol tak terputus sebelah kanan.
+
+@ID: ON24D1P3U
+@BY: Refrain
+@HINT: Tinjau pasangan berurutan Fibonacci modulo suatu bilangan dan gunakan Prinsip Pigeonhole.
+
+Soal ekuivalen dengan membuktikan bahwa terdapat $m\in\mathbb{N}$ sehingga
+$a_m\equiv0\pmod{10^{2024}}$.
+
+Definisikan $a_0=a_2-a_1=0$ sehingga relasi Fibonacci tetap berlaku untuk $n\ge0$. Bahkan, cukup dibuktikan pernyataan yang lebih umum, yaitu untuk setiap modulus $s\in\mathbb{N}$ terdapat $m$ sehingga
+$a_m\equiv0\pmod{s}$.
+
+Perhatikan pasangan
+$(a_n,a_{n+1})$
+modulo $s$. Terdapat paling banyak $s^2$ pasangan yang mungkin.
+
+Dengan Prinsip Pigeonhole, di antara $s^2+1$ pasangan pertama terdapat dua indeks
+$1\le i<j\le s^2+1$
+sehingga
+$$
+(a_i,a_{i+1})
+\equiv
+(a_j,a_{j+1})
+\pmod{s}.
+$$
+
+Dari relasi Fibonacci diperoleh
+$a_{i-1}=a_{i+1}-a_i$
+dan
+$a_{j-1}=a_{j+1}-a_j$,
+sehingga
+$a_{i-1}\equiv a_{j-1}\pmod{s}$.
+
+Dengan induksi mundur diperoleh
+$$
+a_{i-k}\equiv a_{j-k}\pmod{s}
+\qquad
+(0\le k\le i).
+$$
+
+Ambil $k=i$. Karena $a_0=0$, maka
+$$
+a_{j-i}\equiv a_0\equiv0\pmod{s}.
+$$
+
+Jadi selalu terdapat suku Fibonacci yang habis dibagi $s$. Dengan mengambil
+$s=10^{2024}$,
+diperoleh ada suku Fibonacci yang berakhir dengan $2024$ angka nol.
+
+@ID: ON24D1P2U
+@BY: Refrain
+@HINT: Definisikan fungsi bantu yang bernilai nol pada seluruh sumbu real, lalu gunakan Teorema Identitas.
+
+Definisikan fungsi
+$$
+g(z)=\frac{f(z)}{e^z}-1.
+$$
+
+Karena $f$ analitik dan $e^z$ tidak pernah bernilai nol, maka $g$ analitik pada $\mathbb{C}$.
+
+Untuk setiap $x\in\mathbb{R}$ berlaku
+$f(x)=e^x$, sehingga
+$$
+g(x)=\frac{e^x}{e^x}-1=0.
+$$
+
+Jadi, $g$ bernilai nol pada seluruh sumbu real, yang memiliki titik limit di $\mathbb{C}$. Berdasarkan Teorema Identitas, diperoleh $g\equiv0$ pada $\mathbb{C}$.
+
+Akibatnya,
+$$
+f(z)=e^z
+$$
+untuk setiap $z\in\mathbb{C}$.
+
+
+@ID: ON24D1P3U
+@BY: RM
+@HINT: Gunakan prinsip Pigeonhole pada pasangan berurutan modulo $10^{2024}$.
+
+Soal ekuivalen ingin membuktikan terdapat $m\in\mathbb{N}$ sehingga
+$a_m\equiv0\pmod{10^{2024}}$.
+
+Definisikan
+$a_0=a_2-a_1=1-1=0$
+agar barisan Fibonacci $(a_n)$ dapat dimulai dari indeks $n=0$.
+Jelas $a_n>0$ untuk setiap $n>0$.
+Soal dipermudah dengan membuktikan pernyataan untuk sembarang modulo terhadap $s\in\mathbb{N}$.
+
+Bentuk tuple $(a_n,a_{n+1})$ untuk setiap $n\ge1$.
+Dengan mengambil modulo $s$, terdapat paling banyak $s^2$ kemungkinan nilai untuk $(a_n,a_{n+1})$.
+Akibatnya, berdasarkan Prinsip Pigeonhole, apabila diambil $s^2+1$ suku pertama dari tuple $(a_n,a_{n+1})$ setelah $n=0$, yaitu untuk $1\le n\le s^2$, terdapat dua indeks $i$ dan $j$, $1\le i<j\le s^2+1$, dengan sifat
+$(a_i,a_{i+1})\equiv(a_j,a_{j+1})\pmod{s}$.
+
+Akibatnya,
+$a_{i-1}=a_{i+1}-a_i\equiv a_{j+1}-a_j=a_{j-1}\pmod{s}$.
+
+Pembaca dapat membuktikan lebih lanjut secara induksi bahwa
+$a_{i-k}\equiv a_{j-k}\pmod{s}$
+untuk setiap $0\le k\le i$.
+Dengan mengambil $k=i$, diperoleh
+$a_{j-i}\equiv0\pmod{s}$
+dan
+$a_{j-i+1}\equiv1\pmod{s}$.
+
+Jadi, untuk setiap $s\in\mathbb{N}$ selalu terdapat suku barisan Fibonacci yang habis dibagi $s$.
+Dengan mengambil
+$s=10^{2024}$,
+diperoleh terdapat suatu $m$ sehingga
+$a_m\equiv0\pmod{10^{2024}}$.
+Artinya, terdapat suku Fibonacci yang berakhir dengan 2024 angka nol berturut-turut.
+
+
+
+@ID: ON24D1P4U
+@BY: Refrain
+@HINT: Gunakan polinom minimal untuk bagian (a), lalu konstruksi eksplisit untuk bagian (b).
+
+### (a)
+
+Dengan mentransposkan persamaan
+$A^2=A^T$, diperoleh
+$A=(A^2)^T=(A^T)^2=(A^2)^2=A^4$.
+
+Maka
+$A^4-A=A(A^3-I)=0$,
+sehingga polinom minimal $p_A(\lambda)$ membagi
+$\lambda^4-\lambda=\lambda(\lambda-1)(\lambda^2+\lambda+1)$.
+
+Karena $A$ dapat didiagonalkan, semua faktor pada polinom minimal saling berbeda.
+Akibatnya,
+$p_A(\lambda)$ juga membagi
+$\lambda(\lambda-1)=\lambda^2-\lambda$,
+sehingga
+$A^2-A=0$.
+
+Menggabungkan dengan
+$A^2=A^T$,
+diperoleh
+$A=A^T$.
+Jadi, $A$ merupakan matriks simetrik.
+
+### (b)
+
+Apabila $B$ memenuhi
+$B^2=B^T$
+tetapi tidak dapat didiagonalkan, maka polinom minimalnya harus membagi
+$\lambda^4-\lambda$
+namun tidak membagi
+$\lambda^2-\lambda$.
+Dengan demikian,
+$p_B(\lambda)=\lambda^2+\lambda+1$.
+
+Persamaan tersebut ekuivalen dengan
+$B^2+B+I=0$.
+
+Dua matriks berikut memenuhi persamaan tersebut dan tidak simetrik:
+\[
+\begin{pmatrix}
+-\frac12 & \frac{\sqrt3}{2}\\
+-\frac{\sqrt3}{2} & -\frac12
+\end{pmatrix},
+\qquad
+\begin{pmatrix}
+-\frac12 & -\frac{\sqrt3}{2}\\
+\frac{\sqrt3}{2} & -\frac12
+\end{pmatrix}.
+\]
+
+Mudah dicek bahwa kedua matriks tersebut memenuhi
+$B^2=B^T$,
+sehingga keduanya merupakan contoh yang diminta.
+
+
+@ID: ON24D1P5U
+@BY: Sheraz
+@HINT: Tunjukkan setiap baris memiliki banyak entri $1$ yang genap, lalu lakukan operasi kolom.
+
+Pertama, akan dibuktikan bahwa banyaknya
+$j\in\{1,2,\ldots,n\}$
+yang tidak memenuhi
+$x_i x_j^{-1}=x_j x_i^{-1}$
+selalu sama untuk setiap
+$i\in\{1,2,\ldots,n\}$.
+
+Perhatikan bahwa untuk setiap
+$g\in G$
+yang memenuhi
+$x_i g^{-1}=g x_i^{-1}$,
+berlaku
+
+$$
+x_i(x_1 g^{-1}x_i)^{-1}
+=
+x_i x_i^{-1}g x_1^{-1}
+=
+g x_1^{-1}
+=
+(x_1 g^{-1}x_i)x_1^{-1}.
+$$
+
+Pemetaan
+$g\mapsto x_1 g^{-1}x_i$
+bersifat bijektif.
+Akibatnya, banyaknya
+$j\in\{1,2,\ldots,n\}$
+yang memenuhi
+$x_i x_j^{-1}=x_j x_i^{-1}$
+selalu sama untuk setiap $i$.
+Dengan demikian, banyaknya indeks yang **tidak** memenuhi kondisi tersebut juga sama untuk setiap baris.
+
+Selanjutnya, perhatikan bahwa jika
+$x\neq e$
+berorde selain $2$, maka
+$x^{-1}$ juga berorde selain $2$.
+Akibatnya, banyak elemen
+$g\in G$
+yang memenuhi
+$g^2\neq e$
+berjumlah genap.
+Misalkan banyaknya adalah
+$2m$ dengan
+$m\in\mathbb N\cup\{0\}$.
+
+Sekarang,
+
+$$
+x_1h^{-1}\neq hx_1^{-1}
+\iff
+e\neq h x_1^{-1}(x_1h^{-1})^{-1}
+=
+h x_1^{-1} h x_1^{-1}
+=
+(hx_1^{-1})^2.
+$$
+
+Karena terdapat tepat
+$2m$
+elemen
+$h\in G$
+dengan
+$(hx_1^{-1})^2\neq e$,
+maka baris pertama matriks $A$ mempunyai tepat
+$2m$
+entri bernilai $1$.
+Argumen yang sama berlaku untuk setiap baris, sehingga setiap baris memiliki tepat
+$2m$
+entri $1$.
+
+Sekarang lakukan operasi kolom dengan menjumlahkan setiap kolom ke-$i$
+($i=2,\ldots,n$)
+ke kolom pertama.
+Misalkan matriks hasilnya adalah
+$A'$.
+Kolom pertama pada
+$A'$
+seluruh entrinya menjadi
+$2m$.
+
+Selanjutnya, bagi seluruh entri pada kolom pertama dengan
+$2m$
+dan misalkan matriks yang diperoleh adalah
+$A''$.
+Maka
+
+$\det(A)=\det(A')=2m\,\det(A'').$
+
+Karena semua entri
+$A''$
+merupakan bilangan bulat,
+$\det(A'')$
+juga bilangan bulat.
+Akibatnya,
+$\det(A)$
+merupakan kelipatan
+$2m$,
+khususnya merupakan bilangan genap.
+
+Jadi,
+$\boxed{\det(A)\text{ selalu genap}.}$
+
+
+@ID: ON24D2P1U
+@BY: Wildabandon
+@HINT: Kurangkan dua persamaan untuk memperoleh faktorisasi, lalu analisis kasus berdasarkan $x=z$ atau $x+y+z=0$.
+
+Perhatikan bahwa jika $(x,y,z)$ merupakan solusi, maka setiap permutasi dari $(x,y,z)$ juga merupakan solusi.
+
+Kurangkan persamaan pertama dan kedua sehingga
+
+$$
+x^2-z^2=yz-xy=y(z-x),
+$$
+
+atau
+
+$$(x+y+z)(x-z)=0.$$
+
+### Kasus 1. $x=z$
+
+Dari persamaan ketiga diperoleh
+
+$2x^2=2xy$,
+
+sehingga
+
+$2x(x-y)=0$.
+
+- Jika $x=0$, maka juga $z=0$, sehingga diperoleh $y=0$.
+- Jika $x=y$, maka $x=y=z$.
+
+Jadi semua titik berbentuk
+
+$(a,a,a)$
+
+dengan $a\in\mathbb C$ merupakan solusi.
+
+### Kasus 2. $x+y+z=0$
+
+Karena $x+y=-z$, maka dari persamaan pertama diperoleh
+
+$x^2+y^2=(-z)z=-z^2$,
+
+sehingga
+
+$x^2+y^2+z^2=0$.
+
+Selanjutnya,
+
+\[
+\begin{aligned}
+z^2
+&=(-z)^2\\
+&=(x+y)^2\\
+&=x^2+y^2+2xy\\
+&=-z^2+2xy,
+\end{aligned}
+\]
+
+maka
+
+$z^2=xy$.
+
+Dengan cara yang sama diperoleh
+
+$x^2=yz,\qquad y^2=zx.$
+
+Akibatnya,
+
+$x^3=y^3=z^3=xyz.$
+
+Dari
+
+$x^3=y^3$
+
+diperoleh tiga kemungkinan:
+
+- $y=x$,
+- $y=xe^{2\pi i/3}$,
+- $y=xe^{4\pi i/3}$.
+
+#### (i) Jika $y=x$
+
+Karena
+$x+y+z=0$,
+maka
+$z=-2x$.
+
+Dari
+$x^2+y^2+z^2=0$
+diperoleh
+$6x^2=0$,
+sehingga
+$x=y=z=0$,
+yang sudah termasuk pada kasus sebelumnya.
+
+#### (ii) Jika $y=xe^{2\pi i/3}$
+
+Maka
+
+\[
+\begin{aligned}
+z
+&=-x-y\\
+&=-x\left(1+e^{2\pi i/3}\right)\\
+&=x\left(-\frac12-\frac{\sqrt3}{2}i\right)\\
+&=xe^{4\pi i/3}.
+\end{aligned}
+\]
+
+Dengan demikian diperoleh
+
+$(x,y,z)=\left(a,ae^{2\pi i/3},ae^{4\pi i/3}\right)$,
+
+dengan $a\in\mathbb C$.
+
+Substitusi langsung menunjukkan
+
+\[
+\begin{aligned}
+x^2+y^2
+&=a^2+a^2e^{4\pi i/3},\\
+(x+y)z
+&=(a+ae^{2\pi i/3})ae^{4\pi i/3}
+=a^2+a^2e^{4\pi i/3},
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+y^2+z^2
+&=a^2e^{4\pi i/3}+a^2e^{2\pi i/3},\\
+(y+z)x
+&=(ae^{2\pi i/3}+ae^{4\pi i/3})a
+=a^2e^{4\pi i/3}+a^2e^{2\pi i/3},
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+z^2+x^2
+&=a^2e^{2\pi i/3}+a^2,\\
+(z+x)y
+&=(ae^{4\pi i/3}+a)ae^{2\pi i/3}
+=a^2+a^2e^{2\pi i/3}.
+\end{aligned}
+\]
+
+Jadi bentuk tersebut memang memenuhi sistem.
+
+#### (iii) Jika $y=xe^{4\pi i/3}$
+
+Dengan cara yang sama diperoleh
+
+$(x,y,z)=\left(a,ae^{4\pi i/3},ae^{2\pi i/3}\right)$,
+
+yang juga memenuhi sistem.
+
+### Kesimpulan
+
+Semua solusi adalah
+
+- $(a,a,a)$,
+- $\left(a,ae^{2\pi i/3},ae^{4\pi i/3}\right)$,
+- $\left(a,ae^{4\pi i/3},ae^{2\pi i/3}\right)$,
+
+beserta seluruh permutasinya, dengan $a\in\mathbb C$.
+
+
+@ID: ON24D2P2U
+@BY: Wildabandon
+@HINT: Gunakan prinsip Dirichlet pada banyak sisi merah dari sebuah titik, lalu analisis dua kasus.
+
+Beri nama titik-titik sebagai
+$T_1,T_2,\ldots,T_{10}$.
+
+Pertama, tinjau apakah terdapat suatu titik yang terhubung dengan sedikitnya empat ruas merah.
+
+Misalkan titik tersebut adalah
+$T_i$,
+yang terhubung dengan
+$T_a,T_b,T_c,T_d$
+melalui ruas merah.
+
+- Jika terdapat satu saja ruas merah di antara
+$T_a,T_b,T_c,T_d$,
+maka bersama $T_i$ terbentuk segitiga merah.
+
+- Jika tidak ada ruas merah di antara keempat titik tersebut, maka semua
+
+$\binom42=6$
+
+ruas yang menghubungkan mereka berwarna biru, sehingga terbentuk $K_4$ biru.
+
+Jadi kasus ini selesai.
+
+Sekarang anggap setiap titik terhubung dengan paling banyak tiga ruas merah.
+Karena setiap titik mempunyai sembilan tetangga, maka setiap titik terhubung dengan sedikitnya enam ruas biru.
+
+Tanpa mengurangi keumuman, misalkan
+$T_1$
+terhubung dengan ruas biru ke enam titik
+
+$T_{n_1},T_{n_2},\ldots,T_{n_6}$.
+
+Akan dibuktikan bahwa dari keenam titik ini selalu terdapat tiga titik yang saling terhubung dengan ruas biru.
+
+Perhatikan titik
+$T_{n_1}$.
+
+Karena setiap titik mempunyai paling banyak tiga ruas merah, maka terhadap lima titik lainnya
+$T_{n_2},\ldots,T_{n_6}$,
+titik
+$T_{n_1}$
+memiliki sedikitnya dua ruas biru.
+
+Jika
+$T_{n_1}$
+memiliki tiga ruas merah, misalkan ke
+$T_{m_1},T_{m_2},T_{m_3}$.
+
+- Jika terdapat ruas merah di antara
+$T_{m_1},T_{m_2},T_{m_3}$,
+maka bersama
+$T_{n_1}$
+terbentuk segitiga merah.
+
+- Jika tidak ada ruas merah di antara ketiga titik tersebut, maka ketiganya saling terhubung dengan ruas biru.
+Karena
+$T_1$
+juga terhubung biru ke ketiga titik tersebut, maka
+$T_1,T_{m_1},T_{m_2},T_{m_3}$
+membentuk graf lengkap biru $K_4$.
+
+Dengan demikian, pada kedua kemungkinan selalu diperoleh salah satu dari:
+
+- segitiga merah, atau
+- graf lengkap biru pada empat titik.
+
+Pernyataan terbukti.
+
+@ID: ON24D2P3U
+@BY: Refrain
+@HINT: Gunakan deret teleskopik pada $f(x)-f(\alpha^n x)$ dan manfaatkan kekontinuan $f$ di $0$.
+
+Misalkan
+
+$$
+L=\lim_{x\to0}\frac{f(x)-f(\alpha x)}{x}.
+$$
+
+**Klaim.** Turunan $f'(0)$ ada dan memenuhi
+
+$$
+f'(0)=\frac{L}{1-\alpha}.
+$$
+
+Untuk setiap $n\in\mathbb{N}$ berlaku
+
+$$
+f(x)-f(\alpha x)+f(\alpha x)-f(\alpha^2x)+\cdots+f(\alpha^{n-1}x)-f(\alpha^n x)
+=f(x)-f(\alpha^n x).
+$$
+
+Karena $f$ kontinu di $0$ dan $\alpha^n x\to0$, maka
+
+$$
+f(x)-f(0)
+=\sum_{m=0}^{\infty}\bigl(f(\alpha^m x)-f(\alpha^{m+1}x)\bigr).
+$$
+
+Untuk $x\neq0$,
+
+$$
+\frac{f(x)-f(0)}{x}
+=
+\sum_{m=0}^{\infty}
+\alpha^m
+\frac{f(\alpha^m x)-f(\alpha^{m+1}x)}{\alpha^m x}.
+$$
+
+Ambil $\varepsilon>0$. Dari definisi limit terdapat $\delta>0$ sehingga untuk $0<|t|<\delta$ berlaku
+
+$$
+\left|
+\frac{f(t)-f(\alpha t)}{t}-L
+\right|
+<\varepsilon.
+$$
+
+Karena $0<\alpha<1$, maka untuk setiap $m\ge0$ diperoleh $|\alpha^m x|<|x|$. Jadi jika $0<|x|<\delta$,
+
+$$
+\left|
+\frac{f(\alpha^m x)-f(\alpha^{m+1}x)}{\alpha^m x}-L
+\right|
+<\varepsilon.
+$$
+
+Akibatnya,
+
+$$
+(L-\varepsilon)\sum_{m=0}^{\infty}\alpha^m
+<
+\frac{f(x)-f(0)}{x}
+<
+(L+\varepsilon)\sum_{m=0}^{\infty}\alpha^m.
+$$
+
+Karena
+
+$$
+\sum_{m=0}^{\infty}\alpha^m=\frac{1}{1-\alpha},
+$$
+
+diperoleh
+
+$$
+\frac{L-\varepsilon}{1-\alpha}
+<
+\frac{f(x)-f(0)}{x}
+<
+\frac{L+\varepsilon}{1-\alpha}.
+$$
+
+Dengan membiarkan $x\to0$, kemudian $\varepsilon\to0$, diperoleh
+
+$$
+\lim_{x\to0}\frac{f(x)-f(0)}{x}
+=
+\frac{L}{1-\alpha}.
+$$
+
+Jadi, turunan $f'(0)$ ada dan
+
+$$
+f'(0)=\frac{L}{1-\alpha}.
+$$
+
+
+
+
+
+@ID: ON24D2P4U
+@BY: Wildabandon
+@HINT: Di $F[x]$, ideal utama maksimal jika dan hanya jika polinom pembangkitnya tak tereduksi.
+
+Misalkan $F$ suatu field. Diketahui bahwa untuk setiap $p(x)\in F[x]\setminus\{0\}$, ideal $\langle p(x)\rangle$ merupakan ideal maksimal jika dan hanya jika $p(x)$ merupakan polinom tak tereduksi di $F[x]$.
+
+**a)**
+
+Polinom $x-2024$ berderajat satu sehingga tak tereduksi di $\mathbb{R}[x]$. Oleh karena itu,
+
+$$
+\langle x-2024\rangle
+$$
+
+merupakan ideal maksimal di $\mathbb{R}[x]$.
+
+**b)**
+
+Agar
+
+$$
+\langle x^2+ax+2024\rangle
+$$
+
+merupakan ideal maksimal di $\mathbb{R}[x]$, polinom
+
+$$
+x^2+ax+2024
+$$
+
+harus tak tereduksi di $\mathbb{R}[x]$.
+
+Karena polinom tersebut berderajat dua, hal ini ekuivalen dengan tidak mempunyai akar real, yaitu diskriminannya negatif:
+
+$$
+a^2-4(2024)<0.
+$$
+
+Maka
+
+$$
+a^2<8096.
+$$
+
+Karena
+
+$$
+89^2=7921,\qquad
+90^2=8100>8096,
+$$
+
+bilangan asli terbesar yang memenuhi syarat adalah
+
+$$
+a=89.
+$$
+
+
+
+
+@ID: ON24D2P5U
+@BY: Refrain
+@HINT: Tunjukkan bahwa $u-v$ ortogonal terhadap seluruh $T(V)$, lalu gunakan Teorema Pythagoras.
+
+Soal ekuivalen dengan membuktikan
+
+$$
+\|u-v\|^2\le\|w-v\|^2,
+\qquad
+\forall\,w\in T(V).
+$$
+
+Karena $T(v)=T(u)$, diperoleh
+
+$$
+T(u-v)=0.
+$$
+
+Ambil sembarang $w\in T(V)$. Maka terdapat $a\in V$ sehingga
+
+$$
+w=T(a).
+$$
+
+Dengan sifat self-adjoint dari $T$,
+
+$$
+\langle w,u-v\rangle
+=
+\langle T(a),u-v\rangle
+=
+\langle a,T(u-v)\rangle
+=
+\langle a,0\rangle
+=
+0.
+$$
+
+Jadi,
+
+$$
+u-v\perp T(V).
+$$
+
+Karena $w-u\in T(V)$, maka
+
+$$
+w-u\perp u-v.
+$$
+
+Akibatnya, menurut Teorema Pythagoras,
+
+$$
+\|w-v\|^2
+=
+\|(w-u)+(u-v)\|^2
+=
+\|w-u\|^2+\|u-v\|^2.
+$$
+
+Karena
+
+$$
+\|w-u\|^2\ge0,
+$$
+
+maka
+
+$$
+\|w-v\|^2\ge\|u-v\|^2,
+$$
+
+atau ekuivalen dengan
+
+$$
+\|u-v\|\le\|w-v\|.
+$$
+
+Selain itu, kesamaan terjadi jika dan hanya jika
+
+$$
+\|w-u\|=0,
+$$
+
+yang ekuivalen dengan
+
+$$
+w=u.
+$$

@@ -1,0 +1,303 @@
+@ID: OW11D2P1I
+@BIDANG: Struktur Aljabar
+
+Jika $G$ sebuah grup dengan subgrup $H$ sedemikian sehingga $|G|<45$, $|H|> 10$, dan $|G:H|>3$, maka $|G|=\ldots$ 
+
+@ID: OW11D2P2I
+@BIDANG: Struktur Aljabar
+
+Diberikan $\mathbb{Z}_2$ sistem bilangan bulat modulo 2 dan himpunan $G$ yang unsur-unsurnya matriks $2\times 2$ dengan komponen di $\mathbb{Z}_2$ dan determinan tak nol. Banyaknya subgrup berorde 2 adalah $\ldots$ 
+
+@ID: OW11D2P3I
+@BIDANG: Struktur Aljabar
+
+Misalkan $S_5$ adalah grup simetri berorde 5. Orde dari $(1~2)(3~4~5)$ di $S_5$ adalah $\ldots$ 
+
+@ID: OW11D2P4I
+@BIDANG: Struktur Aljabar
+
+Misalkan $R$ suatu ring dan $F$ suatu lapangan. Jika $\theta:F\rightarrow R$ homomorfisma ring yang tidak nol, maka $\text{Inti}(\theta)=\ldots$ 
+
+@ID: OW11D2P5I
+@BIDANG: Struktur Aljabar
+
+Perhatikan ring polinom $\mathbb{Z}_3[x]$. Bilangan $c\in\mathbb{Z}_3$ sehingga $x^3+cx+1$ tidak tereduksi di $\mathbb{Z}_3[x]$ adalah $\ldots$ 
+
+@ID: OW11D2P6U
+@BIDANG: Struktur Aljabar
+
+Misalkan $G$ suatu grup dan $N$ subgrup dari $G$. Buktikan perkalian $(Na)\cdot(Nb)=N(ab)$ pada himpunan koset kanan dari $H$ terdefinisi dengan baik (well defined) jika dan hanya jika $N$ subgrup normal dari $G$. 
+
+@ID: OW11D2P7U
+@BIDANG: Struktur Aljabar
+
+Misalkan $R$ suatu gelanggang komutatif. Misalkan $r\in R$, definisikan $\rho_r:R\rightarrow R$, di mana $\rho_r(a)=ar$ untuk setiap $a\in R$. Buktikan $R$ daerah integral jika dan hanya jika $\text{Inti}(\rho_r)=\{0\}$ untuk setiap $r\in R\setminus\{0\}$. 
+
+@ID: OW11D2P8I
+@BIDANG: Aljabar Linear
+
+Diketahui bahwa $V$ adalah subruang dari $P_3$ yang dibangun oleh $\{x^3+x^2, x^3+x, x+1, x^2+1\}$. Dimensi $V$ adalah $\ldots$ 
+
+@ID: OW11D2P9I
+@BIDANG: Aljabar Linear
+
+Misalkan $A=[a_{ij}]$ matriks berukuran $2011\times 2011$. Jika $a_{ij}=i+j$ untuk setiap $i,j$, maka $\text{rank}(A)=\ldots$ 
+
+@ID: OW11D2P10I
+@BIDANG: Aljabar Linear
+
+Bidang $B$ di $\mathbb{R}^3$ melalui titik-titik $(1,0,0)$, $(0,1,0)$, dan $(0,0,-1)$. Vektor satuan yang tegak lurus terhadap bidang $B$ adalah $\ldots$ 
+
+@ID: OW11D2P11I
+@BIDANG: Aljabar Linear
+
+Diberikan vektor-vektor $x_1=(1,1,0)$ dan $x_2=(0,1,1)$ di $\mathbb{R}^3$. Proses ortonormalisasi Gram-Schmidt pada $x_1, x_2$ menghasilkan vektor-vektor $v_1, v_2$. Hasil dari $v_2=\ldots$ 
+
+@ID: OW11D2P12I
+@BIDANG: Aljabar Linear
+
+Misalkan $A$ dan $B$ matriks-matriks real berukuran berturut-turut $4\times 2$ dan $2\times 4$. Jika
+$$
+AB = \begin{bmatrix} 1 & 0 & -1 & 0 \\ 0 & 1 & 0 & -1 \\ -1 & 0 & 1 & 0 \\ 0 & -1 & 0 & 1 \end{bmatrix}
+$$
+maka $BA=\ldots$ 
+
+@ID: OW11D2P13I
+@BIDANG: Aljabar Linear
+
+Misalkan $T:P_2\rightarrow\mathbb{R}$ adalah transformasi linear yang didefinisikan sebagai
+$$
+T(p(x))=\int_0^1 p(x)dx
+$$
+untuk setiap $p(x)\in P_2$. Dimensi $\text{Inti}(T)$ adalah $\ldots$ 
+
+@ID: OW11D2P14I
+@BIDANG: Aljabar Linear
+
+Misalkan $v=(1,-2,4)$ dan $w=(-3,6,k)\in\mathbb{R}^3$. Jika tidak ada $u\in\mathbb{R}^3$ sehingga $w$ merupakan hasil proyeksi $u$ pada $v$, maka himpunan semua nilai $k$ yang mungkin adalah $\ldots$ 
+
+@ID: OW11D2P15I
+@BIDANG: Aljabar Linear
+
+Misalkan $f:\mathbb{R}^3\times\mathbb{R}^3\rightarrow\mathbb{R}$ untuk $f(x,y)=x_1 y_1 - x_2 y_2 + 3x_3 y_3$, dengan $x=(x_1,x_2,x_3), y=(y_1,y_2,y_3)\in\mathbb{R}^3$. Fungsi $f$ bukan hasil kali dalam di $\mathbb{R}^3$ karena tidak memenuhi sifat $\ldots$ 
+
+@ID: OW11D2P16I
+@BIDANG: Aljabar Linear
+
+Misalkan $A\in\mathbb{R}^{n\times n}$. Jika $A$ mempunyai $k$ kolom yang sama, maka dimensi ruang eigen untuk nilai eigen $\lambda=0$ paling sedikit adalah $\ldots$ 
+
+@ID: OW11D2P17I
+@BIDANG: Aljabar Linear
+
+Misalkan $T$ operator linear pada $\mathbb{R}^{2\times 2}$ yang didefinisikan $T\left(\begin{bmatrix} a & b \\ c & d \end{bmatrix}\right) = \begin{bmatrix} c & a \\ d & b \end{bmatrix}$ untuk setiap $\begin{bmatrix} a & b \\ c & d \end{bmatrix}\in\mathbb{R}^{2\times 2}$. Jika $A$ adalah vektor eigen $T$ untuk nilai eigen $-1$, maka $\det(A)=\ldots$ 
+
+@ID: OW11D2P18U
+@BIDANG: Aljabar Linear
+
+Misalkan $A=[a_{ij}]$ matriks berukuran $2011\times 2011$ dengan
+$$
+a_{ij} = \begin{cases} (-1)^{|i-j|}, & \text{jika } i \ne j \\ 2, & \text{jika } i = j \end{cases}
+$$
+Tentukan $\det(A)$. 
+
+@ID: OW11D2P19U
+@BIDANG: Aljabar Linear
+
+Misalkan $G$ operator linear pada $\mathbb{R}^{2\times 2}$ yang memetakan $A\in\mathbb{R}^{2\times 2}$ ke $G(A)=A^T$, yaitu transpos dari $A$. Periksa apakah $G$ dapat didiagonalkan. Jika ya, berikan suatu diagonalisasi dari $G$. 
+
+@ID: OW11D2P20U
+@BIDANG: Aljabar Linear
+
+Misalkan $V$ adalah subruang dari $\mathbb{R}^{50}$ yang dibangun oleh vektor-vektor $v_1, v_2, \ldots, v_{50}$. Jika himpunan semua entri (komponen) $v_1, v_2, \ldots, v_{50}$ adalah himpunan bilangan $\{1, 2, \ldots, 2500\}$, tentukan nilai terkecil dan nilai terbesar yang mungkin untuk $\dim(V)$. 
+
+@ID: OW11D1P21I
+@BIDANG: Kombinatorika
+
+Pada sebuah permutasi acak dari 26 huruf $\{a,b,c,d,\ldots,z\}$, peluang bahwa huruf $b$ muncul tepat setelah huruf $a$ adalah $\ldots$ 
+
+@ID: OW11D1P22I
+@BIDANG: Kombinatorika
+
+Misalkan $A$ adalah himpunan dengan $n$ elemen dan $B$ adalah himpunan dengan $m$ elemen serta $m\le n$. Banyaknya pemetaan satu-satu (injektif) dari $B$ ke $A$ adalah $\ldots$ 
+
+@ID: OW11D1P23I
+@BIDANG: Kombinatorika
+
+Solusi untuk formula rekursif $v_n = v_{n-1} + n \cdot n!$ dengan $v_0=0$ untuk semua $n\in\mathbb{Z}^+$ adalah $\ldots$ 
+
+@ID: OW11D1P24I
+@BIDANG: Kombinatorika
+
+Misalkan $n$ adalah bilangan delapan digit yang disusun dari enam digit berbeda dengan digit pertamanya 5. Bila $n$ memuat tiga digit yang sama tetapi bukan digit 5, maka banyaknya cara menyusun $n$ tersebut adalah $\ldots$ 
+
+@ID: OW11D1P25I
+@BIDANG: Kombinatorika
+
+Koefisien dari $x^{104}$ dalam ekspansi $\left(x-\frac{3}{5x}\right)^{210}$ adalah $\ldots$ 
+
+@ID: OW11D1P26I
+@BIDANG: Kombinatorika
+
+Misalkan $\pi$ adalah sebuah permutasi atas himpunan $\{1,2,3,\ldots,8\}$. Banyaknya permutasi $\pi$ sehingga bilangan genap tidak dipetakan ke dirinya sendiri adalah $\ldots$ 
+
+@ID: OW11D1P27I
+@BIDANG: Kombinatorika
+
+Untuk setiap $m, n, k \in \mathbb{N}$ nilai dari
+$$
+\binom{m}{0}\binom{n}{k} + \binom{m}{1}\binom{n}{k-1} + \cdots + \binom{m}{k}\binom{n}{0} = \ldots
+$$
+ 
+
+@ID: OW11D1P28I
+@BIDANG: Kombinatorika
+
+Misalkan $\alpha$ adalah sebuah barisan $\alpha_1,\alpha_2,\ldots,\alpha_{20}$ dengan nilai $\alpha_i$ adalah 1 atau 0 untuk semua $i=1,2,\ldots,20$. Misalkan $X=\{\alpha : \alpha_1+\alpha_2+\cdots+\alpha_{20}=10\}$. Banyaknya barisan $\alpha$ sehingga $\alpha_1+\alpha_2+\cdots+\alpha_{10} \in \{0,1,2\}$ adalah $\ldots$ 
+
+@ID: OW11D1P29I
+@BIDANG: Kombinatorika
+
+[Soal pada sumber terpotong/tidak lengkap] Misalkan $1\le n\le 2011$ dengan $n$ bilangan asli yang memuat digit 0. Banyaknya $n$ yang $\ldots$ 
+
+@ID: OW11D1P30I
+@BIDANG: Kombinatorika
+
+Jumlah semua bilangan desimal $0,xyz$ di mana $x, y, z$ merupakan tiga digit yang berbeda adalah $\ldots$ 
+
+@ID: OW11D1P31U
+@BIDANG: Kombinatorika
+
+Tentukan banyaknya bilangan bulat dari 1 sampai 99999 sehingga jumlah digit-digit pada bilangan tersebut adalah 22. 
+
+@ID: OW11D1P32U
+@BIDANG: Kombinatorika
+
+Suatu acara seminar matematika dihadiri oleh $n$ orang peserta. Tunjukkan bahwa di antara para peserta seminar tersebut, senantiasa terdapat dua orang peserta seminar yang mempunyai jumlah kenalan yang sama. 
+
+@ID: OW11D1P33U
+@BIDANG: Kombinatorika
+
+Sebuah graf dikatakan $k$-reguler bila setiap titik mempunyai derajat $k$. Sebuah perfect matching dari sebuah graf dengan $n$ titik adalah himpunan $\frac{n}{2}$ sisi yang saling asing. Perlihatkan bahwa bila $G$ adalah sebuah graf bipartit $k$-reguler, maka $G$ mempunyai perfect matching. 
+
+@ID: OW11D1P34I
+@BIDANG: Analisis Real
+
+Infimum dari himpunan $\{n\in\mathbb{N} : (n!)\}$ adalah $\ldots$ 
+
+@ID: OW11D1P35I
+@BIDANG: Analisis Real
+
+Misalkan $f,g:[0,1]\rightarrow\mathbb{R}^+$ adalah fungsi-fungsi injektif yang diferensiabel. Definisikanlah sebuah kombinasi fungsi dari $f$ dan $g$ sehingga dipenuhi sifat: jika $f(0)=g(1)=0$, maka terdapat $c\in(0,1)$ sedemikian sehingga $\left|\frac{u(c)}{v(c)}\right|=2011$ untuk $u(x)=\ln f(x)$ dan $v(x)=\ln g(x)$ $\forall x\in(0,1)$. 
+
+@ID: OW11D1P36I
+@BIDANG: Analisis Real
+
+Jika fungsi nonnegatif $f$ terintegralkan Riemann pada $[a, b]$ dan $0\le m\le f(x)\le M$ $\forall x \in [a, b]$, tentukan nilai $c$ dan $d$ sehingga
+$$
+c \le \int_a^b f^2(x)dx \le d
+$$
+ 
+
+@ID: OW11D1P37I
+@BIDANG: Analisis Real
+
+Barisan $(S_n)$ dengan
+$$
+S_n = \left(\frac{1}{n}\right)^n + \left(\frac{2}{n}\right)^n + \cdots + \left(\frac{n}{n}\right)^n
+$$
+konvergen ke $\ldots$ 
+
+@ID: OW11D1P38I
+@BIDANG: Analisis Real
+
+Beri contoh suatu barisan dari fungsi-fungsi kontinu $(f_n)$ yang terdefinisi pada $[0, 1]$, sedemikian sehingga $0\le f_n(x)\le 1$, dan $\lim_{n\rightarrow\infty}\int_0^1 f_n(x)dx=0$, tetapi barisan tersebut tidak konvergen pada $[0, 1]$. 
+
+@ID: OW11D1P39I
+@BIDANG: Analisis Real
+
+Jika $\{a_n\}$ barisan dengan $a_{n+1}=a_n+\frac{2-a_n}{2a_n+1}$ untuk setiap $n$, maka $\lim_{n\rightarrow\infty}a_n=\ldots$ 
+
+@ID: OW11D1P40I
+@BIDANG: Analisis Real
+
+Diketahui fungsi $f:[0,1]\rightarrow\mathbb{R}$ kontinu. Jika $f(x)$ rasional, untuk setiap $x\in[0,1]$, dan $f(0)=0$, maka nilai $f\left(\frac{\sqrt{2}}{4}\right)=\ldots$ 
+
+@ID: OW11D1P41I
+@BIDANG: Analisis Real
+
+Contoh fungsi $f$ dan $g$ yang kontinu seragam pada interval $I$, tetapi hasil kali keduanya tidak kontinu seragam pada $I$ adalah $\ldots$ 
+
+@ID: OW11D1P42I
+@BIDANG: Analisis Real
+
+Diketahui $I\subseteq\mathbb{R}$ interval dan $f:I\rightarrow\mathbb{R}$ fungsi. Jika $c$ titik interior (interior point) $I$ dan untuk setiap $x, y \in I$, dengan $x<y$, berlaku $f(x)\ge f(y)$, $\lim_{x\rightarrow c}f(x)=\ldots$ 
+
+@ID: OW11D1P43I
+@BIDANG: Analisis Real
+
+Jika $f''(x)+p(x)f(x)=0$ dan $g''(x)+p(x)g(x)=0$, untuk setiap $x\in(a,b)$, maka $W=f'g-fg'=\ldots$ pada $(a, b)$. 
+
+@ID: OW11D1P44U
+@BIDANG: Analisis Real
+
+Diketahui himpunan $E\subset\mathbb{R}$ tertutup dan fungsi $f: E\rightarrow \mathbb{R}$ kontinu. Jika $\{x_n\}$ merupakan barisan Cauchy di dalam $E$, tunjukkan terdapat $c\in E$ dengan $\{f(x_n)\}$ konvergen ke $f(c)$. 
+
+@ID: OW11D1P45U
+@BIDANG: Analisis Real
+
+Jika fungsi $f:(0,1)\rightarrow\mathbb{R}$ kontinu dan terbatas, tunjukkan bahwa fungsi $g:(0,1)\rightarrow\mathbb{R}$ dengan $g(x)=x(1-x)f(x)$ kontinu seragam. 
+
+@ID: OW11D1P46U
+@BIDANG: Analisis Real
+
+Jika fungsi $f: \mathbb{R}\rightarrow\mathbb{R}$ terdiferensial dan terdapat $c \in \mathbb{R}$ dengan $\lim_{x\rightarrow\infty}f'(x)=c$, maka tunjukkan bahwa
+$$
+\lim_{x\rightarrow\infty}\frac{f(x)}{x}=c
+$$
+ 
+
+@ID: OW11D2P47I
+@BIDANG: Analisis Kompleks
+
+Tentukan jari-jari konvergensi deret
+$$
+\sum_{n=1}^\infty \left[\frac{z(z+n)}{n}\right]^n
+$$
+ 
+
+@ID: OW11D2P48I
+@BIDANG: Analisis Kompleks
+
+Tentukan luas daerah peta dari hasil pemetaan daerah $\{z=x+iy\in\mathbb{C} \mid -1<x\le 2, -1\le y<3\}$ oleh transformasi linear $T(z)=(1+i\sqrt{3})z+2-i$. 
+
+@ID: OW11D2P49I
+@BIDANG: Analisis Kompleks
+
+Berapakah nilai integral berikut?
+$$
+\int_{|z-a|=a}\frac{z~dz}{z^4-1}
+$$
+dengan $a\in\mathbb{R}$ dan $a>1$. 
+
+@ID: OW11D2P50I
+@BIDANG: Analisis Kompleks
+
+Misalkan $f(z)$ fungsi analitik memenuhi $|f(z)|\le 1+|z|^{\frac{3}{2}}$. Tuliskan semua fungsi analitik yang mungkin! 
+
+@ID: OW11D2P51I
+@BIDANG: Analisis Kompleks
+
+Misalkan $p(z)=\sum_{n=0}^\infty a_n z^n$ dan $q(z)=\sum_{n=0}^\infty b_n z^n$. Selanjutnya definisikan $f(z)=p(z)q(z)$. Hitung $f^{(n)}(0)$, yaitu nilai turunan ke $n$ dari fungsi $f$ di titik nol. Nyatakan nilai dalam suku $\{a_k\}$ dan $\{b_k\}$. 
+
+@ID: OW11D2P52U
+@BIDANG: Analisis Kompleks
+
+Buktikan bahwa jika $z_1+z_2+z_3=0$ dan $|z_1|=|z_2|=|z_3|=1$, maka $z_1, z_2, z_3$ adalah titik-titik ujung dari sebuah segitiga sama sisi yang berada di dalam lingkaran satuan. 
+
+@ID: OW11D2P53U
+@BIDANG: Analisis Kompleks
+
+Misalkan $f(z)=\sum_{n=0}^\infty c_n z^n$ fungsi analitik dengan jari-jari konvergensi $R$ dan di bidang kompleks hanya mempunyai satu pole order dua di titik $z_0$.
+a. Definisikan suatu fungsi analitik $F(z)$ yang analitik di seluruh bidang $\mathbb{C}$ yang diperoleh dari hasil perkalian $f(z)$ dengan suatu fungsi yang sederhana.
+b. Misalkan $F(z)=\sum_{n=0}^\infty d_n z^n$. Berdasarkan hubungan yang diperoleh di soal a, hitung nilai $c_n$ bila dinyatakan sebagai suku-suku dari barisan $\{d_k\}_{k=1}^\infty$.
+c. Hitung $\frac{c_n}{c_{n+1}}$ dan $\lim_{n\rightarrow\infty}\frac{c_n}{c_{n+1}}$. 

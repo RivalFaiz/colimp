@@ -1,0 +1,1225 @@
+@ID: OW24D1P1I
+@BY: @refrain
+@HINT: Gunakan sifat bahwa $(I_n)$ merupakan barisan interval menurun dan manfaatkan sifat Archimedes.
+
+Misalkan
+
+$$
+I_n=\left(1,1+\frac1n\right).
+$$
+
+Terlihat bahwa
+
+$$
+I_1\supseteq I_2\supseteq I_3\supseteq\cdots.
+$$
+
+Maka
+
+$$
+\bigcup_{I_n\in\mathcal I}I_n
+=I_1
+=(1,2).
+$$
+
+Selanjutnya,
+
+$$
+\bigcap_{I_n\in\mathcal I}I_n
+=\{x\in\mathbb R:x\in I_n,\ \forall n\in\mathbb N\}.
+$$
+
+Andaikan terdapat
+
+$$
+x\in\bigcap_{I_n\in\mathcal I}I_n.
+$$
+
+Karena $x>1$, berlaku $x-1>0$.
+
+Dari sifat Archimedes, terdapat $n\in\mathbb N$ sehingga
+
+$$
+\frac1n<x-1.
+$$
+
+Akibatnya
+
+$$
+1+\frac1n<x,
+$$
+
+bertentangan dengan $x\in I_n$.
+
+Jadi,
+
+$$
+\boxed{\bigcap_{I_n\in\mathcal I}I_n=\varnothing.}
+$$
+
+
+@ID: OW24D1P2I
+@BY: @refrain
+@HINT: Gunakan substitusi $x=\cos t$ dan identitas hasil kali ke jumlah.
+
+Substitusi
+
+$$
+x=\cos t,\qquad t\in(0,\pi).
+$$
+
+Maka
+
+$$
+dx=-\sin t\,dt,\qquad
+\sqrt{1-x^2}=\sin t,
+$$
+
+serta
+
+$$
+f_n(x)=\cos(nt),\qquad
+f_m(x)=\cos(mt).
+$$
+
+Akibatnya,
+
+$$
+\int_{-1}^{1}\frac{f_n(x)f_m(x)}{\sqrt{1-x^2}}\,dx
+=\int_0^\pi\cos(nt)\cos(mt)\,dt.
+$$
+
+Gunakan identitas
+
+$$
+\cos A\cos B
+=\frac12\bigl(\cos(A+B)+\cos(A-B)\bigr),
+$$
+
+sehingga
+
+$$
+=\frac12\int_0^\pi
+\left(\cos((m+n)t)+\cos((m-n)t)\right)\,dt
+$$
+
+$$
+=\frac12\left[
+\frac{\sin((m+n)t)}{m+n}
++\frac{\sin((m-n)t)}{m-n}
+\right]_0^\pi
+$$
+
+$$
+=0,
+$$
+
+karena $\sin(k\pi)=0$ untuk setiap $k\in\mathbb Z$.
+
+Jadi,
+
+$$
+\boxed{0.}
+$$
+
+@ID: OW24D1P3I
+@BY: @refrain
+@HINT: Gunakan fakta bahwa pada grup siklis terdapat tepat $\varphi(d)$ elemen berorde $d$ untuk setiap pembagi $d$ dari orde grup.
+
+Misalkan
+
+$$
+G=\langle a\rangle,
+\qquad |G|=2024=2^3\cdot11\cdot23.
+$$
+
+Pada grup siklis, banyak elemen yang berorde $d$ adalah $\varphi(d)$ untuk setiap $d\mid2024$.
+
+Pembagi ganjil dari $2024$ hanyalah
+
+$$
+1,\ 11,\ 23,\ 253.
+$$
+
+Maka banyak elemen yang berorde ganjil adalah
+
+$$
+\varphi(1)+\varphi(11)+\varphi(23)+\varphi(253)
+=1+10+22+220
+=253.
+$$
+
+Jadi jawabannya adalah
+
+$$
+\boxed{253.}
+$$
+@ID: OW24D1P4I
+@BY: @aduhmath
+@HINT: Gunakan fakta bahwa konjugat-konjugat aljabar dari $\sqrt3-\sqrt5$ juga merupakan akar.
+
+Karena
+
+$$
+\sqrt3-\sqrt5
+$$
+
+merupakan akar polinom berkoefisien bilangan bulat, maka
+
+$$
+\sqrt3+\sqrt5,\quad
+-\sqrt3+\sqrt5,\quad
+-\sqrt3-\sqrt5
+$$
+
+juga merupakan akar.
+
+Akibatnya,
+
+$$
+\begin{aligned}
+f(x)
+&=(x+\sqrt3+\sqrt5)(x+\sqrt3-\sqrt5)
+(x-\sqrt3+\sqrt5)(x-\sqrt3-\sqrt5)\\
+&=\bigl((x+\sqrt3)^2-5\bigr)
+\bigl((x-\sqrt3)^2-5\bigr)\\
+&=(x^2-2+2x\sqrt3)(x^2-2-2x\sqrt3)\\
+&=(x^2-2)^2-12x^2\\
+&=x^4-16x^2+4.
+\end{aligned}
+$$
+
+Maka
+
+$$
+a=0,\qquad
+b=-16,\qquad
+c=0,\qquad
+d=4,
+$$
+
+sehingga
+
+$$
+a+b+c+d
+=0-16+0+4
+=-12.
+$$
+
+Jadi jawabannya adalah
+
+$$
+\boxed{-12.}
+$$
+
+@ID: OW24D1P5I
+@BY: @hniv
+@HINT: Nyatakan banyak kelereng yang diambil dari setiap warna sebagai solusi bilangan bulat taknegatif, lalu gunakan metode stars and bars.
+
+Misalkan $x_i$ menyatakan banyaknya kelereng warna ke-$i$ yang diambil, untuk $i=1,2,\ldots,5$.
+
+Karena setiap warna terambil paling sedikit satu kali, berlaku
+$x_1+x_2+x_3+x_4+x_5=9$ dan $x_i\ge1$.
+
+Substitusi $y_i=x_i-1$, sehingga $y_i\ge0$ dan
+
+$$
+y_1+y_2+y_3+y_4+y_5=4.
+$$
+
+Karena $y_i\le4<9$, tidak ada batasan atas yang aktif. Dengan metode stars and bars, banyak solusi adalah
+
+$$
+\binom{5+4-1}{5-1}
+=\binom84
+=70.
+$$
+
+Jadi jawabannya adalah $\boxed{70}$.
+
+
+@ID: OW24D1P1U
+@BY: @fofo
+@HINT: Tunjukkan bahwa fungsi iterasi merupakan kontraksi, lalu terapkan Teorema Titik Tetap Banach.
+
+Karena $\sqrt b<a$, diperoleh $a^2-b>0$.
+
+Definisikan fungsi $f:\mathbb R_{\ge0}\to\mathbb R_{\ge0}$ dengan
+
+$$
+f(x)=\frac{ax+b}{x+a}
+=a-\frac{a^2-b}{x+a}.
+$$
+
+Untuk setiap $x,y\ge0$,
+
+$$
+\begin{aligned}
+|f(x)-f(y)|
+&=\left|\left(a-\frac{a^2-b}{x+a}\right)
+-\left(a-\frac{a^2-b}{y+a}\right)\right|\\
+&=(a^2-b)\left|\frac1{x+a}-\frac1{y+a}\right|\\
+&=(a^2-b)\frac{|x-y|}{(x+a)(y+a)}\\
+&\le\frac{a^2-b}{a^2}|x-y|\\
+&=\left(1-\frac{b}{a^2}\right)|x-y|.
+\end{aligned}
+$$
+
+Karena
+
+$$
+0<1-\frac{b}{a^2}<1,
+$$
+
+maka $f$ merupakan fungsi kontraksi.
+
+Misalkan $f^{(n)}$ menyatakan komposisi $f$ sebanyak $n$ kali. Berdasarkan Teorema Titik Tetap Banach, terdapat tepat satu $c\ge0$ sehingga $f(c)=c$, dan untuk setiap $x\ge0$, barisan $\bigl(f^{(n)}(x)\bigr)$ konvergen ke $c$.
+
+Karena $x_n=f(x_{n-1})$, diperoleh $x_n=f^{(n)}(x_0)$ untuk setiap $n\ge1$. Jadi, $(x_n)$ konvergen ke $c$.
+
+Selanjutnya,
+
+$$
+\frac{ac+b}{c+a}=c
+\iff
+ac+b=c^2+ac
+\iff
+c^2=b.
+$$
+
+Karena $c\ge0$, diperoleh
+
+$$
+c=\sqrt b.
+$$
+
+Dengan demikian,
+
+$$
+\boxed{\lim_{n\to\infty}x_n=\sqrt b.}
+$$
+
+@ID: OW24D1P2U
+@BY: @aduhmath
+@HINT: Gunakan Teorema Nilai Ekstrem pada fungsi $|f|$.
+
+Karena $f$ kontinu, maka $|f|$ juga kontinu pada $[a,b]$.
+
+Karena $[a,b]$ kompak, berdasarkan Teorema Nilai Ekstrem terdapat $x_0\in[a,b]$ sehingga
+
+$$
+|f(x_0)|=\min_{x\in[a,b]}|f(x)|.
+$$
+
+Dari hipotesis, untuk $x=x_0$ terdapat $p\in[a,b]$ sehingga
+
+$$
+|f(p)|\le\frac{2023}{2024}|f(x_0)|.
+$$
+
+Karena $|f(x_0)|$ merupakan nilai minimum dari $|f|$, diperoleh
+
+$$
+|f(x_0)|
+\le
+|f(p)|
+\le
+\frac{2023}{2024}|f(x_0)|.
+$$
+
+Maka
+
+$$
+\frac1{2024}|f(x_0)|\le0.
+$$
+
+Akibatnya,
+
+$$
+|f(x_0)|=0,
+$$
+
+sehingga
+
+$$
+f(x_0)=0.
+$$
+
+Dengan mengambil $c=x_0$, diperoleh
+
+$$
+\boxed{f(c)=0.}
+$$
+
+@ID: OW24D1P3U
+@BY: @refrain
+@HINT: Misalkan $(a,b)$ pembagi nol dan analisis berdasarkan komponen pertama dari hasil perkalian.
+
+Misalkan $(a,b)\ne(0,0)$ merupakan pembagi nol. Maka terdapat $(c,d)\ne(0,0)$ sehingga
+
+$$
+(a,b)\cdot(c,d)=(0,0).
+$$
+
+Artinya,
+
+$$
+ac\equiv0\pmod{1013},
+\qquad
+ad+bc+bd\equiv0\pmod{1013}.
+$$
+
+Karena $1013$ prima, dari $ac\equiv0\pmod{1013}$ diperoleh $a=0$ atau $c=0$.
+
+**Kasus 1.** $a=0$.
+
+Karena $(a,b)\ne(0,0)$, maka $b\ne0$. Persamaan kedua menjadi
+
+$$
+bc+bd=b(c+d)\equiv0\pmod{1013}.
+$$
+
+Karena $b\ne0$, diperoleh
+
+$$
+c+d\equiv0\pmod{1013}.
+$$
+
+Untuk setiap $b\in\{1,2,\ldots,1012\}$, dapat dipilih misalnya $(c,d)=(1,1012)$ sehingga syarat di atas terpenuhi. Jadi terdapat $1012$ pembagi nol pada kasus ini.
+
+**Kasus 2.** $c=0$.
+
+Karena $(c,d)\ne(0,0)$, maka $d\ne0$. Persamaan kedua menjadi
+
+$$
+ad+bd=d(a+b)\equiv0\pmod{1013}.
+$$
+
+Karena $d\ne0$, diperoleh
+
+$$
+a+b\equiv0\pmod{1013}.
+$$
+
+Maka pembagi nol yang mungkin adalah
+
+$$
+(1,1012),(2,1011),\ldots,(1012,1),
+$$
+
+yang berjumlah $1012$ buah.
+
+Dengan demikian, banyak elemen taknol di $R$ yang merupakan pembagi nol adalah
+
+$$
+1012+1012=2024.
+$$
+
+Jadi terdapat tepat
+
+$$
+\boxed{2024}
+$$
+
+elemen taknol di $R$ yang merupakan pembagi nol.
+
+
+@ID: OW24D1P4U
+@BY: @refrain
+@HINT: Untuk (a) cukup berikan konstruksi. Untuk (b), jumlahkan seluruh elemen pada kedua himpunan.
+
+**a)**
+
+Ambil
+
+$$
+g_i=\overline{i}\in\mathbb Z_7,
+\qquad i=1,2,\ldots,7.
+$$
+
+Maka
+
+$$
+\{g_1+g_2,\;g_2+g_3,\;\ldots,\;g_6+g_7,\;g_7+g_1\}
+=\mathbb Z_7.
+$$
+
+Jadi $(\mathbb Z_7,+)$ merupakan grup yang rapi.
+
+**b)**
+
+Andaikan $(\mathbb Z_n,+)$ rapi untuk suatu $n$ genap. Maka terdapat $g_1,g_2,\ldots,g_n$ berbeda sehingga
+
+$$
+\{g_1+g_2,\;g_2+g_3,\;\ldots,\;g_n+g_1\}
+=\mathbb Z_n.
+$$
+
+Menjumlahkan semua elemen pada kedua himpunan diperoleh
+
+$$
+\sum_{i=1}^n(g_i+g_{i+1})
+=
+2\sum_{i=1}^n g_i
+=
+\sum_{i=1}^n\overline{i}
+\pmod n,
+$$
+
+dengan $g_{n+1}=g_1$.
+
+Karena $g_1,\ldots,g_n$ merupakan permutasi dari elemen-elemen $\mathbb Z_n$,
+
+$$
+\sum_{i=1}^n g_i
+=
+\sum_{i=1}^n\overline{i}.
+$$
+
+Akibatnya,
+
+$$
+2\sum_{i=1}^n\overline{i}
+=
+\sum_{i=1}^n\overline{i}
+\pmod n,
+$$
+
+sehingga
+
+$$
+\sum_{i=1}^n\overline{i}
+=
+0
+\pmod n.
+$$
+
+Namun,
+
+$$
+\sum_{i=1}^n\overline{i}
+=
+\frac{n(n+1)}2,
+$$
+
+sedangkan untuk $n$ genap,
+
+$$
+\frac{n(n+1)}2
+\not\equiv0
+\pmod n,
+$$
+
+karena $n+1$ ganjil.
+
+Kontradiksi.
+
+Jadi, untuk setiap $n$ genap, $(\mathbb Z_n,+)$ tidak rapi.
+
+
+@ID: OW24D1P5U
+@BY: @hniv
+@HINT: Gunakan prinsip Pigeonhole dengan mempartisi himpunan menjadi $n$ blok berukuran $k$.
+
+Partisi himpunan $\{1,2,\ldots,kn\}$ menjadi $n$ himpunan
+
+$$
+H_i=\{k(i-1)+1,\;k(i-1)+2,\;\ldots,\;ki\},
+\qquad i=1,2,\ldots,n.
+$$
+
+Setiap $H_i$ berisi tepat $k$ bilangan.
+
+Karena dipilih $n+1$ bilangan, sedangkan hanya terdapat $n$ himpunan partisi, berdasarkan Prinsip Pigeonhole terdapat dua bilangan yang berada pada himpunan $H_i$ yang sama.
+
+Selisih maksimum dua bilangan di dalam $H_i$ adalah
+
+$$
+ki-\bigl(k(i-1)+1\bigr)=k-1.
+$$
+
+Dengan demikian, selalu terdapat dua bilangan yang selisihnya paling banyak $k-1$.
+
+@ID: OW24D2P1I
+@BY: @refrain
+@HINT: Gunakan fakta bahwa $z^{20}=1$ sehingga $|z|=1$.
+
+Karena $z^{20}=1$ dan $z^{24}\in\mathbb R$, berlaku
+
+$$
+z^4=\frac{z^{24}}{z^{20}}=z^{24}\in\mathbb R.
+$$
+
+Karena $z^{20}=1$, maka $|z|=1$, sehingga
+
+$$
+z^4\in\{-1,1\}.
+$$
+
+Apabila $z^4=-1$, maka
+
+$$
+z^{20}=(z^4)^5=-1,
+$$
+
+bertentangan dengan $z^{20}=1$.
+
+Jadi haruslah
+
+$$
+z^4=1.
+$$
+
+Banyak akar dari $z^4=1$ adalah $4$.
+
+Jadi jawabannya adalah
+
+$$
+\boxed{4.}
+$$
+
+@ID: OW24D2P2I
+@BY: @wildabandon
+@HINT: Tuliskan $z=x+iy$, lalu gunakan persamaan Cauchy--Riemann.
+
+Tuliskan $z=x+iy$ dengan $x,y\in\mathbb R$.
+
+Maka
+
+$$
+f(x+iy)
+=(x-iy)e^{-x^2-y^2}.
+$$
+
+Dengan demikian,
+
+$$
+u(x,y)=xe^{-x^2-y^2},
+\qquad
+v(x,y)=-ye^{-x^2-y^2}.
+$$
+
+Turunan parsialnya memenuhi
+
+$$
+u_x=e^{-x^2-y^2}-2x^2e^{-x^2-y^2},
+\qquad
+u_y=-2xye^{-x^2-y^2},
+$$
+
+$$
+v_x=2xye^{-x^2-y^2},
+\qquad
+v_y=-e^{-x^2-y^2}+2y^2e^{-x^2-y^2}.
+$$
+
+Di titik $(0,1)$ diperoleh
+
+$$
+u_x(0,1)=\frac1e,\qquad
+u_y(0,1)=0,
+$$
+
+$$
+v_x(0,1)=0,\qquad
+v_y(0,1)=\frac1e.
+$$
+
+Karena persamaan Cauchy--Riemann berlaku di sekitar $(0,1)$, maka
+
+$$
+f'(i)
+=u_x(0,1)+iv_x(0,1)
+=\frac1e.
+$$
+
+Jadi jawabannya adalah
+
+$$
+\boxed{\frac1e.}
+$$
+
+@ID: OW24D2P3I
+@BY: @hniv
+@HINT: Hitung bentuk $T_k^m$ untuk setiap $m$.
+
+Untuk setiap polinomial
+
+$$
+p(x)=a_0+a_1x+a_2x^2+a_3x^3+a_4x^4,
+$$
+
+diperoleh
+
+$$
+T_k(p)=a_0+a_1^kx^2+a_2x^4,
+$$
+
+$$
+T_k^2(p)=a_0+a_1^kx^4,
+$$
+
+$$
+T_k^3(p)=a_0,
+$$
+
+dan
+
+$$
+T_k^4(p)=a_0.
+$$
+
+Jelas $T_k^3$ dan $T_k^4$ merupakan pemetaan linear untuk setiap $k$.
+
+Selanjutnya, $T_k$ dan $T_k^2$ linear jika dan hanya jika $k=1$.
+
+Maka pasangan $(k,m)$ yang memenuhi adalah
+
+$$
+(1,1),(1,2),(1,3),(1,4),
+$$
+
+$$
+(2,3),(2,4),
+$$
+
+$$
+(3,3),(3,4),
+$$
+
+$$
+(4,3),(4,4),
+$$
+
+yang berjumlah $10$.
+
+Jadi jawabannya adalah
+
+$$
+\boxed{10.}
+$$
+
+@ID: OW24D2P4I
+@BY: @hniv
+@HINT: Dimensi subruang terkecil yang memuat $U$ dan $V$ sama dengan dimensi $\operatorname{span}(U\cup V)$.
+
+Karena subruang terkecil yang memuat $U$ dan $V$ adalah $\operatorname{span}(U\cup V)$, cukup mencari
+
+$$
+\dim(\operatorname{span}(U\cup V)).
+$$
+
+Bentuk matriks $A$ yang kolom-kolomnya adalah vektor-vektor pada $U\cup V$. Maka
+
+$$
+\dim(\operatorname{span}(U\cup V))
+=\operatorname{rank}(A).
+$$
+
+Dengan mengambil transpose, diperoleh
+
+$$
+A^T=
+\begin{bmatrix}
+1&0&0&0&0&0&0&0&0&0\\
+0&1&1&0&0&0&0&0&0&0\\
+0&0&0&1&1&1&0&0&0&0\\
+0&0&0&0&0&0&1&1&1&1\\
+1&1&0&0&0&0&0&0&0&0\\
+0&0&1&1&0&0&0&0&0&0\\
+0&0&0&0&1&1&0&0&0&0\\
+0&0&0&0&0&0&1&1&0&0\\
+0&0&0&0&0&0&0&0&1&1
+\end{bmatrix}.
+$$
+
+Dengan melakukan operasi baris elementer, matriks tersebut ekuivalen dengan matriks yang memiliki $7$ baris taknol.
+
+Akibatnya,
+
+$$
+\operatorname{rank}(A)
+=\operatorname{rank}(A^T)
+=7.
+$$
+
+Jadi,
+
+$$
+\dim(\operatorname{span}(U\cup V))=7.
+$$
+
+Dengan demikian, dimensi subruang terkecil yang memuat $U$ dan $V$ adalah
+
+$$
+\boxed{7.}
+$$
+
+@ID: OW24D2P5I
+@BY: @wildabandon
+@HINT: Gunakan jumlah total skor seluruh peserta.
+
+Banyak pertandingan yang berlangsung adalah
+
+$$
+\binom{10}{2}=45.
+$$
+
+Karena pada setiap pertandingan jumlah skor kedua peserta selalu $2$, maka jumlah seluruh skor peserta adalah
+
+$$
+2\cdot45=90.
+$$
+
+Misalkan skor peserta dengan skor terendah paling sedikit $5$. Karena seluruh skor berbeda, jumlah skor seluruh peserta paling sedikit
+
+$$
+5+6+\cdots+14
+=\frac{(5+14)\cdot10}{2}
+=95,
+$$
+
+bertentangan dengan fakta bahwa jumlah seluruh skor adalah $90$.
+
+Jadi skor peserta dengan skor terendah paling besar adalah $4$.
+
+Karena satu kemenangan bernilai $2$ poin, peserta dengan skor $4$ paling banyak dapat memperoleh
+
+$$
+\frac42=2
+$$
+
+kemenangan.
+
+Batas ini dapat dicapai (contoh konfigurasi diserahkan pada pembaca).
+
+$$
+\boxed{2}.
+$$
+
+
+@ID: OW24D2P1U
+@BY: @refrain
+@HINT: Gunakan ketaksamaan segitiga dan ketaksamaan segitiga balik.
+
+Dengan ketaksamaan segitiga balik,
+
+$$
+||z|-1|
+\le
+|1+z|
+\le
+|z|+1.
+$$
+
+Karena $|z|=1$, diperoleh
+
+$$
+0\le |1+z|\le2.
+$$
+
+Demikian pula,
+
+$$
+||2z|-1|
+\le
+|1+2z|
+\le
+|2z|+1.
+$$
+
+Karena $|2z|=2$, diperoleh
+
+$$
+1\le |1+2z|\le3.
+$$
+
+Menjumlahkan kedua ketaksamaan tersebut menghasilkan
+
+$$
+1=0+1
+\le
+|1+z|+|1+2z|
+\le
+2+3=5.
+$$
+
+Jadi,
+
+$$
+\boxed{1\le |1+z|+|1+2z|\le5.}
+$$
+
+@ID: OW24D2P2U
+@BY: @fofo (direvisi @refrain)
+@HINT: Carilah daerah tempat $\operatorname{Re}(z)\to-\infty$ ketika $|z|\to\infty$.
+
+Untuk setiap bilangan real $a,b_1,b_2$ dengan $b_1<b_2$, definisikan
+
+$$
+D(a,b_1,b_2)
+=
+\{z\in\mathbb C:\operatorname{Re}(z)<a,\ b_1<\operatorname{Im}(z)<b_2\}.
+$$
+
+**Lemma.** Untuk setiap $z\in D(a,b_1,b_2)$,
+
+$$
+\lim_{\substack{|z|\to\infty\\z\in D(a,b_1,b_2)}}
+\operatorname{Re}(z)
+=
+-\infty.
+$$
+
+**Bukti.**
+
+Karena $z\in D(a,b_1,b_2)$,
+
+$$
+|\operatorname{Im}(z)|
+\le
+\max\{|b_1|,|b_2|\}
+=:B.
+$$
+
+Selain itu,
+
+$$
+\operatorname{Re}(z)<a.
+$$
+
+Dari
+
+$$
+|z|
+\le
+|\operatorname{Re}(z)|
++
+|\operatorname{Im}(z)|
+\le
+|\operatorname{Re}(z)|+B,
+$$
+
+diperoleh $|\operatorname{Re}(z)|\to\infty$ ketika $|z|\to\infty$.
+
+Karena $\operatorname{Re}(z)<a$, haruslah
+
+$$
+\operatorname{Re}(z)\to-\infty.
+$$
+
+Selanjutnya,
+
+$$
+|e^z|
+=
+e^{\operatorname{Re}(z)}.
+$$
+
+Maka, berdasarkan lemma,
+
+$$
+\lim_{\substack{|z|\to\infty\\z\in D(a,b_1,b_2)}}
+|e^z|
+=
+\lim_{\operatorname{Re}(z)\to-\infty}
+e^{\operatorname{Re}(z)}
+=
+0.
+$$
+
+Akibatnya,
+
+$$
+\lim_{\substack{|z|\to\infty\\z\in D(a,b_1,b_2)}}e^z
+=
+0.
+$$
+
+Dengan demikian, salah satu daerah yang memenuhi adalah
+
+$$
+\boxed{
+D=
+\{z\in\mathbb C:\operatorname{Re}(z)<a,\ b_1<\operatorname{Im}(z)<b_2\},
+}
+$$
+
+dengan $a,b_1,b_2\in\mathbb R$ dan $b_1<b_2$ sebarang.
+
+@ID: OW24D2P3U
+@BY: @refrain ft. @wili
+@HINT: Tunjukkan bahwa $A$ memiliki tiga nilai eigen yang berbeda.
+
+Polinom karakteristik $A$ adalah
+
+$$
+\det(\lambda I-A)
+=
+\begin{vmatrix}
+\lambda&-a&0\\
+-a&\lambda-b&-a\\
+0&-a&\lambda
+\end{vmatrix}.
+$$
+
+Ekspansi terhadap baris pertama menghasilkan
+
+$$
+\det(\lambda I-A)
+=
+\lambda(\lambda(\lambda-b)-a^2)-a^2\lambda
+=
+\lambda(\lambda^2-b\lambda-2a^2).
+$$
+
+Jadi nilai-nilai eigennya adalah
+
+$$
+\lambda_1=0,
+$$
+
+dan
+
+$$
+\lambda_{2,3}
+=
+\frac{b\pm\sqrt{b^2+8a^2}}2.
+$$
+
+Karena $a\ne0$,
+
+$$
+b^2+8a^2>b^2,
+$$
+
+sehingga
+
+$$
+\sqrt{b^2+8a^2}>|b|.
+$$
+
+Akibatnya,
+
+$$
+\lambda_2\ne\lambda_3,
+\qquad
+\lambda_2\ne0,
+\qquad
+\lambda_3\ne0.
+$$
+
+Maka $A$ memiliki tiga nilai eigen yang saling berbeda. Oleh karena itu, $A$ memiliki tiga vektor eigen yang bebas linear.
+
+Dengan demikian, $A$ dapat didiagonalkan.
+
+@ID: OW24D2P4U
+@BY: @RM (diketik @refrain)
+@HINT: Agar sistem tidak memiliki solusi, $A$ harus singular.
+
+Agar terdapat $b$ sehingga persamaan
+
+$$
+A^2x=Ab
+$$
+
+tidak memiliki solusi, matriks $A$ harus singular.
+
+Karena
+
+$$
+\det(A)=20q-24p,
+$$
+
+maka harus berlaku
+
+$$
+20q-24p=0,
+$$
+
+atau
+
+$$
+q=\frac65p.
+$$
+
+Dengan syarat tersebut,
+
+$$
+A=
+\begin{pmatrix}
+20&24\\
+p&\frac65p
+\end{pmatrix},
+$$
+
+dan kedua kolom $A$ saling bergantung.
+
+Untuk setiap $x=(x_1,x_2)^T$, berlaku
+
+$$
+Ax
+=
+k_1
+\begin{pmatrix}
+20\\
+p
+\end{pmatrix},
+$$
+
+dengan
+
+$$
+k_1=x_1+\frac65x_2.
+$$
+
+Demikian pula,
+
+$$
+Ab
+=
+k_2
+\begin{pmatrix}
+20\\
+p
+\end{pmatrix},
+$$
+
+untuk suatu $k_2\in\mathbb R$.
+
+Selanjutnya,
+
+$$
+A^2x=A(Ax)
+=
+k_1A
+\begin{pmatrix}
+20\\
+p
+\end{pmatrix}
+=
+k_1\left(20+\frac65p\right)
+\begin{pmatrix}
+20\\
+p
+\end{pmatrix}.
+$$
+
+Maka persamaan $A^2x=Ab$ ekuivalen dengan
+
+$$
+k_1\left(20+\frac65p\right)=k_2.
+$$
+
+Jika
+
+$$
+20+\frac65p\ne0,
+$$
+
+maka untuk setiap $k_2$ selalu dapat dipilih
+
+$$
+k_1=\frac{k_2}{20+\frac65p},
+$$
+
+sehingga persamaan selalu mempunyai solusi.
+
+Jadi satu-satunya kemungkinan adalah
+
+$$
+20+\frac65p=0,
+$$
+
+yakni
+
+$$
+p=-\frac{50}{3},
+\qquad
+q=-20.
+$$
+
+Untuk pasangan ini,
+
+$$
+A^2=0,
+$$
+
+sedangkan $\operatorname{rank}(A)=1$, sehingga terdapat $b\notin\ker(A)$.
+
+Akibatnya,
+
+$$
+Ab\ne0=A^2x
+$$
+
+untuk setiap $x$, sehingga persamaan tidak memiliki solusi.
+
+Dengan demikian, satu-satunya pasangan yang memenuhi adalah
+
+$$
+\boxed{\left(-\frac{50}{3},-20\right).}
+$$
+
+@ID: OW24D2P5U
+@BY: @wili (diketik @refrain)
+@HINT: Hitung semua pasangan $(a,b)$, lalu identifikasi pasangan yang merepresentasikan garis yang sama.
+
+Penyelesaian dibagi menjadi tiga kasus.
+
+**Kasus 1.** $a=0$.
+
+Persamaan menjadi $by=0$ dengan $b\in\{1,2,3,6,7\}$.
+
+Semua pilihan $b$ merepresentasikan garis yang sama, yaitu
+
+$$
+y=0.
+$$
+
+Jadi terdapat $1$ garis pada kasus ini.
+
+**Kasus 2.** $b=0$.
+
+Secara analog, semua pilihan $a$ merepresentasikan garis
+
+$$
+x=0.
+$$
+
+Jadi terdapat $1$ garis pada kasus ini.
+
+**Kasus 3.** $a,b\neq0$.
+
+Banyak pasangan terurut $(a,b)$ dengan $a,b\in\{1,2,3,6,7\}$ dan $a\neq b$ adalah
+
+$$
+P(5,2)=\frac{5!}{(5-2)!}=20.
+$$
+
+Beberapa pasangan berbeda merepresentasikan garis yang sama, yaitu
+
+- $(1,2)$ dan $(3,6)$,
+- $(2,1)$ dan $(6,3)$,
+- $(1,3)$ dan $(2,6)$,
+- $(3,1)$ dan $(6,2)$.
+
+Keempat pasangan tersebut masing-masing mengurangi satu garis yang dihitung ganda.
+
+Maka banyak garis berbeda pada kasus ini adalah
+
+$$
+20-4=16.
+$$
+
+Dengan demikian, banyak garis lurus berbeda yang dapat dibentuk adalah
+
+$$
+1+1+16=18.
+$$
+
+Jadi jawabannya adalah
+
+$$
+\boxed{18}.
+$$

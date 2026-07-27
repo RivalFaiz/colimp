@@ -1,0 +1,129 @@
+@ID: ON24D1P1U
+@BIDANG: Analisis Real
+
+Diberikan barisan bilangan real $(a_n)$ yang memenuhi kondisi $0<a_n<1$ dan
+$$
+a_n(1-a_{n+1})>\frac14,
+\qquad
+\forall n\in\mathbb{N}.
+$$
+
+Selidiki kekonvergenan barisan $(a_n)$ dan tentukan limitnya jika ada.
+
+@ID: ON24D1P2U
+@BIDANG: Analisis Kompleks
+
+Diketahui fungsi $f:\mathbb{C}\to\mathbb{C}$ analitik pada $\mathbb{C}$, memenuhi
+$$
+f(z_1+z_2)=f(z_1)f(z_2),
+$$
+untuk setiap $z_1,z_2\in\mathbb{C}$ dan $f(x)=e^x$ untuk setiap $x\in\mathbb{R}$. Buktikan bahwa $f(z)=e^z$ untuk setiap $z\in\mathbb{C}$.
+
+
+
+@ID: ON24D1P3U
+@BIDANG: Kombinatorika
+
+Diberikan barisan Fibonacci $a_1,a_2,a_3,\ldots$ dengan
+$a_1=a_2=1$ dan
+$a_{n+1}=a_n+a_{n-1}$
+untuk setiap $n>1$.
+
+Buktikan bahwa terdapat bilangan pada barisan tersebut yang berakhir dengan 2024 angka nol tak terputus sebelah kanan.
+
+@ID: ON24D1P4U
+@BIDANG: Aljabar Linear
+
+(a) Misalkan $A$ suatu matriks berukuran $n\times n$ atas $\mathbb{R}$ yang memenuhi
+$A^2=A^T$.
+Jika $A$ dapat didiagonalkan atas $\mathbb{R}$, buktikan bahwa $A$ matriks simetrik.
+
+(b) Berikan matriks $B$ berukuran $2\times2$ atas $\mathbb{R}$ yang tidak simetrik dan memenuhi
+$B^2=B^T$.
+
+@ID: ON24D1P5U
+@BIDANG: Struktur Aljabar
+
+Diberikan grup hingga $G$ dengan unsur-unsurnya
+$x_1,x_2,\ldots,x_n$.
+Misalkan $A=(a_{ij})$ adalah matriks berukuran $n\times n$ dengan
+
+$$
+a_{ij}=
+\begin{cases}
+1,& \text{jika }x_i x_j^{-1}\neq x_j x_i^{-1},\\
+0,& \text{jika }x_i x_j^{-1}=x_j x_i^{-1}.
+\end{cases}
+$$
+
+Buktikan bahwa $\det(A)$ selalu genap.
+
+
+@ID: ON24D2P1U
+@BIDANG: Analisis Kompleks
+
+Cari semua pasangan bilangan kompleks $(x,y,z)$ yang memenuhi sistem persamaan
+
+$$
+\begin{aligned}
+x^2+y^2&=(x+y)z,\\
+y^2+z^2&=(y+z)x,\\
+z^2+x^2&=(z+x)y.
+\end{aligned}
+$$
+
+
+@ID: ON24D2P2U
+@BIDANG: Kombinatorika
+
+Diberikan sebarang pewarnaan merah-biru pada setiap ruas garis yang menghubungkan 10 titik. Buktikan bahwa terdapat tiga titik sedemikian sehingga ketiga ruas garis yang menghubungkan ketiga titik tersebut berwarna merah, atau terdapat empat titik sedemikian sehingga keenam ruas garis yang menghubungkan keempat titik tersebut berwarna biru.
+
+
+@ID: ON24D2P3U
+@BIDANG: Analisis Real
+
+Diketahui $r>0$, $\alpha\in(0,1)$, dan fungsi $f:(-r,r)\to\mathbb{R}$ kontinu di $0$. Misalkan limit
+
+$$
+\lim_{x\to0}\frac{f(x)-f(\alpha x)}{x}
+$$
+
+ada di $\mathbb{R}$. Selidiki eksistensi $f'(0)$. Berikan penjelasan jawaban Anda.
+
+
+@ID: ON24D2P4U
+@BIDANG: Struktur Aljabar
+
+Diketahui $\mathbb{R}[x]$ adalah ring polinom atas $\mathbb{R}$. Untuk setiap $p(x)\in\mathbb{R}[x]$, ideal yang dibangun oleh $p(x)$ dinotasikan dengan $\langle p(x)\rangle$.
+
+a) Buktikan bahwa $\langle x-2024\rangle$ merupakan ideal maksimal di $\mathbb{R}[x]$.
+
+b) Tentukan bilangan asli $a$ terbesar sehingga $\langle x^2+ax+2024\rangle$ merupakan ideal maksimal di $\mathbb{R}[x]$.
+
+
+@ID: ON24D2P5U
+@BIDANG: Aljabar Linear
+
+Misalkan $V$ ruang vektor yang dilengkapi dengan hasil kali dalam riil $\langle\cdot,\cdot\rangle$ dan norma $\|\cdot\|$ yang didefinisikan oleh $\|f\|^2=\langle f,f\rangle$ untuk setiap $f\in V$.
+
+Selanjutnya, diberikan pemetaan linier $T:V\to V$ yang memenuhi
+
+$$
+\langle T(v_1),v_2\rangle=\langle v_1,T(v_2)\rangle,
+\qquad
+\forall\,v_1,v_2\in V.
+$$
+
+Buktikan bahwa jika $v\in V$ dan $u\in T(V)$ memenuhi $T(v)=T(u)$, maka
+
+$$
+\|u-v\|\le\|w-v\|,
+\qquad
+\forall\,w\in T(V).
+$$
+
+Catatan.
+
+$$
+T(V)=\{T(a):a\in V\}.
+$$

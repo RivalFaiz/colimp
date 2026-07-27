@@ -1,0 +1,109 @@
+@ID: ON25D1P1U
+@BIDANG: Analisis Kompleks
+
+Diberikan $a,b,c,d$ bilangan kompleks yang memenuhi
+$$
+|a|=|b|=|c|=|d|
+\qquad\text{dan}\qquad
+a+b+c=d.
+$$
+Tunjukkan bahwa $d=a$ atau $d=b$ atau $d=c$.
+
+@ID: ON25D1P2U
+@BIDANG: Aljabar Linear
+
+Misalkan $A$ matriks tak singular berukuran $3\times3$ dengan entri kompleks, sehingga terdapat vektor eigen $\mathbf{x}$ dan $\mathbf{y}$ yang bersesuaian dengan dua nilai eigen berbeda yang memenuhi
+$$
+A(\mathbf{x}+\mathbf{y})=\mu(\mathbf{x}-\mathbf{y})
+$$
+untuk suatu bilangan kompleks $\mu$.
+
+(a) Beri contoh matriks $A$ yang memenuhi syarat di atas. Jelaskan mengapa matriks tersebut memenuhi syarat di atas.
+
+(b) Buktikan bahwa untuk setiap matriks $A$ yang memenuhi syarat di atas, $\operatorname{tr}(A)$ merupakan nilai eigen dari $A$.
+
+@ID: ON25D1P3U
+@BIDANG: Analisis Real
+
+Diberikan barisan bilangan real $(b_n)$ dengan $0<m<M<1$. Didefinisikan barisan $(y_n)$ oleh
+$$
+0<y_0<1,
+\qquad
+y_{n+1}=y_n+(1+y_n)b_{n+1}.
+$$
+
+Jika $m\le b_n\le M$, buktikan bahwa barisan $(y_n)$ konvergen. Kemudian, tentukan nilai limitnya.
+
+@ID: ON25D1P4U
+@BIDANG: Struktur Aljabar
+
+Diberikan grup $G$ dengan $\varphi(x)=x^3$ merupakan homomorfisma grup yang injektif.
+
+(a) Buktikan bahwa untuk setiap $a,b\in G$ berlaku $a^2b^2=b^2a^2$.
+
+(b) Apakah $G$ pasti merupakan grup komutatif? Jelaskan jawaban Saudara.
+
+@ID: ON25D1P5U
+@BIDANG: Kombinatorika
+
+Misalkan diberikan barisan $mn+1$ bilangan dengan $m$ dan $n$ bilangan bulat positif berbeda. Buktikan bahwa selalu ada subbarisan naik tegas dengan panjang paling sedikit $m+1$, atau subbarisan turun tegas dengan panjang paling sedikit $n+1$.
+
+
+@ID: ON25D2P1U
+@BIDANG: Analisis Real
+
+Jika fungsi kontinu $f:[a,b]\to\mathbb{R}$ terdiferensial pada $(a,b)$, buktikan bahwa terdapat $c\in(a,b)$ sehingga
+$$
+f'(c)(a-c)<2
+\qquad\text{dan}\qquad
+f'(c)(b-c)<2.
+$$
+
+@ID: ON25D2P2U
+@BIDANG: Analisis Kompleks
+
+Tentukan himpunan terbuka terbesar $\Omega\subseteq\mathbb{C}$ sedemikian sehingga $\operatorname{Ln}(1-z^{2025})$ analitik di $\Omega$.
+
+Catatan. $\operatorname{Ln}$ menyatakan bagian utama dari logaritma natural kompleks.
+
+@ID: ON25D2P3U
+@BIDANG: Struktur Aljabar
+
+Diberikan $(R,+,\cdot)$ ring dengan elemen satuan $0_R$ dan $1_R$. Untuk setiap $r\in R$, didefinisikan
+$$
+A_r=\{xr:x\in R\},
+\qquad
+B_r=\{x\in R:xr=0_R\}.
+$$
+
+Unsur $r$ dikatakan **rapi** jika terdapat isomorfisma grup $\varphi:R/A_r\to B_r$ yang memenuhi
+$$
+\varphi(xa)=x\varphi(a)
+$$
+untuk semua $x\in R$ dan $a\in R/A_r$.
+
+Buktikan:
+
+(a) Jika $r$ rapi dan tak nol, maka terdapat $s\in R$ dengan $s\neq r$ sehingga $A_r=B_s$ dan $A_s=B_r$.
+
+(b) Jika $r$ rapi dan $u$ adalah unit di $R$, maka $R/A_{ur}\cong B_{ur}$ sebagai grup.
+
+@ID: ON25D2P4U
+@BIDANG: Aljabar Linear
+
+Misalkan $\mathbb{M}$ himpunan semua matriks simetrik berukuran $4\times4$ dengan entri-entrinya merupakan elemen dari $\{0,2,5\}$, dan setiap baris memiliki ketiga elemen $0$, $2$, dan $5$.
+
+(a) Jika pada $A\in\mathbb{M}$ terdapat $k\in\{0,2,5\}$ yang muncul sebanyak $8$ kali di $A$, buktikan bahwa $\det(A)\neq0$.
+
+(b) Tentukan nilai dari
+$$
+\max\{\det(A):A\in\mathbb{M}\}.
+$$
+Uraikan jawaban Saudara.
+
+@ID: ON25D2P5U
+@BIDANG: Kombinatorika
+
+Dua puluh lima rumah yang berjajar di sisi barat Jalan ONMIPA akan diwarnai merah atau putih. Setiap rumah diwarnai tepat satu warna, dengan aturan tidak ada dua rumah bersebelahan yang diwarnai putih dan tidak ada tiga rumah bersebelahan yang diwarnai merah.
+
+Tentukan banyaknya cara mewarnai $25$ rumah tersebut. Uraikan jawaban Saudara.

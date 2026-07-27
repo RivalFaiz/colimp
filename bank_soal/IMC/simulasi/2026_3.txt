@@ -1,0 +1,162 @@
+@ID: SL3IMC26P1
+@BIDANG: Analisis Kompleks
+@SUMBER: Simulasi 3 IMC 2026
+
+Let $A_1A_2 \dots A_n$ be a polygon and let $a_1, a_2, \dots, a_n$ be the coordinates of the vertices $A_1, A_2, \dots, A_n$, respectively. If $|a_1| = |a_2| = \dots = |a_n| = R$, prove that
+$$
+\sum_{1 \le j < k \le n} |a_j + a_k|^2 \ge n(n-2)R^2.
+$$
+
+@ID: SL3IMC26P2
+@BIDANG: Analisis Real
+@SUMBER: Simulasi 3 IMC 2026
+
+Let $f : [0, 1] \to \mathbb{R}$ be continuous. Suppose that
+$$
+\int_0^1 f(x) dx = 0 \quad \text{and} \quad \int_0^1 x f(x) dx = 0.
+$$
+Prove that $f$ has at least two zeros in $(0, 1)$.
+
+@ID: SL3IMC26P3
+@BIDANG: Struktur Aljabar
+@SUMBER: Simulasi 3 IMC 2026
+
+Let $f \in \mathbb{Z}[x]$ be a non-constant polynomial. Show that there are infinitely many prime numbers $p$ such that $f(x) \equiv 0 \pmod p$ has an integer solution.
+
+@ID: SL3IMC26P4
+@BIDANG: Aljabar Linear
+@SUMBER: Simulasi 3 IMC 2026
+
+Let $n > 1$ and $A = [a_{ij}]$ be an $n \times n$ matrix such that $a_{ij} \in \{0, 1, 2, \dots, n - 1\}$ and $a_{ij} \equiv j - i \pmod n$. Find all values of $n$ such that $-\frac{n}{2}$ is an eigenvalue of $A$.
+
+@ID: SL3IMC26P5
+@BIDANG: Kombinatorika
+@SUMBER: Simulasi 3 IMC 2026
+
+Let $S$ be a finite set of points in the plane. A linear partition of $S$ is an unordered pair $\{A, B\}$ of subsets of $S$ such that
+$$
+A \cup B = S, \quad A \cap B = \emptyset,
+$$
+and $A$ and $B$ lie on opposite sides of some straight line disjoint from $S$ (either $A$ or $B$ may be empty). Let $L_S$ be the number of linear partitions of $S$. For each positive integer $n$, find the maximum value of $L_S$ over all sets $S$ of $n$ points.
+
+@ID: SL4IMC26P1
+@BIDANG: Kombinatorika
+@SUMBER: Simulasi 4 IMC 2026
+
+Let $p$ be an odd prime number. Find the number of subsets of $\{1, 2, \ldots, p\}$ whose sum of elements is divisible by $p$.
+
+@ID: SL4IMC26P2
+@BIDANG: Aljabar Linear
+@SUMBER: Simulasi 4 IMC 2026
+
+Let $A, B \in M_n(\mathbb{C})$ satisfying
+$$
+A = AB - BA + A^2B - BA^2
+$$
+Show that $A$ is nilpotent.
+
+@ID: SL4IMC26P3
+@BIDANG: Struktur Aljabar
+@SUMBER: Simulasi 4 IMC 2026
+
+Prove that for any distinct integers $a_1, a_2, \ldots, a_n$ the polynomial
+$$
+P(x) = (x-a_1)(x-a_2)\ldots(x-a_n) - 1
+$$
+cannot be written as a product of two nonconstant polynomials with integer coefficients.
+
+@ID: SL4IMC26P4
+@BIDANG: Analisis Kompleks
+@SUMBER: Simulasi 4 IMC 2026
+
+Let $m \in \mathbb{N} \cup \{0\}$. Show that the complex differential equation
+$$
+\begin{cases}
+(1-z^2)f''(z) - zf'(z) + m^2f(z) = 0, \\
+f(0) = 1, \ f'(0) = im
+\end{cases}
+$$
+has a unique solution in $\{z \in \mathbb{C} : |z| < 1\}$.
+
+@ID: SL4IMC26P5
+@BIDANG: Analisis Real
+@SUMBER: Simulasi 4 IMC 2026
+
+Let $f: \mathbb{R} \rightarrow \mathbb{R}$ have a continuous second derivative. Suppose that $f''(x) > 0$ $(x \in \mathbb{R})$, $\lim_{x\rightarrow -\infty} f'(x) = -\infty$, $\lim_{x\rightarrow \infty} f'(x) = \infty$. For each $t \in \mathbb{R}$, let $\ell_t$ be the tangent line to the graph of $f$ at $(t, f(t))$. Prove that
+$$
+\bigcup_{t \in \mathbb{R}} \ell_t = \{(x, y) \in \mathbb{R}^2 : y \le f(x)\}
+$$
+Moreover, prove that every point strictly below the graph of $f$ lies on exactly two such tangent lines.
+
+@ID: SL2IMC26P1
+@BIDANG: Analisis Kompleks
+@SUMBER: Simulasi 2 IMC 2026
+
+Let $a_1, \ldots, a_n$ be real pairwise different numbers, all different from zero, and $z_1, \ldots, z_n$ be complex numbers. Show that for every $\epsilon \in (0,1)$ there exists $\alpha \in \mathbb{R}$ such that
+$$
+\left|1 - \sum_{k=1}^n z_k e^{i a_k \alpha}\right| > \epsilon
+$$
+
+@ID: SL2IMC26P2
+@BIDANG: Geometri
+@SUMBER: Simulasi 2 IMC 2026
+
+Let $ABC$ be a triangle. Prove that there exists a line $l$ which divides the triangle into two polygonal regions $R_1$ and $R_2$ such that $[R_1] = [R_2]$ and $\text{per}(R_1) = \text{per}(R_2)$. Here $[R]$ denotes the area of $R$, and $\text{per}(R)$ denotes the usual perimeter of $R$. In particular, the segment cut by $l$ inside the triangle is counted as part of the perimeter of both regions.
+
+@ID: SL2IMC26P3
+@BIDANG: Aljabar Linear
+@SUMBER: Simulasi 2 IMC 2026
+
+Let $A$ and $B$ $n \times n$ real matrices such that $AB = BA$ and $A^2 = 0$. Prove that $\det(A+B) = \det(B)$.
+
+@ID: SL2IMC26P4
+@BIDANG: Struktur Aljabar
+@SUMBER: Simulasi 2 IMC 2026
+
+Let $k$ be a positive integer. Find all positive integers $n$ such that $3^k \mid 2^n - 1$.
+
+@ID: SL2IMC26P5
+@BIDANG: Kombinatorika
+@SUMBER: Simulasi 2 IMC 2026
+
+Let $S(n)$ denote the number of ways to choose the signs $+$ or $-$ such that $\pm 1 \pm 2 \pm \cdots \pm n = 0$. Prove that
+$$
+S(n) = \frac{2^{n-1}}{\pi} \int_0^{2\pi} \cos t \cos 2t \cdots \cos nt \, dt
+$$
+
+@ID: SL1IMC26P1
+@BIDANG: Analisis Kompleks
+@SUMBER: Simulasi 1 IMC 2026
+
+Let $m$ be a nonnegative integer. Evaluate
+$$
+\int_0^{2\pi} e^{imt} \cos(\cos t) \cosh(\sin t) \, dt
+$$
+
+@ID: SL1IMC26P2
+@BIDANG: Analisis Real
+@SUMBER: Simulasi 1 IMC 2026
+
+Let $f:[0,1] \rightarrow \mathbb{R}$ be a function whose second derivative exists and is continuous on $[0, 1]$. Suppose that $f(0) = f(1) = 0$ and $\int_0^1 f(x) \, dx = 1$. Prove that
+$$
+\int_0^1 (f''(x))^2 \, dx \ge 120
+$$
+Determine also when equality holds.
+
+@ID: SL1IMC26P3
+@BIDANG: Struktur Aljabar
+@SUMBER: Simulasi 1 IMC 2026
+
+Let $a > 1$ and $n > 1$ be integers. Let $p$ be an odd prime divisor of the cyclotomic value $\Phi_n(a)$. Prove that $p \mid n$ or $p \equiv 1 \pmod n$.
+
+@ID: SL1IMC26P4
+@BIDANG: Aljabar Linear
+@SUMBER: Simulasi 1 IMC 2026
+
+Suppose that $A, B, C, D$ are $2 \times 2$ complex matrices satisfying the conditions that $AB$ and $CD$ are symmetric and $AD - B^T C^T = I$. Prove that $DA - BC = I$.
+
+@ID: SL1IMC26P5
+@BIDANG: Kombinatorika
+@SUMBER: Simulasi 1 IMC 2026
+
+Two sequences of sets $\{A_n : n=1,2,\ldots\}$ and $\{B_n : n=1,2,\ldots\}$ are defined by $A_1 = \emptyset$, $B_1 = \{0\}$, and for every $n \ge 1$, $A_{n+1} = \{x+1 \mid x \in B_n\}$, and $B_{n+1} = A_n \triangle B_n$. Determine all positive integers $n$ for which $B_n = \{0\}$.

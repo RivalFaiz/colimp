@@ -1,0 +1,325 @@
+@ID: OW15D1P1I
+@BIDANG: Analisis Real
+
+Jika $S=\{\sqrt[3]{n}-\sqrt[3]{m}:n,m\in\mathbb{N}\}$, maka $\sup S=\ldots$
+
+@ID: OW15D1P2I
+@BIDANG: Analisis Real
+
+Bentuk umum fungsi naik tegas $f:\mathbb{R}\to\mathbb{R}$ yang memenuhi
+$$
+f(f(x)+y)=f(x+y)+f(0),
+\qquad
+\forall x,y\in\mathbb{R},
+$$
+adalah $\ldots$
+
+@ID: OW15D1P3I
+@BIDANG: Analisis Real
+
+Diberikan barisan bilangan real nonnegatif yang naik monoton $(x_k)$, mempunyai sifat $x_{nk}\ge nx_k$ dan $\sup\frac{x_k}{k}=x<\infty$. Barisan $\left(\frac{x_k}{k}\right)$ konvergen ke $\ldots$
+
+@ID: OW15D1P4I
+@BIDANG: Analisis Real
+
+Diberikan fungsi $f:(0,1)\to\mathbb{R}$ dengan $\lim_{x\to0}f(x)=0$ dan
+$$
+\lim_{x\to0}\frac{f(x)-f\!\left(\frac{x}{2}\right)}{x}=0.
+$$
+Nilai $\displaystyle\lim_{x\to0}\frac{f(x)}{x}$ adalah $\ldots$
+
+@ID: OW15D1P5I
+@BIDANG: Analisis Real
+
+Diberikan fungsi $f:\mathbb{R}\to\mathbb{R}$ dengan $f(x)=4x^2+1$ untuk setiap $x\in\mathbb{R}$, dan barisan $(x_n)$ dengan
+$$
+x_n=\sum_{k=1}^{n}\frac{1}{k^2+5k+6},
+$$
+untuk setiap $n\in\mathbb{N}$. Nilai $\displaystyle\lim_{n\to\infty}f(x_n)$ adalah $\ldots$
+
+@ID: OW15D1P6I
+@BIDANG: Analisis Real
+
+Fungsi $f:(a,b)\to\mathbb{R}$ dikatakan terdiferensial seragam pada $(a,b)$ jika $f$ terdiferensial di setiap titik $x\in(a,b)$ dan memenuhi sifat bahwa untuk setiap $\varepsilon>0$ terdapat $\delta>0$ sedemikian sehingga untuk setiap $x,y\in(a,b)$ dengan $|x-y|<\delta$ berlaku
+$$
+\left|
+\frac{f(x)-f(y)}{x-y}-f'(x)
+\right|
+<\varepsilon.
+$$
+Contoh fungsi yang terdiferensial tetapi tidak terdiferensial seragam adalah $\ldots$
+
+@ID: OW15D1P7I
+@BIDANG: Analisis Real
+
+Untuk setiap $n\in\mathbb{N}$, didefinisikan
+$$
+f_n(x)=\sum_{k=1}^{n}(-1)^k x^n,
+\qquad -1<x<1.
+$$
+Jika $f:(-1,1)\to\mathbb{R}$ didefinisikan oleh $f=\lim_{n\to\infty}f_n$, maka nilai $\displaystyle\int_0^{1/2}f(x)\,dx$ adalah $\ldots$
+
+@ID: OW15D1P8I
+@BIDANG: Analisis Real
+
+Jika fungsi $f:\mathbb{R}\to\mathbb{R}$ kontinu dan $A=\{x\in\mathbb{R}:f^2(x)\le1\}$, maka penutup (closure) dari $A$, yaitu $\overline{A}$, adalah $\ldots$
+
+@ID: OW15D1P1U
+@BIDANG: Analisis Real
+
+Diketahui barisan $(x_n)$ dengan $x_n\ge1$ untuk setiap $n\in\mathbb{N}$. Didefinisikan barisan $(y_n)$ dengan
+$$
+y_n=x_n+\frac{2}{x_n},
+$$
+untuk setiap $n$. Jika $(y_n)$ konvergen, buktikan bahwa $(x_n)$ konvergen.
+
+@ID: OW15D1P2U
+@BIDANG: Analisis Real
+
+Misalkan $f:[a,b]\to\mathbb{R}$ merupakan fungsi terdiferensial dengan $f'(x)\neq0$ untuk setiap $x\in(a,b)$ dan $f(a)=f(b)=0$. Tunjukkan bahwa terdapat $x_0\in(a,b)$ sehingga
+$$
+|f'(x_0)|
+>
+\frac{1}{(b-a)^2}
+\int_a^b
+f(x)\,dx.
+$$
+
+@ID: OW15D1P3U
+@BIDANG: Analisis Real
+
+Diketahui fungsi $\varphi$ konveks pada $\mathbb{R}$ dan fungsi $f$ terintegral pada $[0,1]$. Buktikan bahwa
+$$
+\int_0^1\varphi(f(t))\,dt
+\ge
+\varphi\!\left(\int_0^1f(t)\,dt\right).
+$$
+
+@ID: OW15D1P9I
+@BIDANG: Kombinatorika
+
+Pada babak final sebuah turnamen, tim pemenang adalah tim yang pertama sekali memenangkan dua pertandingan secara berurutan atau tim yang pertama sekali memenangkan empat pertandingan. Banyaknya cara turnamen dapat terjadi adalah $\ldots$
+
+@ID: OW15D1P10I
+@BIDANG: Kombinatorika
+
+Banyaknya cara mengisi persegi panjang berukuran $2\times16$ dengan persegi panjang berukuran $2\times2$, $2\times3$, dan $2\times4$ adalah $\ldots$
+
+@ID: OW15D1P11I
+@BIDANG: Kombinatorika
+
+Enam komite akan dibentuk dari $14$ orang. Bila $2$ komite dari $6$ komite ini terdiri atas $3$ orang dan sisanya terdiri atas masing-masing $2$ orang, maka banyaknya komite yang dapat dibentuk adalah $\ldots$
+
+@ID: OW15D1P12I
+@BIDANG: Kombinatorika
+
+Sebuah password terdiri atas $7$ huruf yang dibentuk dengan menggunakan huruf kapital. Sebuah password dikatakan legal bila memenuhi dua kondisi:
+1. tidak terdapat huruf berulang,
+2. huruf $X$ dan $Y$ tidak saling berdekatan.
+
+Besarnya peluang untuk membentuk password legal adalah $\ldots$
+
+@ID: OW15D1P13I
+@BIDANG: Kombinatorika
+
+Diberikan sebuah barisan $(x_n)$ dengan suku ke-$n$ adalah
+$$
+x_n=\frac{1}{\sqrt5}(a^n-b^n),
+$$
+dengan
+$a=\frac{1+\sqrt5}{2}$ dan
+$b=\frac{1-\sqrt5}{2}$.
+Relasi rekursif yang memenuhi barisan $(x_n)$ adalah $\ldots$
+
+@ID: OW15D1P14I
+@BIDANG: Kombinatorika
+
+Lima buah dadu (enam sisi) digulirkan. Peluang bahwa mata dadu yang muncul berjumlah $14$ adalah $\ldots$
+
+@ID: OW15D1P15I
+@BIDANG: Kombinatorika
+
+Setiap bujursangkar pada persegi panjang berukuran $1\times n$ diwarnai dengan menggunakan satu dari tiga warna: merah, putih, atau biru. Banyak cara mewarnai persegi panjang $1\times n$ dengan merah, putih, atau biru sehingga terdapat genap buah bujursangkar berwarna putih adalah $\ldots$
+
+@ID: OW15D1P16I
+@BIDANG: Kombinatorika
+
+Untuk setiap bilangan asli $n\in\mathbb{N}$ dengan $n\ge2$, nilai dari
+$$
+\frac1n\binom{n}{1}
++\frac2n\binom{n}{2}
++\frac3n\binom{n}{3}
++\cdots+
+\frac{n-1}{n}\binom{n}{n-1}
+$$
+adalah $\ldots$
+
+@ID: OW15D1P4U
+@BIDANG: Kombinatorika
+
+Suatu graf $\Lambda$ disebut komplemen dari graf $\Gamma$ jika $V(\Lambda)=V(\Gamma)$ dan sisi $e=(u,v)\in E(\Lambda)$ jika dan hanya jika $e=(u,v)\notin E(\Gamma)$. Komplemen dari graf $\Gamma$ ditulis $\overline{\Gamma}$.
+
+Tentukan bilangan bulat positif terkecil $N$ sedemikian sehingga untuk setiap sebarang graf $\Gamma$ dengan $N$ titik senantiasa memuat graf lengkap $K_3$ sebagai subgraf atau graf $\overline{\Gamma}$ memuat graf lengkap $K_3$ sebagai subgraf. Kemudian, buktikan!
+
+@ID: OW15D1P17I
+@BIDANG: Analisis Kompleks
+
+Hitung bagian real dan imajiner dari bilangan kompleks
+$$
+\frac{3i^{30}-i^{19}}{2i-1}.
+$$
+
+@ID: OW15D1P18I
+@BIDANG: Analisis Kompleks
+
+Hitung nilai
+$$
+\lim_{z\to0}\left(\frac{1}{z^2}-\frac{1}{\sin^2 z}\right).
+$$
+
+@ID: OW15D1P19I
+@BIDANG: Analisis Kompleks
+
+Hitung nilai
+$$
+\oint_C\frac{e^z}{(z+\pi i)^3}\,dz,
+$$
+dengan $C$ adalah lingkaran dengan pusat $0$ dan jari-jari $4$.
+
+@ID: OW15D1P20I
+@BIDANG: Analisis Kompleks
+
+Jika $f$ adalah fungsi penuh (entire), $f(0)=1$, dan berlaku
+$$
+|f(z)-e^z\sin2z|<4
+$$
+untuk setiap $z\in\mathbb{C}$, maka tentukan nilai dari $f(1)$.
+
+
+@ID: OW15D1P7U
+@BIDANG: Analisis Kompleks
+
+Kerjakan dua soal berikut.
+
+(a) Tentukan nilai
+$$
+\min_{z\in\mathbb{C}\setminus\mathbb{R}}
+\frac{\operatorname{Im}(z^5)}{(\operatorname{Im}z)^5}.
+$$
+
+(b) Tentukan nilai $k$ sehingga peta dari lingkaran $|z-1|=k$ oleh fungsi kompleks
+$$
+f(z)=\frac{z-3}{1-2z}
+$$
+adalah sebuah garis lurus.
+
+@ID: OW15D1P8U
+@BIDANG: Analisis Kompleks
+
+Hitunglah
+$$
+\int_0^{2\pi}e^{\,e^{2it}-3it}\,dt.
+$$
+
+@ID: OW15D2P1I
+@BIDANG: Struktur Aljabar
+
+Misalkan $G$, $H$, dan $K$ grup hingga. Misalkan pula homomorfisma $\varphi:G\to H$ dan homomorfisma $\psi:H\to K$ memenuhi $\operatorname{Im}(\varphi)=\operatorname{Ker}(\psi)$. Jika $\psi$ homomorfisma surjektif dan $|K|=|H|=n$, maka $|\operatorname{Im}(\varphi)|=\ldots$
+
+@ID: OW15D2P2I
+@BIDANG: Struktur Aljabar
+
+Banyaknya polinom tak tereduksi di $\mathbb{Z}_2[x]$ yang berderajat $3$ adalah $\ldots$
+
+@ID: OW15D2P3I
+@BIDANG: Struktur Aljabar
+
+Banyaknya pembagi nol di $\mathbb{Z}_{100}$ adalah $\ldots$
+
+@ID: OW15D2P4I
+@BIDANG: Struktur Aljabar
+
+Misalkan $R$ adalah ring dengan identitas perkalian dan $x\in R$ memenuhi $x^2=x$. Maka balikan (invers) dari $2x-1$ adalah $\ldots$
+
+@ID: OW15D2P5U
+@BIDANG: Struktur Aljabar
+
+Misalkan $G$ suatu grup yang memiliki subgrup berorde 2015. Buktikan bahwa irisan semua subgrup dari $G$ yang berorde 2015 merupakan subgrup normal dari $G$.
+
+@ID: OW15D2P6U
+@BIDANG: Struktur Aljabar
+
+(a) Jika $I$ ideal di $M_2(\mathbb{R})$ yang memuat 
+$$
+\begin{pmatrix} a & 0 \\ 0 & 0 \end{pmatrix}
+$$
+untuk suatu $a \neq 0$, buktikan bahwa $I = M_2(\mathbb{R})$.
+
+(b) Tentukan semua ideal di ring $M_2(\mathbb{R})$.
+
+@ID: OW15D1P1I
+@BIDANG: Aljabar Linier
+
+Misalkan $A, B, C$ berturut-turut matriks berukuran $m \times m, n \times n$ dan $n \times m$. Jika $\det(A) = 2$ dan $\det(B) = 3$, maka $\det \begin{bmatrix} 0 & A \\ B & C \end{bmatrix} = \ldots$
+
+@ID: OW15D1P2I
+@BIDANG: Aljabar Linier
+
+Diketahui bahwa $a \neq 0$. Agar himpunan $\{a+bx, ax+bx^2, b+ax^3\}$ bergantung linier di ruang vektor $P_4$, $a$ dan $b$ haruslah memenuhi hubungan $\ldots$
+
+@ID: OW15D1P3I
+@BIDANG: Aljabar Linier
+
+Di $\mathbb{R}^3$, subruang $K$ dibangun oleh $\left\{ \begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}, \begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix}, \begin{bmatrix} 3 \\ 2 \\ 1 \end{bmatrix} \right\}$ dan subruang $L$ dibangun oleh $\left\{ \begin{bmatrix} 1 \\ 0 \\ -1 \end{bmatrix}, \begin{bmatrix} -1 \\ 1 \\ 0 \end{bmatrix} \right\}$. Maka $K \cap L = \ldots$
+
+@ID: OW15D1P4I
+@BIDANG: Aljabar Linier
+
+Misalkan $A = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$. Pemetaan linier $T$ memenuhi $T(X) = AX - XA$, untuk setiap $X \in \mathbb{R}^{2 \times 2}$. Maka dimensi $\text{Inti}(T)$ adalah $\ldots$
+
+@ID: OW15D1P5I
+@BIDANG: Aljabar Linier
+
+Diketahui bahwa $u = \begin{bmatrix} 1 \\ 1 \end{bmatrix}$ adalah vektor eigen matriks $\begin{bmatrix} a-1 & a \\ 2 & 1 \end{bmatrix}$. Maka nilai eigen untuk $u$ adalah $\ldots$
+
+@ID: OW15D1P6I
+@BIDANG: Aljabar Linier
+
+Banyaknya matriks real diagonal berukuran $n \times n$ yang ortogonal adalah $\ldots$
+
+@ID: OW15D1P7I
+@BIDANG: Aljabar Linier
+
+Diketahui matriks-matriks $A = \begin{bmatrix} 1 & a \\ -1 & 1 \\ b & 1 \end{bmatrix}$ dan $B = \begin{bmatrix} c & -1 & 0 \\ 0 & 1 & 1 \end{bmatrix}$. Agar matriks $AB$ dapat didiagonalisasi ortogonal, haruslah $(a,b,c) = \ldots$
+
+@ID: OW15D1P8I
+@BIDANG: Aljabar Linier
+
+Di ruang vektor $P_2$ kita definisikan hasilkali dalam
+$$
+\langle p, q \rangle = \int_0^1 p(t)q(t) \, dt
+$$
+untuk setiap $p, q \in P_2$. Jika $K$ dibangun oleh $\{1, x\}$, maka $K^\perp = \ldots$
+
+@ID: OW15D1P1U
+@BIDANG: Aljabar Linier
+
+Misalkan $a_1, a_2, b_1, b_2$ empat vektor di $\mathbb{R}^3$ yang memenuhi $\|a_1\|_2 = \|b_1\|_2 = 1$. Misalkan $A = \begin{bmatrix} a_1 & a_2 \end{bmatrix}$ dan $B = \begin{bmatrix} b_1 & b_2 \end{bmatrix}$ memenuhi $A^t B = I_2$, matriks identitas $2 \times 2$.
+
+(a) Tunjukkan bahwa keempat vektor tersebut dapat dipilih sehingga $B A^t = \text{diag}(1, 1, 0)$.
+
+(b) Dapatkah keempat vektor tersebut dipilih sehingga $B A^t$ bukan matriks diagonal? Berikan alasannya.
+
+@ID: OW15D1P2U
+@BIDANG: Aljabar Linier
+
+Misalkan $U, V, W$ ruang-ruang vektor atas lapangan $F$, $\dim(V) = m$, dan $\dim(U) = n$. Misalkan pula $T : V \longrightarrow W$ linier dan satu-satu, sedangkan $S : W \longrightarrow U$ linier dan pada. Jika $\text{Peta}(T) = \text{Inti}(S)$, tentukan $\dim(W)$.
+
+@ID: OW15D1P3U
+@BIDANG: Aljabar Linier
+
+Misalkan $A \in M_{n \times n}(\mathbb{R})$ memenuhi $A^2 = I$.
+
+(a) Tunjukkan bahwa $1$ dan $-1$ adalah semua nilai eigen $A$.
+
+(b) Jika $E(1)$ dan $E(-1)$ adalah ruang-ruang eigen $A$, buktikan bahwa $\mathbb{R}^n = E(1) \oplus E(-1)$.

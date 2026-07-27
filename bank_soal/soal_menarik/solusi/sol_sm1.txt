@@ -1,0 +1,576 @@
+@ID: SM1
+@BY: @aduhmath
+@HINT: Gunakan fungsi dengan batas atas $t$ dan analisis turunannya.
+
+Definisikan fungsi $F(t)$ untuk $t \in [0, 1]$:
+$$
+F(t) = \left(\int_0^t f(x) \, dx\right)^2 - \int_0^t f(x)^3 \, dx
+$$
+Perhatikan bahwa $F(0) = 0$. Turunan pertamanya adalah:
+$$
+F'(t) = f(t) \left( 2 \int_0^t f(x) \, dx - f(t)^2 \right)
+$$
+Karena $f(t) > 0$ untuk $t > 0$, tanda $F'(t)$ bergantung pada suku di dalam kurung. Misalkan:
+$$
+G(t) = 2 \int_0^t f(x) \, dx - f(t)^2
+$$
+Nilai $G(0) = 0$. Turunan dari $G(t)$ adalah:
+$$
+G'(t) = 2f(t)(1 - f'(t))
+$$
+Karena $f(t) > 0$ dan $f'(t) \leq 1$, maka $G'(t) \geq 0$. Akibatnya $G(t)$ monoton naik, sehingga $G(t) \geq 0$.
+
+Karena $G(t) \geq 0$, maka $F'(t) \geq 0$. Ini berarti $F(t)$ juga monoton naik. Mengingat $F(0) = 0$, maka nilai pada batas atas tidak mungkin negatif:
+$$
+F(1) \geq 0
+$$
+Terbukti.
+
+
+@ID: SM2
+@BY: @aduhmath
+@HINT: Gunakan Ketaksamaan Cauchy-Schwarz.
+
+Berdasarkan Ketaksamaan Cauchy-Schwarz untuk integral, pilih $u(x) = f(x)$ dan fungsi pembantu $v(x) = 3x - 1$:
+$$
+\left( \int_0^1 f(x)(3x - 1) \, dx \right)^2 \leq \left( \int_0^1 (f(x))^2 \, dx \right) \left( \int_0^1 (3x - 1)^2 \, dx \right)
+$$
+Evaluasi bagian kiri menggunakan sifat linear:
+$$
+\int_0^1 f(x)(3x - 1) \, dx = 3 \int_0^1 xf(x) \, dx - \int_0^1 f(x) \, dx = 3(1) - 1 = 2
+$$
+Evaluasi bagian integral fungsi pembantu di ruas kanan:
+$$
+\int_0^1 (3x - 1)^2 \, dx = \left[ 3x^3 - 3x^2 + x \right]_0^1 = (3 - 3 + 1) - 0 = 1
+$$
+Substitusikan kedua hasil tersebut ke ketaksamaan awal:
+$$
+(2)^2 \leq \left( \int_0^1 (f(x))^2 \, dx \right) \cdot 1
+$$
+$$
+\int_0^1 (f(t))^2 \, dt \geq 4
+$$
+Terbukti.
+
+@ID: SM3
+@BY: @aduhmath
+@HINT: Gunakan integrasi parsial pada syarat awal untuk menunjukkan $\int_0^1 F(x) dx = 0$.
+
+Dari kondisi pada soal, kita dapat menulis ulang persamaannya menjadi:
+$$
+\int_0^1 f(x) \, dx - \int_0^1 xf(x) \, dx = 0
+$$
+$$
+\int_0^1 (1 - x)f(x) \, dx = 0
+$$
+Kita selesaikan integral tersebut menggunakan metode integrasi parsial. Misalkan $u = 1 - x$ (sehingga $du = -dx$) dan $dv = f(x) \, dx$ (sehingga $v = F(x)$):
+$$
+\left[ (1 - x)F(x) \right]_0^1 - \int_0^1 -F(x) \, dx = 0
+$$
+$$
+(0 \cdot F(1) - 1 \cdot F(0)) + \int_0^1 F(x) \, dx = 0
+$$
+Karena $F(0) = 0$, persamaan tersebut menyederhanakan menjadi:
+$$
+\int_0^1 F(x) \, dx = 0
+$$
+Karena integral dari fungsi kontinu $F(x)$ pada interval $[0, 1]$ sama dengan nol, berdasarkan Teorema Nilai Rata-rata untuk Integral, pasti terdapat setidaknya satu titik $a \in (0, 1)$ sedemikian sehingga $F(a) = 0$.
+
+Selanjutnya, definisikan fungsi bantu $g(x) = e^{-x}F(x)$ pada interval $[0, a]$. Evaluasi nilai pada batas interval:
+$$
+g(0) = e^0 F(0) = 1 \cdot 0 = 0
+$$
+$$
+g(a) = e^{-a} F(a) = e^{-a} \cdot 0 = 0
+$$
+Karena $g(0) = g(a) = 0$ dan fungsi tersebut kontinu serta terdiferensialkan, menurut Teorema Rolle, pasti terdapat $c \in (0, a)$ sedemikian sehingga $g'(c) = 0$.
+
+Mari kita cari turunan $g(x)$:
+$$
+g'(x) = -e^{-x}F(x) + e^{-x}F'(x) = e^{-x}(f(x) - F(x))
+$$
+Substitusikan $x = c$:
+$$
+g'(c) = e^{-c}(f(c) - F(c)) = 0
+$$
+Karena nilai $e^{-c}$ tidak mungkin nol, maka haruslah:
+$$
+f(c) - F(c) = 0
+$$
+$$
+f(c) = \int_0^c f(x) \, dx
+$$
+Karena $c \in (0, a)$ dan $a < 1$, sudah pasti $c \in (0, 1)$. 
+Terbukti.
+
+@ID: SM4
+@BY: @aduhmath
+@HINT: Gunakan integrasi ganda dan ketaksamaan Cauchy-Schwarz.
+
+Integralkan ketaksamaan yang diberikan terhadap $x$ pada interval $[0,1]$. Diperoleh
+$$
+\int_0^1\left(\int_x^1 f(t)\,dt\right)dx
+\ge
+\int_0^1\frac{1-x^2}{2}\,dx
+=
+\frac13.
+$$
+
+Selanjutnya, ubah urutan integrasi:
+$$
+\int_0^1\left(\int_x^1 f(t)\,dt\right)dx
+=
+\int_0^1\left(\int_0^t dx\right)f(t)\,dt
+=
+\int_0^1 t\,f(t)\,dt.
+$$
+
+Akibatnya,
+$$
+\int_0^1 t\,f(t)\,dt \ge \frac13.
+$$
+
+Sekarang terapkan ketaksamaan Cauchy--Schwarz:
+$$
+\left(\int_0^1 t\,f(t)\,dt\right)^2
+\le
+\left(\int_0^1 t^2\,dt\right)
+\left(\int_0^1 (f(t))^2\,dt\right).
+$$
+
+Karena
+$$
+\int_0^1 t^2\,dt=\frac13,
+$$
+maka
+$$
+\frac19
+\le
+\left(\int_0^1 t\,f(t)\,dt\right)^2
+\le
+\frac13
+\int_0^1 (f(t))^2\,dt.
+$$
+
+Dengan demikian,
+$$
+\int_0^1 (f(t))^2\,dt \ge \frac13,
+$$
+sesuai yang ingin dibuktikan.
+
+
+@ID: SM5
+@BY: @aduhmath
+@HINT: Gunakan definisi limit dan sifat kontinuitas fungsi serta tinjau barisan fungsi dan gunakan pertukaran limit dan integral.
+
+Karena $f$ kontinu di $0$, maka untuk setiap $\varepsilon>0$ terdapat $\delta>0$ sehingga
+$$
+|f(x)-f(0)|<\varepsilon,\qquad 0\le x<\delta.
+$$
+
+Selanjutnya, definisikan
+$$
+g_n(x)=f(x^n).
+$$
+
+Ambil sembarang $d\in(0,1)$. Karena
+$$
+x^n\longrightarrow 0
+\quad\text{secara seragam pada }[0,1-d],
+$$
+maka terdapat $N$ sehingga untuk setiap $n\ge N$ dan setiap $x\in[0,1-d]$ berlaku
+$$
+x^n<\delta.
+$$
+Akibatnya,
+$$
+|g_n(x)-f(0)|
+=
+|f(x^n)-f(0)|
+<
+\varepsilon,
+$$
+sehingga $g_n$ konvergen seragam ke fungsi konstan $f(0)$ pada interval $[0,1-d]$.
+
+Oleh karena itu, limit dan integral dapat dipertukarkan:
+$$
+\lim_{n\to\infty}\int_0^{1-d}f(x^n)\,dx
+=
+\int_0^{1-d}\lim_{n\to\infty}f(x^n)\,dx
+=
+(1-d)f(0).
+$$
+
+Karena $f$ kontinu pada interval kompak $[0,1]$, maka $f$ terbatas. Misalkan
+$$
+|f(x)|\le M,\qquad \forall x\in[0,1].
+$$
+
+Sekarang tuliskan
+$$
+\int_0^1f(x^n)\,dx
+=
+\int_0^{1-d}f(x^n)\,dx
++
+\int_{1-d}^1f(x^n)\,dx.
+$$
+
+Dari keterbatasan $f$ diperoleh
+$$
+\left|
+\int_{1-d}^1f(x^n)\,dx
+\right|
+\le
+Md.
+$$
+
+Mengambil limit saat $n\to\infty$ menghasilkan
+$$
+(1-d)f(0)-Md
+\le
+\liminf_{n\to\infty}\int_0^1f(x^n)\,dx
+\le
+\limsup_{n\to\infty}\int_0^1f(x^n)\,dx
+\le
+(1-d)f(0)+Md.
+$$
+
+Karena ketaksamaan tersebut berlaku untuk setiap $d\in(0,1)$, dengan mengambil limit $d\to0^+$ diperoleh
+$$
+\liminf_{n\to\infty}\int_0^1f(x^n)\,dx
+=
+\limsup_{n\to\infty}\int_0^1f(x^n)\,dx
+=
+f(0).
+$$
+
+Dengan demikian,
+$$
+\boxed{\lim_{n\to\infty}\int_0^1f(x^n)\,dx=f(0).}
+$$
+
+
+@ID: SM6
+@BY: @aduhmath
+@HINT: Definisikan fungai yang bagus dan gunakan fakta limit menuju tak hingga.
+
+Jelas bahwa $f$ tidak konstan. Definisikan
+$$
+E=\{x\in[0,\infty):f(x)=0\}.
+$$
+Cukup dibuktikan bahwa $E$ terbatas di atas.
+
+Andaikan sebaliknya, yaitu $E$ tidak terbatas.
+
+Definisikan
+$$
+g(x)=e^{-x}f'(x).
+$$
+Maka
+$$
+g'(x)
+=
+e^{-x}\bigl(f''(x)-f'(x)\bigr).
+$$
+Akibatnya,
+$$
+\lim_{x\to\infty}e^xg'(x)
+=
+\lim_{x\to\infty}\bigl(f''(x)-f'(x)\bigr)
+=
+L.
+$$
+
+Tanpa mengurangi keumuman, andaikan $L>0$ (kasus $L<0$ serupa). Maka terdapat $M>0$ sehingga
+$$
+g'(x)>0,\qquad\forall x\ge M.
+$$
+Jadi $g$ naik pada $[M,\infty)$.
+
+Karena $E$ tidak terbatas, terdapat dua titik berbeda $a,b\in E$ dengan
+$$
+M<a<b.
+$$
+Menurut Teorema Rolle, terdapat $c\in(a,b)$ sehingga
+$$
+f'(c)=0.
+$$
+Dengan demikian,
+$$
+g(c)=e^{-c}f'(c)=0.
+$$
+
+Karena $g$ naik pada $[M,\infty)$, maka
+$$
+g(x)>0,\qquad\forall x>c.
+$$
+Karena $e^{-x}>0$, diperoleh
+$$
+f'(x)>0,\qquad\forall x>c.
+$$
+Akibatnya, $f$ naik tegas pada $[c,\infty)$.
+
+Namun, $E$ tidak terbatas sehingga terdapat $d>c$ dengan
+$$
+f(d)=0=f(c).
+$$
+Hal ini mustahil karena $f$ naik tegas pada $[c,\infty)$.
+
+Kontradiksi ini menunjukkan bahwa $E$ harus terbatas di atas. Oleh karena itu, terdapat $x_0>0$ sehingga
+$$
+f(x)\neq0,\qquad\forall x>x_0.
+$$
+
+
+
+@ID: SM7
+@BY: @aduhmath
+@HINT: Definisikan fungsi yang sesuai dan gunakan fakta kemonotonan fungsi.
+
+Definisikan
+$$
+g(x)=e^x(f(x)-1).
+$$
+Maka
+$$
+g'(x)
+=
+e^x(f(x)-1)+e^xf'(x)
+=
+e^x(f(x)+f'(x)-1)
+\le0.
+$$
+Jadi, $g$ merupakan fungsi yang menurun pada $\mathbb{R}$.
+
+Karena $g$ menurun, diperoleh
+$$
+g(1)\le g(0).
+$$
+Dengan menggunakan $f(0)=0$, diperoleh
+$$
+e(f(1)-1)
+\le
+-1,
+$$
+sehingga
+$$
+f(1)\le 1-\frac1e.
+$$
+
+Batas atas ini tercapai dengan memilih
+$$
+f(x)=1-e^{-x},
+$$
+karena
+$$
+f(0)=0
+$$
+dan
+$$
+f(x)+f'(x)
+=
+(1-e^{-x})+e^{-x}
+=
+1.
+$$
+Selain itu,
+$$
+f(1)=1-\frac1e.
+$$
+
+Dengan demikian, nilai terbesar yang mungkin untuk $f(1)$ adalah
+$$
+\boxed{1-\frac1e.}
+$$
+
+@ID: SM8
+@BY: @aduhmath
+@HINT: Gunakan Teorema Rolle dan Persamaan Fungsional Jensen.
+Pertama, kita akan membuktikan bahwa $f'(x)$ adalah fungsi yang kontinu. 
+Pilih $a = x - 1$ dan $b = x + 1$ (sehingga $b - a = 2$ dan $\frac{a+b}{2} = x$). Substitusikan ke dalam persamaan awal:
+$$
+\frac{f(x+1) - f(x-1)}{2} = f'(x)
+$$
+Karena $f$ diketahui terdiferensialkan, maka $f$ pasti kontinu. Ruas kiri adalah operasi aljabar dari fungsi-fungsi kontinu, yang berarti ruas kanannya, yaitu $f'(x)$, juga secara mutlak kontinu untuk seluruh $x \in \mathbb{R}$.
+
+Kedua, tinjau tiga titik berurutan: $x-h$, $x$, dan $x+h$ untuk suatu $h > 0$. 
+Terapkan persamaan dari soal pada interval $[x-h, x]$ dan $[x, x+h]$:
+$$
+f(x) - f(x-h) = h f'\left(x - \frac{h}{2}\right)
+$$
+$$
+f(x+h) - f(x) = h f'\left(x + \frac{h}{2}\right)
+$$
+Jumlahkan kedua persamaan tersebut untuk mengeliminasi $f(x)$:
+$$
+f(x+h) - f(x-h) = h \left( f'\left(x - \frac{h}{2}\right) + f'\left(x + \frac{h}{2}\right) \right)
+$$
+Di sisi lain, jika kita terapkan persamaan soal secara langsung pada interval ujung ke ujung $[x-h, x+h]$, kita peroleh:
+$$
+f(x+h) - f(x-h) = 2h f'(x)
+$$
+Samakan kedua hasil di atas, lalu bagi dengan $h$ (karena $h \neq 0$):
+$$
+f'\left(x - \frac{h}{2}\right) + f'\left(x + \frac{h}{2}\right) = 2f'(x)
+$$
+Ini adalah bentuk klasik dari Persamaan Fungsional Jensen. Karena kita telah membuktikan di awal bahwa $f'(x)$ kontinu, satu-satunya penyelesaian umum untuk persamaan Jensen yang kontinu adalah fungsi linear:
+$$
+f'(x) = cx + d
+$$
+untuk suatu konstanta $c, d \in \mathbb{R}$.
+
+Langkah terakhir, integralkan $f'(x)$ terhadap $x$ untuk mengembalikan fungsi aslinya:
+$$
+f(x) = \frac{1}{2}cx^2 + dx + e
+$$
+Bentuk ini dapat kita tulis ulang secara lebih sederhana sebagai polinomial berderajat (maksimal) dua:
+$$
+f(x) = Ax^2 + Bx + C
+$$
+Jika diuji kembali ke persamaan awal, baik ruas kiri maupun ruas kanan akan menghasilkan nilai ekuivalen $A(a+b) + B$, sehingga solusi ini valid.
+
+Jadi, semua fungsi yang memenuhi adalah $f(x) = Ax^2 + Bx + C$ untuk sembarang konstanta riil $A, B$, dan $C$.
+
+
+
+@ID: SM9
+@BY: @aduhmath
+@HINT: Gunakan Teorema Taylor dan ketaksamaan segitiga untuk mengekstrak batas atas dari turunan pertama.
+
+Ambil sembarang $x\in\mathbb{R}$ dan $h>0$. Dari Teorema Taylor diperoleh
+$$
+f(x+h)
+=
+f(x)+hf'(x)+\frac{h^2}{2}f''(\xi_1),
+$$
+untuk suatu $\xi_1\in(x,x+h)$.
+
+Demikian pula,
+$$
+f(x-h)
+=
+f(x)-hf'(x)+\frac{h^2}{2}f''(\xi_2),
+$$
+untuk suatu $\xi_2\in(x-h,x)$.
+
+Mengurangkan kedua persamaan tersebut menghasilkan
+$$
+2hf'(x)
+=
+f(x+h)-f(x-h)
+-\frac{h^2}{2}\bigl(f''(\xi_1)-f''(\xi_2)\bigr).
+$$
+Dengan menggunakan ketaksamaan segitiga, diperoleh
+$$
+2h|f'(x)|
+\le
+|f(x+h)|+|f(x-h)|
++\frac{h^2}{2}\left(|f''(\xi_1)|+|f''(\xi_2)|\right).
+$$
+Karena
+$$
+|f(y)|\le M_0,\qquad |f''(y)|\le M_2,
+$$
+untuk setiap $y\in\mathbb{R}$, maka
+$$
+2h|f'(x)|
+\le
+2M_0+h^2M_2,
+$$
+atau
+$$
+|f'(x)|
+\le
+\frac{M_0}{h}
++\frac{hM_2}{2}.
+$$
+
+Ketaksamaan ini berlaku untuk setiap $h>0$. Pilih
+$$
+h=2\sqrt{\frac{M_0}{M_2}},
+$$
+sehingga
+$$
+\frac{M_0}{h}
+=
+\frac{\sqrt{M_0M_2}}{2},
+\qquad
+\frac{hM_2}{2}
+=
+\sqrt{M_0M_2}.
+$$
+Akibatnya,
+$$
+|f'(x)|
+\le
+2\sqrt{M_0M_2}.
+$$
+
+Karena $x$ dipilih sembarang, diperoleh
+$$
+\sup_{x\in\mathbb{R}}|f'(x)|
+\le
+2\sqrt{M_0M_2},
+$$
+sehingga $f'$ terbatas pada $\mathbb{R}$.
+
+
+@ID: SM10
+@BY: @aduhmath
+@HINT: Gunakan AM-GM
+
+
+Pertama, buktikan lemma berikut.
+
+**Lemma.** Untuk setiap $x,y\in\mathbb{C}$ berlaku
+$$
+\operatorname{Re}(x+y)\le |x|+|y|.
+$$
+
+**Bukti.** Karena
+$$
+\operatorname{Re}(x)\le |x|
+\quad\text{dan}\quad
+\operatorname{Re}(y)\le |y|,
+$$
+maka
+$$
+\operatorname{Re}(x+y)
+=
+\operatorname{Re}(x)+\operatorname{Re}(y)
+\le
+|x|+|y|.
+$$
+
+
+Dengan menggunakan lemma di atas,
+$$
+2\operatorname{Re}(uz+vw)
+\le
+2|uz|+2|vw|
+=
+2|u||z|+2|v||w|.
+$$
+
+Selanjutnya, dari ketaksamaan AM--GM,
+
+$$
+2|u||z|
+\le
+4|u|^2+\frac14|z|^2,
+$$
+dan
+$$
+2|v||w|
+\le
+4|v|^2+\frac14|w|^2.
+$$
+
+Menjumlahkan kedua ketaksamaan tersebut menghasilkan
+$$
+2\operatorname{Re}(uz+vw)
+\le
+4\left(|u|^2+|v|^2\right)
++\frac14\left(|z|^2+|w|^2\right),
+$$
+yang diinginkan.

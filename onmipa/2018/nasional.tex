@@ -1,0 +1,185 @@
+@ID: ON18D1P1U
+@BIDANG: Analisis Kompleks
+
+
+
+
+Diberikan bilangan asli $n$. Cari semua bilangan bulat yang dapat dinyatakan dalam bentuk
+
+$$
+\left(\sum_{k=1}^{n} z_k\right)
+\left(\sum_{k=1}^{n}\frac1{z_k}\right)
+$$
+
+untuk suatu bilangan kompleks $z_1,\dots,z_n\in\mathbb C$ dengan $|z_1|=\cdots=|z_n|=1$.
+
+@ID: ON18D1P2U
+@BIDANG: Aljabar Linear
+
+Misalkan $A\in\mathbb R^{n\times n}$ dengan $k_1,k_2,\dots,k_n\in\mathbb R^n$ adalah vektor-vektor kolom dari $A$. Vektor-vektor kolom tersebut memenuhi hubungan
+
+$$
+k_i=(i+2)k_{i+2},\qquad i=1,2,\dots,n-2.
+$$
+
+Untuk $n>3$, pilihlah satu nilai eigen $A$ kemudian tentukan dimensi terkecil yang mungkin untuk ruang eigen dari nilai eigen yang terpilih.
+
+@ID: ON18D1P3U
+@BIDANG: Kombinatorika
+
+Untuk bilangan bulat positif $n\ge1$, definisikan $h_n$ sebagai banyaknya cara menuliskan $n$ sebagai jumlahan dari bilangan $1$ dan $2$ dengan memperhatikan urutan kemunculan bilangan $1$ dan $2$. Sebagai contoh, $h_3=3$, karena
+
+$$
+3=1+1+1,\qquad
+3=2+1,\qquad
+3=1+2.
+$$
+
+Selanjutnya, $h_4=5$, karena
+
+$$
+4=1+1+1+1,\;
+4=1+1+2,\;
+4=1+2+1,\;
+4=2+1+1,\;
+4=2+2.
+$$
+
+Buktikan bahwa untuk $k\ge0$
+
+$$
+h_{2k+1}
+=
+\sum_{i\ge0}\sum_{j\ge0}
+\binom{k-i}{j}
+\binom{k-j}{i}.
+$$
+
+@ID: ON18D1P4U
+@BIDANG: Analisis Real
+
+Diberikan fungsi kontinu $f:[0,\infty)\to[0,a]$, untuk suatu bilangan real $a>0$, dan $f$ memenuhi *the intermediate value property* pada $[0,\infty)$. Jika $f(0)=0$ dan
+
+$$
+xf(x)\ge\int_0^x f(t)\,dt,\qquad \forall x\in(0,\infty),
+$$
+
+buktikan bahwa $f$ mempunyai antiderivatif.
+
+@ID: ON18D1P5U
+@BIDANG: Struktur Aljabar
+
+Diberikan bilangan prima $p$ dan bilangan asli $n\ge3$. Misalkan
+
+$$
+G_n(p)=
+\left\{
+x+a_2x^2+\cdots+a_nx^n
+\mid
+a_i\in\mathbb Z_p
+\right\}.
+$$
+
+Definisikan operasi $\circ$ di $G_n(p)$ melalui
+
+$$
+P\circ Q=P(Q(x))
+\pmod{x^{n+1}}.
+$$
+
+Sebagai contoh di $G_3(5)$, misalkan $P=x+2x^2$ dan $Q=x+3x^2$. Maka
+
+$$
+\begin{aligned}
+P\circ Q
+&=(x+3x^2)+2(x+3x^2)^2\\
+&=x+3x^2+2(x^2+6x^3+9x^4)\\
+&=x+5x^2+12x^3+18x^4\\
+&=x+5x^2+12x^3
+\qquad(\text{karena modulo }x^4)\\
+&=x+2x^3
+\qquad(\text{karena koefisiennya di }\mathbb Z_5).
+\end{aligned}
+$$
+
+Periksa apakah $G_n(p)$ merupakan grup terhadap operasi $\circ$.
+
+@ID: ON18D2P1U
+@BIDANG: Kombinatorika
+
+Diberikan bilangan bulat tak negatif $k$ dan $n$ sehingga $0\le k<n$. Berikan bukti kombinatorial bahwa
+
+$$
+\sum_{j=0}^{k}\binom{n}{j}
+=
+\sum_{j=0}^{k}\binom{n-1-j}{k-j}2^j.
+$$
+
+@ID: ON18D2P2U
+@BIDANG: Struktur Aljabar
+
+(a) Apakah $\langle x+2018\rangle$ merupakan ideal prima di $\mathbb Z[x]$?
+
+(b) Apakah $\langle x+2018\rangle$ merupakan ideal maksimal di $\mathbb Z[x]$?
+
+@ID: ON18D2P3U
+@BIDANG: Analisis Real
+
+Misalkan barisan bilangan real $\{x_n\}$ terbatas dan memenuhi
+
+$$
+x_{n+2}\le\frac12(x_n+x_{n+1}),\qquad \forall n\ge0.
+$$
+
+Jika $A_n=\max\{x_n,x_{n+1}\}$, buktikan:
+
+(a) barisan $\{A_n\}$ konvergen.
+
+(b) barisan $\{x_n\}$ konvergen.
+
+@ID: ON18D2P4U
+@BIDANG: Analisis Real
+
+Buktikan atau beri contoh penyangkal.
+
+(a) Untuk setiap fungsi $f:\mathbb R\to\mathbb R$, jika fungsi $g:\mathbb R\to\mathbb R$ dengan definisi $g(x)=f(x^{2018})$ untuk setiap $x\in\mathbb R$, mempunyai deret pangkat
+
+$$
+\sum_{n=0}^{\infty}a_nx^n
+$$
+
+yang konvergen di suatu persekitaran $x=0$, maka $f$ mempunyai turunan di $x=0$.
+
+(b) Untuk setiap fungsi $f:\mathbb C\to\mathbb C$, jika fungsi $g:\mathbb C\to\mathbb C$ dengan definisi $g(z)=f(z^{2018})$ untuk setiap $z\in\mathbb C$, mempunyai deret pangkat
+
+$$
+\sum_{n=0}^{\infty}a_nz^n
+$$
+
+yang konvergen di suatu persekitaran $z=0$, maka $f$ mempunyai turunan di $z=0$.
+
+@ID: ON18D2P5U
+@BIDANG: Aljabar Linear
+
+Diberikan bilangan asli $n$. Misalkan
+
+$$
+A=
+\begin{pmatrix}
+a&b\\
+c&d
+\end{pmatrix}
+\in\mathbb R^{2\times2}
+$$
+
+dengan $\det(A)=a+d=1$. Jika
+
+$$
+A^n=
+\begin{pmatrix}
+a'&b'\\
+c'&d'
+\end{pmatrix},
+$$
+
+tentukan nilai $a'+d'$.

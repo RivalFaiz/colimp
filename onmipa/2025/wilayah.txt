@@ -1,0 +1,223 @@
+@ID: OW25D1P1I
+@BIDANG: Struktur Aljabar
+
+Banyaknya unsur berorde $6$ pada grup $\mathbb{Z}_{12}\times\mathbb{Z}_6$ adalah $\ldots$
+
+@ID: OW25D1P2I
+@BIDANG: Kombinatorika
+
+Nilai dari
+$$
+\sum_{i=0}^{n}\frac{2^i}{i+1}\binom{n}{i}
+$$
+adalah $\ldots$
+
+@ID: OW25D1P3I
+@BIDANG: Analisis Real
+
+Jika $A_1,A_2,\ldots,A_k$ bilangan real nonnegatif, maka
+$$
+\lim_{n\to\infty}
+\left(A_1^n+A_2^n+\cdots+A_k^n\right)^{1/n}
+=
+\ldots
+$$
+
+@ID: OW25D1P4I
+@BIDANG: Analisis Real
+
+Diberikan fungsi terdiferensial $f$ dan $g$ pada $(0,\infty)$. Jika untuk setiap $x\in(0,\infty)$ berlaku $xf'(x)+g(x)=0$ dan $xg'(x)+f(x)=0$, maka
+$$
+\{x\in(0,\infty):f(x)-g(x)=2025x\}
+=
+\ldots
+$$
+
+@ID: OW25D1P5I
+@BIDANG: Struktur Aljabar
+
+Himpunan
+$$
+R=
+\left\{
+\begin{pmatrix}
+a&b\\
+0&c
+\end{pmatrix}
+\;\middle|\;
+a,b,c\in\mathbb{Z}_{20}
+\right\}
+$$
+membentuk ring dengan operasi berikut.
+
+$$
+\begin{pmatrix}
+a_1&b_1\\
+0&c_1
+\end{pmatrix}
++
+\begin{pmatrix}
+a_2&b_2\\
+0&c_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+(a_1+a_2)\bmod 20&(b_1+b_2)\bmod 20\\
+0&(c_1+c_2)\bmod 20
+\end{pmatrix}.
+$$
+
+$$
+\begin{pmatrix}
+a_1&b_1\\
+0&c_1
+\end{pmatrix}
+\begin{pmatrix}
+a_2&b_2\\
+0&c_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+(a_1a_2)\bmod 20&(a_1b_2+b_1c_2)\bmod 20\\
+0&(c_1c_2)\bmod 20
+\end{pmatrix}.
+$$
+
+Banyaknya unsur yang mempunyai invers terhadap operasi perkalian di $R$ adalah $\ldots$
+
+@ID: OW25D1P1U
+@BIDANG: Kombinatorika
+
+Tentukan solusi persamaan rekursif
+$$
+a_{n+2}-a_{n+1}-6a_n=0
+$$
+dengan syarat awal $a_0=3$ dan $a_1=4$.
+
+@ID: OW25D1P2U
+@BIDANG: Analisis Real
+
+Diberikan barisan bilangan real $(a_n)$ dan $(b_n)$ yang masing-masing konvergen ke bilangan real $\alpha$ dan $\beta$. Untuk setiap $n\ge0$, definisikan
+$$
+S_n=\frac1{n+1}\sum_{k=0}^{n}a_kb_{n-k}.
+$$
+Buktikan bahwa $(S_n)$ konvergen ke $\alpha\beta$.
+
+@ID: OW25D1P3U
+@BIDANG: Analisis Real
+
+Jika fungsi kontinu $f:[a,b]\to\mathbb{R}$ mempunyai turunan hingga orde dua pada $(a,b)$ dengan sifat $f(a)=f(b)$ dan
+$$
+f''(x)-2f'(x)+f(x)\le0,
+\qquad x\in[a,b],
+$$
+buktikan bahwa
+$$
+\inf\{f(x):x\in[a,b]\}=f(a).
+$$
+
+@ID: OW25D1P4U
+@BIDANG: Struktur Aljabar
+
+Suatu unsur $a$ di ring $(R,+,\ast)$ disebut **unsur idempoten** apabila $a\ast a=a$. Ring $R$ dikatakan **menarik** apabila banyaknya unsur idempoten di $R$ sama dengan suatu bilangan prima.
+
+(a) Tunjukkan bahwa $(\mathbb{Z}_{23},+,\cdot)$ merupakan ring menarik.
+
+(b) Jika $p$ dan $q$ merupakan dua bilangan prima yang berbeda, buktikan bahwa $(\mathbb{Z}_{pq},+,\cdot)$ tidak menarik.
+
+@ID: OW25D1P5U
+@BIDANG: Struktur Aljabar
+
+Diberikan grup hingga $(G,\cdot)$ dengan unsur identitas $e$. Misalkan terdapat unsur $a\neq e$ di $G$ dan bilangan prima $p$ sehingga
+$$
+x^{p+1}=a^{-1}xa,
+\qquad \text{untuk setiap }x\in G.
+$$
+
+Buktikan bahwa:
+
+(a) Untuk setiap $x,y\in G$ berlaku $(xy)^p=y^px^p$.
+
+(b) Untuk setiap $x\in G$ berlaku $x^{p^2}=e$.
+
+@ID: OW25D2P1I
+@BIDANG: Analisis Kompleks
+
+Jika $z\neq0$ merupakan bilangan kompleks yang memenuhi $z+\frac1z=1$, maka nilai $z^{2025}+\frac1{z^{2025}}$ adalah $\ldots$
+
+@ID: OW25D2P2I
+@BIDANG: Analisis Kompleks
+
+Jika $z\in\mathbb{C}$ memenuhi $\tan\left(\frac z2\right)=2i$, maka bagian imajiner dari $z$ adalah $\ldots$
+
+@ID: OW25D2P3I
+@BIDANG: Aljabar Linear
+
+Misalkan $J$ adalah matriks berukuran $10\times10$ dengan semua entrinya sama dengan $1$, dan $I$ adalah matriks identitas berukuran $10\times10$. Invers dari matriks $I+2025J$ berbentuk $aI-bJ$, dengan $a,b\in\mathbb{R}$. Nilai $ab$ adalah $\ldots$
+
+@ID: OW25D2P4I
+@BIDANG: Aljabar Linear
+
+Diberikan ruang vektor $P_1(\mathbb{R})=\{ax+b:a,b\in\mathbb{R}\}$ dengan hasil kali dalam
+$$
+\langle f,g\rangle=\int_{-1}^{1}f(x)g(x)\,dx.
+$$
+Tentukan semua unsur di $P_1(\mathbb{R})$ yang memiliki norm $2\sqrt2$ dan tegak lurus terhadap $1-x$.
+
+@ID: OW25D2P5I
+@BIDANG: Kombinatorika
+
+Suatu bilangan $6$ digit dengan setiap digit berbeda disebut **bilangan cantik** jika semua digitnya diambil dari himpunan $\{1,2,\ldots,6\}$ dan selisih setiap dua digit yang berurutan bukan merupakan kelipatan $3$. Banyaknya bilangan cantik adalah $\ldots$
+
+@ID: OW25D2P1U
+@BIDANG: Analisis Kompleks
+
+Diberikan himpunan
+$$
+D=\{z\in\mathbb{C}:|z-1|=|z+1|\}.
+$$
+Tentukan nilai minimum dari $|z^2+2025z+1|$ untuk semua $z\in D$, serta tentukan semua titik yang mencapai nilai minimum tersebut.
+
+@ID: OW25D2P2U
+@BIDANG: Analisis Kompleks
+
+Tentukan semua fungsi entire $f:\mathbb{C}\to\mathbb{C}$ yang memenuhi
+$$
+f(z)=f\left(\frac{2025}{z}\right),\qquad z\neq0.
+$$
+
+@ID: OW25D2P3U
+@BIDANG: Aljabar Linear
+
+Diberikan ruang vektor $V$ atas lapangan $\mathbb{R}$ dengan basis $\{u,v\}$.
+
+(a) Tentukan semua bilangan real $p$ sehingga subruang
+$$
+W_p=
+\left\{
+k_1u+k_2v+k_3(pu+p^2v):
+k_1,k_2,k_3\in\mathbb{R},
+\;
+k_1+2k_2+3k_3=0
+\right\}
+$$
+tidak sama dengan $V$.
+
+(b) Untuk setiap nilai $p$ yang diperoleh pada bagian (a), tentukan suatu basis dari $W_p$.
+
+@ID: OW25D2P4U
+@BIDANG: Aljabar Linear
+
+Misalkan $T:\mathbb{R}^7\to\mathbb{R}^7$ merupakan operator linear yang memenuhi $T^5=T^2$.
+
+Buktikan bahwa
+$$
+\operatorname{Im}(T^5)\oplus\ker(T^2)=\mathbb{R}^7.
+$$
+
+Catatan. Jika $P:V\to V$ merupakan operator linear, maka $\operatorname{Im}(P)=\{P(v):v\in V\}$ dan $\ker(P)=\{v\in V:P(v)=0\}$.
+
+@ID: OW25D2P5U
+@BIDANG: Kombinatorika
+
+Buktikan bahwa tidak ada persegi panjang dengan luas $20$ satuan yang dapat dibentuk dengan menggunakan kelima jenis tetromino pada gambar berikut, masing-masing tepat satu kali.

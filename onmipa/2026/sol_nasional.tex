@@ -1,0 +1,200 @@
+@ID: ON26D1P1U
+@BY: @fofokyut
+@HINT : Buat model kombinatorial yang berkaitan dengan benda berpasangan untuk benda yang berjumlah ganjil
+Misalkan terdapat $2n+1$ orang yang terdiri dari $n$ pasangan suami istri dan $1$ orang jomblo, dan akan dipilih $n$ orang untuk menerima kado. Jelas terdapat $\binom{2n+1}{n}$ cara untuk melakukannya.
+
+Misalkan terdapat $k$ pasangan suami istri sedemikian sehingga hanya salah satu orang yang menerima kado pada setiap pasangan tersebut, dengan $k \in \{0,1,\dots,n\}$. Terdapat $\binom{n}{k}$ cara memilih $k$ pasangan tersebut, dan $2^k$ cara memilih salah satu orang pada tiap pasangan untuk menerima kado.
+
+- **(a) Orang jomblo menerima kado.** Tersisa $n-k-1$ orang penerima kado dari $n-k$ pasangan yang belum ditentukan. Pada tiap pasangan sisa, kedua orang sama-sama menerima atau sama-sama tidak menerima kado. 
+    
+    Jika ada $m$ pasangan yang keduanya menerima kado, maka $2m = n-k-1$, sehingga $n-k$ ganjil dan $m = \left\lfloor \frac{n-k}{2} \right\rfloor$. Banyak cara memilih $m$ pasangan ini adalah $\binom{n-k}{\lfloor (n-k)/2 \rfloor}$.
+
+- **(b) Orang jomblo tidak menerima kado.** Tersisa $n-k$ orang penerima kado dari $n-k$ pasangan. Dengan argumen serupa, $2m = n-k$ (genap), sehingga $m = \left\lfloor \frac{n-k}{2} \right\rfloor$, dan banyak caranya juga $\binom{n-k}{\lfloor (n-k)/2 \rfloor}$.
+
+Kedua kasus memberi banyak cara yang sama, yakni $\binom{n-k}{\lfloor (n-k)/2\rfloor}$, untuk tiap $k$ tetap. Menjumlahkan atas seluruh $k$ dan mengalikan dengan $\binom{n}{k}2^k$, diperoleh:
+
+
+$$ 
+\sum_{k=0}^{n} 2^k \binom{n}{k}\binom{n-k}{\lfloor (n-k)/2\rfloor} = \binom{2n+1}{n} 
+$$
+
+
+
+
+@ID: ON26D1P2U
+@BY: @fofokyut
+@HINT : Gunakan identitas determinan untuk matriks blok dan OBE
+Perhatikan bahwa dengan operasi kolom $C_2 \to C_2 + C_1$,
+
+$$
+\det A = \det\begin{pmatrix} P & Q \\ Q & P \end{pmatrix} = \det\begin{pmatrix} P & P+Q \\ Q & P+Q \end{pmatrix}
+$$
+
+Matriks terakhir dapat difaktorkan sebagai:
+
+$$
+\begin{pmatrix} P & P+Q \\ Q & P+Q \end{pmatrix} = \begin{pmatrix} P & I \\ Q & I \end{pmatrix}\begin{pmatrix} I & O \\ O & P+Q \end{pmatrix}
+$$
+
+sehingga:
+
+$$
+\det A = \det\begin{pmatrix} P & I \\ Q & I \end{pmatrix} \cdot \det\begin{pmatrix} I & O \\ O & P+Q \end{pmatrix}
+$$
+
+Dengan operasi baris $R_1 \to R_1 - R_2$ pada faktor pertama,
+
+$$
+\det\begin{pmatrix} P & I \\ Q & I \end{pmatrix} = \det\begin{pmatrix} P-Q & O \\ Q & I \end{pmatrix} = \det(P-Q)\det(I)
+$$
+
+karena matriks tersebut berbentuk blok segitiga bawah. Begitu pula:
+
+$$
+\det\begin{pmatrix} I & O \\ O & P+Q \end{pmatrix} = \det(I)\det(P+Q)
+$$
+
+Karena $\det(I) = 1$ untuk matriks identitas $1013 \times 1013$, diperoleh:
+
+$$
+\det A = \det(P-Q)\det(P+Q)
+$$
+
+dengan $O$ dan $I$ berturut-turut adalah matriks nol dan matriks identitas berukuran $1013 \times 1013$.
+
+
+
+
+
+
+
+
+
+
+@ID: ON26D1P4U
+@BY: @fofokyut
+
+**(a)** Karena $B$ adalah himpunan semua elemen $x \in A$ dengan $x*x=e_A$ (yaitu $\text{ord}(x) \le 2$), maka $A \setminus B$ adalah himpunan semua elemen dengan $\text{ord}(x) \ge 3$, sehingga $x^{-1} \ne x$ untuk setiap $x \in A\setminus B$.
+
+Misalkan $K = \{\{x, x^{-1}\} : x \in A\setminus B\}$, yaitu kumpulan pasangan elemen dan inversnya (yang saling berbeda). Karena setiap pasangan $\{x,x^{-1}\}$ menghasilkan $x * x^{-1} = e_A$, maka:
+
+$$
+\prod_{x \in A\setminus B} x = \prod_{\{x,x^{-1}\}\in K} (x * x^{-1}) = \prod_{\{x,x^{-1}\}\in K} e_A = e_A
+$$
+
+Akibatnya,
+
+$$
+a_1 * a_2 * \cdots * a_n = \prod_{y \in A} y = \left(\prod_{x \in A\setminus B} x\right)*\left(\prod_{z \in B} z\right) = e_A * (b_1 * \cdots * b_m) = b_1 * b_2 * \cdots * b_m
+$$
+
+**(b)** *(Pembahasan belum tersedia)*
+
+@ID: ON26D1P5U
+@BY: @fofokyut
+
+**(a)** Untuk $z = x+iy \in \mathbb{C}$,
+
+$$
+f(z) = (|z|^2-2)\bar z = (x^2+y^2-2)(x-iy) = (x^3+xy^2-2x) + i(2y - x^2y - y^3)
+$$
+
+Menggunakan turunan parsial terhadap $x$ (karena $f$ terdiferensialkan kompleks, berlaku $f' = u_x + iv_x$),
+
+$$
+f'(z) = (3x^2+y^2-2) + i(-2xy)
+$$
+
+Bentuk ini dapat ditulis ulang dalam $z$ dan $\bar z$:
+
+$$
+f'(z) = (2x^2+2y^2) + (x^2-y^2-2ixy) - 2 = 2|z|^2 + z^2 - 2
+$$
+
+untuk setiap $z$ di mana $f$ terdiferensialkan kompleks.
+
+**(b)** Karena $0<|w|<1$ dan pada $|z|=1$ berlaku $z\bar z = |z|^2 = 1$ sehingga $\bar z = 1/z$,
+
+$$
+\oint_{|z|=1} \frac{f(z)}{z-w}\,dz = \oint_{|z|=1} \frac{(|z|^2-2)\bar z}{z-w}\,dz = \oint_{|z|=1} \frac{(1-2)/z}{z-w}\,dz = \oint_{|z|=1} \frac{-1}{(z-w)z}\,dz
+$$
+
+Dengan pecahan parsial, $\dfrac{-1}{(z-w)z} = \dfrac{1}{w}\left(\dfrac{1}{z}-\dfrac{1}{z-w}\right)$, sehingga:
+
+$$
+\oint_{|z|=1} \frac{f(z)}{z-w}\,dz = \frac{1}{w}\left(\oint_{|z|=1}\frac{1}{z}\,dz - \oint_{|z|=1}\frac{1}{z-w}\,dz\right) = \frac{1}{w}(2\pi i - 2\pi i) = 0
+$$
+
+karena kedua pole $z=0$ dan $z=w$ sama-sama berada di dalam $|z|=1$ (sebab $0<|w|<1$), sehingga masing-masing menyumbang residu $2\pi i$.
+
+@ID: ON26D2P2U
+@BY: @fofokyut
+
+**(a)** Misalkan $n=3$ dan multiset nilai eigen dari $A$ adalah $\{\lambda_1,\lambda_2,\lambda_3\}$. Menurut teorema pemetaan spektral, nilai eigen dari $I_3-A$ adalah $\{1-\lambda_1,1-\lambda_2,1-\lambda_3\}$. Karena $I_3-A$ invertibel, maka $\lambda_1,\lambda_2,\lambda_3 \ne 1$.
+
+Andaikan $A^3=I_3$. Maka nilai eigen dari $A^3$ adalah $\{\lambda_1^3,\lambda_2^3,\lambda_3^3\}$, sedangkan nilai eigen $I_3$ semuanya $1$, sehingga $\lambda_1^3=\lambda_2^3=\lambda_3^3=1$. Karena $\lambda_i \ne 1$, maka setiap:
+
+$$
+\lambda_i \in \left\{\frac{-1+i\sqrt3}{2}, \frac{-1-i\sqrt3}{2}\right\}
+$$
+
+sehingga $\mathrm{Im}(\lambda_i) \in \left\{\frac{\sqrt3}{2}, -\frac{\sqrt3}{2}\right\}$ untuk setiap $i$.
+
+Untuk semua kemungkinan kombinasi banyaknya $\lambda_i$ yang bagian imajinernya $\frac{\sqrt3}{2}$ (dari 0 sampai 3 di antara tiga nilai eigen), jumlah bagian imajinernya tidak pernah nol (dapat dicek langsung untuk kombinasi 0,1,2,3). Akibatnya:
+
+$$
+\mathrm{Im}(\mathrm{tr}(A)) = \mathrm{Im}(\lambda_1+\lambda_2+\lambda_3) \ne 0
+$$
+
+sehingga $\mathrm{tr}(A) \ne 0$. Ini kontradiksi dengan hipotesis $\mathrm{tr}(A)=0$, sehingga haruslah $A^3 \ne I_3$.
+
+**(b)** Ya, terdapat. Ambil $n=4$ dan:
+
+$$
+A = \begin{pmatrix} 0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}
+$$
+
+Polinomial karakteristiknya adalah:
+
+$$
+\det(\lambda I_4 - A) = (\lambda+i)^2(\lambda-i)^2
+$$
+
+sehingga nilai eigen $A$ adalah $\{i,i,-i,-i\}$, dan $\mathrm{tr}(A) = i+i-i-i = 0$.
+
+Nilai eigen $I_4-A$ adalah $\{1-i,1-i,1+i,1+i\}$, semuanya tak nol, sehingga $I_4-A$ invertibel.
+
+Di sisi lain, dapat dihitung $A^2 = -I_4$, sehingga $A^4 = (A^2)^2 = (-I_4)^2 = I_4$.
+
+Jadi untuk $n=4$, terdapat matriks $A$ yang memenuhi semua syarat dengan $A^n=I_n$.
+
+@ID: ON26D2P3U
+@BY: @fofokyut
+
+**(a)** Misalkan $B = \{z-1 : z \in A\}$. Karena $A$ tak kosong dan berhingga, $B$ juga tak kosong dan berhingga. Karena $z^2-2z+2 \in A$ untuk setiap $z\in A$, dan $z^2-2z+2 = (z-1)^2+1$, maka untuk $w=z-1\in B$ berlaku $w^2 = (z^2-2z+2)-1 \in B$.
+
+Misalkan $w \in B$ dan andaikan $w \ne 0$ dan $|w|\ne 1$, yaitu $0<|w|<1$ atau $|w|>1$. Pada kedua kasus, karena $w^2 \in B$ maka $w^4, w^8, \dots, w^{2^n} \in B$ untuk setiap $n$. Karena $|w|\ne 1$, nilai $|w^{2^n}| = |w|^{2^n}$ berbeda-beda untuk tiap $n$ (monoton naik jika $|w|>1$, monoton turun jika $0<|w|<1$), sehingga $w^{2^n}$ menghasilkan tak hingga banyak elemen berbeda di $B$. Ini bertentangan dengan $B$ berhingga.
+
+Jadi haruslah $w=0$ atau $|w|=1$ untuk setiap $w \in B$, yang berarti $z=1$ atau $|z-1|=1$ untuk setiap $z \in A$.
+
+**(b)** Karena $z=1$ atau $|z-1|=1$ untuk tiap $z\in A$, maka $A \subseteq \{1\}\cup\{z\in\mathbb{C}:|z-1|=1\}$. Jika dibatasi ke bilangan real, $\{z\in\mathbb{R}:|z-1|=1\} = \{0,2\}$, sehingga $A \subseteq \{0,1,2\}$.
+
+Perhatikan bahwa $0^2-2(0)+2=2$, $1^2-2(1)+2=1$, dan $2^2-2(2)+2=2$, yang semuanya tetap berada dalam $\{0,1,2\}$. Karena $A$ harus tak kosong, berhingga, dan tertutup terhadap $z \mapsto z^2-2z+2$, seluruh kemungkinan himpunan $A$ adalah:
+
+$$
+\{1\},\ \{2\},\ \{1,2\},\ \{0,1,2\}
+$$
+
+@ID: ON26D2P4U
+@BY: @fofokyut
+
+**(a)** Andaikan $R$ memiliki elemen nilpoten tak nol $x$, yaitu terdapat $m\ge 2$ terkecil dengan $x^m=0$ dan $x^{m-1}\ne 0$.
+
+- Jika $m=2$: $x^2=0$, sehingga $x = x^3 = x^2\cdot x = 0\cdot x = 0$, kontradiksi dengan $x\ne 0$.
+- Jika $m>2$: $x^{m-1} = x^{m-2}\cdot x = x^{m-2}\cdot x^3 = x^{m}\cdot x = 0\cdot x = 0$, bertentangan dengan minimalitas $m$ (sebab seharusnya $x^{m-1}\ne 0$).
+
+Kedua kasus menghasilkan kontradiksi, sehingga $R$ tidak memiliki elemen nilpoten tak nol.
+
+**(b)** Misalkan $x\in R$ tak nol dan bukan pembagi nol. Dari $x^3=x$ diperoleh $x(x^2-1)=0$. Karena $x$ bukan pembagi nol dan $x\ne 0$, haruslah $x^2-1=0$, yaitu $x^2=1$.
+
+Ini berarti $x\cdot x = 1$, sehingga $x$ memiliki invers (yaitu $x$ sendiri), sehingga $x$ merupakan unit.

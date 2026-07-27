@@ -1,0 +1,188 @@
+@ID: ON26D1P1U
+@BIDANG: Kombinatorika
+Buktikan
+$$
+\sum_{k=0}^{n} 2^k \binom{n}{k} \binom{n-k}{\left\lfloor \frac{n-k}{2} \right\rfloor} = \binom{2n+1}{n}
+$$
+
+@ID: ON26D1P2U
+@BIDANG: Aljabar Linear
+Diberikan matriks persegi $P$ dan $Q$ berukuran $1013 \times 1013$, dan
+
+$$
+A=\begin{pmatrix}
+P & Q\\
+Q & P
+\end{pmatrix}
+$$
+
+merupakan matriks blok berukuran $2026 \times 2026$. Tunjukkan bahwa
+
+$$
+\det A=\det(P+Q)\det(P-Q).
+$$
+
+@ID: ON26D1P3U
+@BIDANG: Analisis Real
+Diberikan barisan bilangan real terbatas $(a_n)_{n\ge0}$ yang memenuhi
+
+$$
+a_{n+2}\le\frac12(a_n+a_{n+1}),\qquad \forall n\ge0.
+$$
+
+Buktikan:
+
+(a) Jika didefinisikan barisan
+$$
+x_n=\max\{a_n,a_{n+1}\},
+$$
+maka barisan $(x_n)$ konvergen.
+
+(b) Barisan $(a_n)$ konvergen dan tentukan limitnya.
+
+@ID: ON26D1P4U
+@BIDANG: Struktur Aljabar
+Diberikan grup komutatif berhingga
+$$
+A=\{e_A,a_1,\dots,a_n\}
+$$
+dengan operasi $*$ dan elemen netralnya $e_A$, serta
+$$
+B=\{a\in A\mid a*a=e_A\}.
+$$
+
+Buktikan:
+
+(a) Jika
+$$
+B=\{e_A,b_1,\dots,b_m\},
+$$
+maka
+$$
+a_1*\cdots*a_n=b_1*\cdots*b_m.
+$$
+
+(b) Jika $|B|>2$, maka
+$$
+a_1*\cdots*a_n=e_A.
+$$
+
+@ID: ON26D1P5U
+@BIDANG: Analisis Kompleks
+Diberikan fungsi kompleks
+
+$$
+f(z)=(|z|^2-2)\overline z.
+$$
+
+(a) Jika $D\subset\mathbb C$ adalah daerah di mana $f$ terdiferensialkan kompleks, tentukan $f'$ dalam variabel $z$.
+
+(b) Jika $w\in\mathbb C$ dengan $0<|w|<1$, dan $C$ adalah lingkaran dengan $|z|=1$, hitunglah
+
+$$
+\oint_C\frac{f(z)}{z-w}\,dz.
+$$
+
+@ID: ON26D2P1U
+@BIDANG: Analisis Real
+Diberikan fungsi $f$ yang mempunyai turunan kedua dan kontinu pada interval $[0,1]$. Jika $f(0)=f(1)=0$ dan terdapat $M>0$ sedemikian sehingga
+
+$$
+|f''(x)|\le M
+$$
+
+untuk setiap $x\in[0,1]$. Buktikan
+
+$$
+\left|f'\left(\frac1{2026}\right)\right|
+\le
+\frac{(1+2025^2)M}{2(2026^2)}.
+$$
+
+@ID: ON26D2P2U
+@BIDANG: Aljabar Linear
+Diberikan matriks kompleks $A$ berukuran $n\times n$ dengan
+
+$$
+\operatorname{tr}(A)=0
+$$
+
+dan matriks $I_n-A$ memiliki invers.
+
+(a) Untuk $n=3$, buktikan bahwa
+$$
+A^3\ne I_3.
+$$
+
+(b) Apakah terdapat bilangan asli $n\ge2$ sedemikian sehingga terdapat matriks $A$ yang memenuhi syarat pada soal dan berlaku
+$$
+A^n=I_n?
+$$
+
+Jelaskan jawaban Anda.
+
+@ID: ON26D2P3U
+@BIDANG: Analisis Kompleks
+Diberikan $A$ himpunan tak kosong berhingga di $\mathbb C$ sedemikian sehingga untuk setiap $z\in A$ berlaku
+
+$$
+z^2-2z+2\in A.
+$$
+
+(a) Buktikan bahwa untuk setiap $z\in A$ berlaku
+
+$$
+z=1
+\quad\text{atau}\quad
+|z-1|=1.
+$$
+
+(b) Jika semua anggota $A$ merupakan bilangan real, tentukan semua himpunan $A$ yang mungkin.
+
+@ID: ON26D2P4U
+@BIDANG: Struktur Aljabar
+Diberikan $R$ ring dengan identitas yang memenuhi
+
+$$
+x^3=x
+$$
+
+untuk setiap $x\in R$.
+
+Buktikan:
+
+(a) $R$ tidak memiliki elemen nilpoten tak nol.
+
+(b) Setiap elemen tak nol yang bukan pembagi nol merupakan unit.
+
+@ID: ON26D2P5U
+@BIDANG: Kombinatorika
+Diberikan petak lintasan
+
+$$
+\begin{array}{ccccc}
+A_{11} & A_{12} & A_{13} & A_{14} & A_{15}\\
+A_{21} & A_{22} & A_{23} & A_{24} & A_{25}\\
+A_{31} & A_{32} & A_{33} & A_{34} & A_{35}\\
+A_{41} & A_{42} & A_{43} & A_{44} & A_{45}\\
+\vdots & \vdots & \vdots & \vdots & \vdots\\
+A_{n1} & A_{n2} & A_{n3} & A_{n4} & A_{n5}
+\end{array}
+$$
+
+Sebuah lintasan adalah gerak perpindahan dari satu kotak ke kotak yang lain. Sebuah lintasan yang aman adalah gerak perpindahan ke kotak yang ada di atasnya, bisa vertikal ke atas, diagonal ke atas kanan, atau diagonal ke atas kiri.
+
+Buktikan bahwa banyaknya lintasan aman untuk bergerak dari petak $A_{n1}$ adalah
+
+$$
+\frac13
+\sum_{j=1}^{5}
+\sum_{k=1}^{5}
+\left(1+2\cos\frac{k\pi}{6}\right)^{n-1}
+\sin\frac{k\pi}{6}
+\sin\frac{kj\pi}{6}.
+$$
+
+(Contoh: $A_{31}\to A_{21}\to A_{12}$ atau $A_{31}\to A_{22}\to A_{12}$ merupakan lintasan yang aman, sedangkan $A_{31}\to A_{32}\to A_{22}\to A_{12}$ bukan lintasan yang aman.)
+
+

@@ -1,0 +1,593 @@
+@ID: SM11
+@BY: @aduhmath
+@HINT: Cukup misalkan saja dan kuli.
+Tuliskan
+$$
+a=|z+2|,
+\qquad
+b=|z-2|,
+\qquad
+z=x+iy.
+$$
+
+$$
+|z-a|=|z+b|
+\Rightarrow
+|z-a|^2=|z+b|^2
+$$
+
+$$
+(x-a)^2+y^2=(x+b)^2+y^2
+\Rightarrow
+a^2-b^2=2x(a+b).
+$$
+
+$$
+a^2=(x+2)^2+y^2,\qquad
+b^2=(x-2)^2+y^2
+$$
+
+$$
+a^2-b^2
+=(x+2)^2-(x-2)^2
+=8x
+$$
+
+$$
+2x(a+b)=8x
+\Rightarrow
+x=0
+\ \text{atau}\
+a+b=4.
+$$
+
+Jika $x=0$, maka
+$$
+|z+2|=|z-2|,
+$$
+sehingga persamaan jelas terpenuhi.
+
+Jika $a+b=4$, maka
+$$
+|z+2|+|z-2|
+=|(z+2)-(z-2)|.
+$$
+
+Kesamaan pada ketaksamaan segitiga
+$$
+\Rightarrow
+z+2=t(z-2),
+\quad t\ge0
+\Rightarrow
+z\in\mathbb R.
+$$
+
+Misalkan $z=x$. Maka
+$$
+|x+2|+|x-2|=4
+\iff
+-2\le x\le2.
+$$
+
+Jadi
+$$
+\boxed{z\in\{iy:y\in\mathbb R\}\cup[-2,2].}
+$$
+
+@ID: SM12
+@BY: @aduhmath
+@HINT: Definisikan fungsi selisih.
+
+Definisikan
+$$
+h(x)=f(x)-g(x).
+$$
+
+Jika
+$$
+h(x)=0
+$$
+untuk suatu $x$, maka selesai.
+
+Andaikan
+$$
+h(x)\neq0,
+\qquad\forall x\in[0,1].
+$$
+
+Karena $h$ kontinu, maka $h$ memiliki tanda tetap pada $[0,1]$.
+
+Misalkan
+$$
+h(x)>0,
+\qquad\forall x\in[0,1].
+$$
+
+$$
+f(x)>g(x),
+\qquad\forall x\in[0,1]
+$$
+
+$$
+\Rightarrow
+\sup_{0\le x\le1}f(x)>
+\sup_{0\le x\le1}g(x),
+$$
+kontradiksi.
+
+Kasus
+$$
+h(x)<0,
+\qquad\forall x\in[0,1]
+$$
+juga menghasilkan kontradiksi.
+
+Jadi terdapat
+$$
+t\in[0,1]
+$$
+sehingga
+$$
+h(t)=0,
+$$
+yakni
+$$
+f(t)=g(t).
+$$
+
+$$
+\Rightarrow
+f(t)^2+3f(t)
+=
+g(t)^2+3g(t).
+$$
+
+
+@ID: SM13
+@BY: @aduhmath
+@HINT: Gunakan Teorema Taylor.
+
+Untuk
+$$
+x>\pi,
+$$
+berlaku
+$$
+x-\frac{x^3}{6}
+<
+0,
+$$
+karena
+$$
+x^2>\pi^2>6.
+$$
+Maka
+$$
+\sin x\ge-1>x-\frac{x^3}{6}.
+$$
+
+Sekarang ambil
+$$
+0<x<\pi.
+$$
+
+Dari Teorema Taylor diperoleh
+$$
+\sin x
+=
+x-\frac{x^3}{3!}
++\frac{\sin c}{4!}x^4,
+$$
+untuk suatu
+$$
+c\in(0,x).
+$$
+
+Karena
+$$
+0<c<\pi,
+$$
+maka
+$$
+\sin c>0.
+$$
+
+$$
+\Rightarrow
+\frac{\sin c}{4!}x^4>0.
+$$
+
+$$
+\Rightarrow
+\sin x
+>
+x-\frac{x^3}{6}.
+$$
+
+Jadi
+$$
+\boxed{\sin x>x-\frac{x^3}{6},\qquad\forall x>0.}
+$$
+
+@ID: SM14
+@BY: @aduhmath
+@HINT: Bangun fungsi area yang ingin diminimalkan, lalu turunkan.
+
+Karena
+$$
+f''(x)>0,
+$$
+maka grafik $f$ berada di atas setiap garis singgungnya.
+
+Definisikan
+$$
+A(c)
+=
+\int_a^b
+\left(
+f(x)-f(c)-f'(c)(x-c)
+\right)\,dx.
+$$
+
+$$
+A'(c)
+=
+\int_a^b
+\left(
+-f'(c)-f''(c)(x-c)+f'(c)
+\right)\,dx
+$$
+
+$$
+=
+-f''(c)\int_a^b(x-c)\,dx
+$$
+
+$$
+=
+-f''(c)\left(\frac{b^2-a^2}{2}-c(b-a)\right)
+$$
+
+$$
+=
+-f''(c)(b-a)\left(\frac{a+b}{2}-c\right).
+$$
+
+Karena
+$$
+f''(c)>0,
+\qquad
+b-a>0,
+$$
+maka
+$$
+A'(c)=0
+\iff
+c=\frac{a+b}{2}.
+$$
+
+Selain itu,
+$$
+A'(c)<0,
+\qquad
+c<\frac{a+b}{2},
+$$
+
+$$
+A'(c)>0,
+\qquad
+c>\frac{a+b}{2}.
+$$
+
+Jadi $A(c)$ menurun lalu naik, sehingga minimum dicapai tepat saat
+$$
+\boxed{c=\frac{a+b}{2}.}
+$$
+
+@ID: SM15
+@BY: @aduhmath
+@HINT: Definisikan himpunan, lalu buktikan himpunan tersebut tak terbatas.
+
+Ambil sembarang
+$$
+y\in(a,b).
+$$
+
+Definisikan
+$$
+E_y=\{x\in[0,\infty):f(x)=y\}.
+$$
+
+Cukup dibuktikan bahwa $E_y$ tak terbatas.
+
+Andaikan $E_y$ terbatas.
+
+$$
+\Rightarrow
+\exists\,M>0
+\text{ sehingga }
+E_y\subseteq[0,M].
+$$
+
+$$
+\Rightarrow
+f(x)\neq y,
+\qquad
+\forall x>M.
+$$
+
+Karena $f$ kontinu,
+$$
+f(x)>y,\quad\forall x>M,
+$$
+atau
+$$
+f(x)<y,\quad\forall x>M.
+$$
+
+Ambil barisan $(u_n)$ dan $(v_n)$ sehingga
+$$
+u_n,v_n\to\infty,
+$$
+serta
+$$
+f(u_n)\to a,
+\qquad
+f(v_n)\to b.
+$$
+
+Karena
+$$
+a<y<b,
+$$
+maka untuk $n$ cukup besar,
+$$
+f(u_n)<y<f(v_n).
+$$
+
+Tanpa mengurangi keumuman,
+$$
+u_n<v_n.
+$$
+
+Teorema Nilai Tengah
+$$
+\Rightarrow
+\exists\,c_n\in(u_n,v_n)
+$$
+sehingga
+$$
+f(c_n)=y.
+$$
+
+Karena
+$$
+u_n,v_n>M,
+$$
+maka
+$$
+c_n>M,
+$$
+bertentangan dengan keterbatasan $E_y$.
+
+Jadi $E_y$ tak terbatas.
+
+Ambil $(x_n)\subseteq E_y$ dengan
+$$
+x_n\to\infty.
+$$
+
+$$
+f(x_n)=y,
+\qquad\forall n
+$$
+
+$$
+\Rightarrow
+y=\lim_{n\to\infty}f(x_n),
+$$
+yakni
+$$
+y\in A.
+$$
+
+Karena $y\in(a,b)$ dipilih sembarang,
+$$
+[a,b]\subseteq A.
+$$
+
+
+
+@ID: SM16
+@BY: @aduhmath
+@HINT: Representasikan polinom $f$ dan $g$ dalam bentuk Taylor di sekitar $a$.
+
+Tuliskan
+$$
+f(x)=A+B(x-a)+C(x-a)^2+(x-a)^3F(x),
+$$
+dengan
+$$
+A=f(a)\ne0.
+$$
+
+Tuliskan pula
+$$
+g(x)=\alpha+\beta(x-a)+\gamma(x-a)^2.
+$$
+
+Maka
+$$
+p(x)=f(x)g(x)
+$$
+memiliki koefisien
+
+$$
+p(a)=A\alpha,
+$$
+
+$$
+p'(a)=A\beta+B\alpha,
+$$
+
+$$
+\frac{p''(a)}2=A\gamma+B\beta+C\alpha.
+$$
+
+Syarat
+$$
+p(a)=1,\qquad
+p'(a)=0,\qquad
+p''(a)=0
+$$
+setara dengan sistem
+
+$$
+A\alpha=1,
+$$
+
+$$
+A\beta+B\alpha=0,
+$$
+
+$$
+A\gamma+B\beta+C\alpha=0.
+$$
+
+Karena
+$$
+A=f(a)\ne0,
+$$
+sistem tersebut mempunyai solusi tunggal
+
+$$
+\alpha=\frac1A,
+$$
+
+$$
+\beta=-\frac{B}{A^2},
+$$
+
+$$
+\gamma=\frac{B^2-AC}{A^3}.
+$$
+
+Jadi
+$$
+g(x)
+=
+\frac1A
+-\frac{B}{A^2}(x-a)
++\frac{B^2-AC}{A^3}(x-a)^2
+$$
+adalah polinom yang memenuhi syarat.
+
+
+@ID: SM17
+@BY: @aduhmath
+@HINT: Definisikan fungsi pembanding, lalu turunkan.
+
+Definisikan
+$$
+g(x)=1+2\int_0^x f(s)\,ds.
+$$
+
+$$
+g'(x)=2f(x)\le2\sqrt{g(x)}.
+$$
+
+Karena
+$$
+\frac{d}{dx}\sqrt{g(x)}
+=
+\frac{g'(x)}{2\sqrt{g(x)}},
+$$
+maka
+$$
+\left(\sqrt{g(x)}\right)'
+\le1.
+$$
+
+$$
+\Rightarrow
+\sqrt{g(x)}-\sqrt{g(0)}
+\le x.
+$$
+
+Karena
+$$
+g(0)=1,
+$$
+maka
+$$
+\sqrt{g(x)}
+\le1+x.
+$$
+
+$$
+f(x)\le\sqrt{g(x)}
+\le1+x.
+$$
+
+Jadi
+$$
+\boxed{f(x)\le1+x,\qquad\forall x\in[0,1].}
+$$
+
+@ID: SM18
+@BY: @aduhmath
+@HINT: Gunakan Teorema Nilai Rata-rata.
+
+Andaikan
+$$
+b\ne0.
+$$
+
+Tanpa mengurangi keumuman,
+$$
+b>0.
+$$
+
+$$
+\Rightarrow
+\exists\,K>0,\ M>0
+$$
+sehingga
+$$
+\varphi'(x)\ge K,
+\qquad
+\forall x\ge M.
+$$
+
+Teorema Nilai Rata-rata
+$$
+\Rightarrow
+\varphi(x)-\varphi(M)
+=\varphi'(\xi)(x-M)
+\ge K(x-M),
+$$
+untuk suatu
+$$
+\xi\in(M,x).
+$$
+
+$$
+\Rightarrow
+\varphi(x)
+\ge
+\varphi(M)+K(x-M).
+$$
+
+$$
+x\to\infty
+\Rightarrow
+\varphi(x)\to\infty,
+$$
+bertentangan dengan
+$$
+\varphi(x)\to a.
+$$
+
+Jadi
+$$
+\boxed{b=0.}
