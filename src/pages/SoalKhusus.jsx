@@ -111,7 +111,7 @@ export default function SoalKhusus() {
 						<Link
 							to="/"
 							className="text-sm font-medium text-slate-400 hover:text-blue-600 flex items-center gap-2 w-fit mb-6 transition-colors">
-							<span>←</span> Kembali ke Beranda
+							<span>←</span> Kembali
 						</Link>
 						<h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3 tracking-tight">
 							Koleksi Soal Khusus
@@ -145,7 +145,7 @@ export default function SoalKhusus() {
 					{listKategori.map((item) => (
 						<Link
 							key={item.id}
-							to={`/soal-khusus/${item.id}`}
+							to={`/IMC/${item.id}`}
 							className={`group relative flex flex-col p-8 bg-white border border-slate-200/80 rounded-[2rem] transition-all duration-300 hover:-translate-y-1 ${item.theme
 								.split(" ")
 								.filter(

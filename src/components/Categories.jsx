@@ -35,10 +35,10 @@ export default function Categories() {
 			icon: "🏆",
 		},
 		{
-			title: "Soal Khusus",
+			title: "Per IMC-an",
 			description: "Eksplorasi soal seleksi internal, pelatnas IMC, dan kompetisi eksklusif lainnya.",
 			icon: "🏛️", // Atau gunakan SVG jika kamu sudah menggunakan SVG di komponenmu
-			to: "/soal-khusus",
+			to: "/IMC",
 		},
 		{
 			title: "Soal Menarik",

@@ -60,9 +60,9 @@ function App() {
 						element={<TambahSolusi />}
 					/>
 					<Route path="/semua-soal" element={<SemuaSoal />} />;
-					<Route path="/soal-khusus" element={<SoalKhusus />} />
+					<Route path="/IMC" element={<SoalKhusus />} />
 					<Route
-						path="/soal-khusus/:id"
+						path="/IMC/:id"
 						element={<DetailSoalKhusus />}
 					/>
 					<Route path="/pemenang" element={<Pemenang />} />;

@@ -255,15 +255,15 @@ export default function DetailSoalKhusus() {
 			<div className="flex flex-col sm:flex-row sm:items-start justify-between gap-6 mb-10">
 				<div>
 					<Link
-						to="/soal-khusus"
+						to="/IMC"
 						className="text-sm font-medium text-slate-400 hover:text-blue-600 flex items-center gap-2 w-fit mb-6 transition-colors">
-						<span>←</span> Kembali ke Menu Soal Khusus
+						<span>←</span> Kembali
 					</Link>
 					<h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3 tracking-tight">
 						Soal {formatTitle(id)}
 					</h1>
 					<p className="text-slate-500 max-w-2xl leading-relaxed text-sm md:text-base">
-						Arsip soal khusus untuk kategori ini.
+						Arsip soal per IMC-an
 					</p>
 				</div>
 
