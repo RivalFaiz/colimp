@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="utf-8" />
+		<title>COLIMP</title>
+		<script>
+			// GitHub Pages tidak punya rewrite rule, sehingga URL seperti
+			// /colimp/pemenang selalu jatuh ke file 404 ini.
+			//
+			// Script ini mengubahnya jadi /colimp/?/pemenang lalu mengalihkan.
+			// index.html punya pasangannya yang mengembalikan URL asli
+			// sebelum React Router membaca lokasi.
+			//
+			// pathSegmentsToKeep = 1 karena situs berada di sub-path /colimp/.
+			var pathSegmentsToKeep = 1;
+			var l = window.location;
+			l.replace(
+				l.protocol +
+					"//" +
+					l.hostname +
+					(l.port ? ":" + l.port : "") +
+					l.pathname
+						.split("/")
+						.slice(0, 1 + pathSegmentsToKeep)
+						.join("/") +
+					"/?/" +
+					l.pathname
+						.slice(1)
+						.split("/")
+						.slice(pathSegmentsToKeep)
+						.join("/")
+						.replace(/&/g, "~and~") +
+					(l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+					l.hash,
+			);
+		</script>
+	</head>
+	<body></body>
+</html>
