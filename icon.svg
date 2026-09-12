@@ -6,9 +6,6 @@
 		</linearGradient>
 	</defs>
 	<rect width="24" height="24" rx="8" fill="url(#bg)"/>
-	<!-- Angka dan warna di bawah ini SAMA PERSIS dengan lencana di
-	     Navbar.jsx/Footer.jsx -- disalin langsung, bukan didesain ulang,
-	     supaya benar-benar identik dengan logo navbar. -->
 	<text x="10.6" y="17.3" text-anchor="middle"
 		font-family="'Plus Jakarta Sans', Arial, sans-serif"
 		font-weight="700" font-size="15" fill="#ffffff">C</text>
