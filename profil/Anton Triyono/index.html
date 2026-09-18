@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Nama file sengaja diganti tiap kali desainnya berubah supaya
+		     browser yang menyimpan cache favicon lama, yang terkenal sangat
+		     sulit di-refresh, dipaksa mengambil versi baru. Glyph "C"-nya
+		     sama persis dengan lencana di Navbar. -->
+		<link rel="icon" type="image/svg+xml" href="/colimp/icon.svg" />
+
+		<!-- Judul, deskripsi, canonical, dan og:* di bawah ini ditimpa per
+		     halaman oleh scripts/prerender.mjs saat build (sumber teksnya:
+		     src/lib/seo.js). Pola tag-nya jangan diubah tanpa menyesuaikan
+		     regex di skrip itu. -->
+		<title>Anton Triyono — Medalis ONMIPA-PT | Colimp</title>
+		<meta name="description" content="Anton Triyono (Universitas Gadjah Mada): 2 medali ONMIPA-PT Kimia (1 perunggu, 1 honorable mention) tahun 2024–2026. Profil dan rekam jejak medali olimpiade matematika &amp; MIPA di Colimp." />
+		<link rel="canonical" href="https://rivalfaiz.github.io/colimp/profil/Anton%20Triyono/" />
+		<meta name="theme-color" content="#f7f9fc" />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Colimp" />
+		<meta property="og:title" content="Anton Triyono — Medalis ONMIPA-PT | Colimp" />
+		<meta property="og:description" content="Anton Triyono (Universitas Gadjah Mada): 2 medali ONMIPA-PT Kimia (1 perunggu, 1 honorable mention) tahun 2024–2026. Profil dan rekam jejak medali olimpiade matematika &amp; MIPA di Colimp." />
+		<meta property="og:url" content="https://rivalfaiz.github.io/colimp/profil/Anton%20Triyono/" />
+		<meta property="og:locale" content="id_ID" />
+		<meta name="twitter:card" content="summary" />
+
+		<!-- Data terstruktur: memberi tahu Google nama situs ini. -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "Colimp",
+				"alternateName": "Colimp — Arsip Soal & Medalis ONMIPA-PT dan IMC",
+				"url": "https://rivalfaiz.github.io/colimp/",
+				"inLanguage": "id",
+				"description": "Arsip soal dan daftar medalis ONMIPA-PT (Olimpiade Nasional MIPA Perguruan Tinggi) serta International Mathematics Competition (IMC)."
+			}
+		</script>
+
+		<script>
+			// Pasangan dari public/404.html.
+			//
+			// 404.html mengubah /colimp/pemenang menjadi /colimp/?/pemenang,
+			// lalu blok ini mengembalikannya ke URL asli memakai replaceState
+			// SEBELUM React Router membaca lokasi. Tanpa ini, deep link dan
+			// refresh di GitHub Pages berakhir di halaman 404.
+			(function (l) {
+				if (l.search[1] === "/") {
+					var decoded = l.search
+						.slice(1)
+						.split("&")
+						.map(function (s) {
+							return s.replace(/~and~/g, "&");
+						})
+						.join("?");
+					window.history.replaceState(
+						null,
+						null,
+						l.pathname.slice(0, -1) + decoded + l.hash,
+					);
+				}
+			})(window.location);
+		</script>
+		<script type="module" crossorigin src="/colimp/assets/index-CavmDZa3.js"></script>
+		<link rel="modulepreload" crossorigin href="/colimp/assets/react-Dj8HpMw-.js">
+		<link rel="modulepreload" crossorigin href="/colimp/assets/vendor-CLK7GgzZ.js">
+		<link rel="stylesheet" crossorigin href="/colimp/assets/vendor-DYlWTKI7.css">
+		<link rel="stylesheet" crossorigin href="/colimp/assets/index-BMYguCkG.css">
+	</head>
+	<body>
+		<div id="root"><main style="max-width:64rem;margin:0 auto;padding:2rem 1rem;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#2b364a"><h1>Anton Triyono</h1><p><a href="/colimp/universitas/Universitas%20Gadjah%20Mada">Universitas Gadjah Mada</a></p><h2>Perolehan Medali</h2><ul><li>ONMIPA-PT 2026 Kimia — Honorable Mention (Universitas Gadjah Mada)</li><li>ONMIPA-PT 2024 Kimia — Medali Perunggu (Universitas Gadjah Mada)</li></ul><nav><a href="/colimp/">Beranda</a> · <a href="/colimp/onmipa">Soal ONMIPA-PT</a> · <a href="/colimp/pemenang">Medalis ONMIPA-PT</a> · <a href="/colimp/IMC">Soal IMC</a></nav></main></div>
+	</body>
+</html>
