@@ -1,4 +1,4 @@
-import{d as _,e as A,r as n,j as e}from"./react-BQLdkzUh.js";import{s as v}from"./supabase-CcEpfJN9.js";import{M as x,r as m,b as u}from"./vendor-CbhwrdH8.js";import{u as M}from"./index-BNcPEyXm.js";import"./supabase-C8Oi6oq4.js";const N=`Gunakan $ untuk inline math, atau $$ untuk blok math:
+import{d as _,e as A,r as n,j as e}from"./react-BQLdkzUh.js";import{s as v}from"./supabase-CcEpfJN9.js";import{M as x,r as m,b as u}from"./vendor-CbhwrdH8.js";import{u as M}from"./index-XSRfwnGN.js";import"./supabase-C8Oi6oq4.js";const N=`Gunakan $ untuk inline math, atau $$ untuk blok math:
 
 $$
 \\int_0^1 x^2 \\, dx
