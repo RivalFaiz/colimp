@@ -64,11 +64,52 @@
 				}
 			})(window.location);
 		</script>
-		<script type="module" crossorigin src="/colimp/assets/index-DJ5b4fO7.js"></script>
+
+		<script>
+			// Keluar dari peramban bawaan Instagram (khusus Android).
+			//
+			// Link di bio Instagram dibuka di webview milik aplikasinya, dan
+			// tidak ada link yang bisa melarang itu — aplikasinya yang
+			// menentukan. Yang bisa dilakukan hanyalah melompat keluar dari
+			// dalam halaman: di Android, alamat "intent://" meminta sistem
+			// membuka Chrome. `browser_fallback_url` menjaga pengunjung tanpa
+			// Chrome tetap di halaman yang sama, bukan berakhir di layar
+			// kosong.
+			//
+			// Di iPhone tidak ada jalan pintas yang bisa diandalkan; petunjuk
+			// manualnya ditampilkan oleh komponen BanderolBrowser.
+			//
+			// Hanya berjalan sekali per sesi dan hanya untuk pengunjung yang
+			// user agent-nya memuat "Instagram" — mesin pencari dan browser
+			// biasa tidak tersentuh sama sekali.
+			(function () {
+				var ua = navigator.userAgent || "";
+				if (!/Instagram/i.test(ua) || !/Android/i.test(ua)) return;
+				try {
+					if (sessionStorage.getItem("colimp:keluar-ig")) return;
+					sessionStorage.setItem("colimp:keluar-ig", "1");
+				} catch (e) {
+					return;
+				}
+				var l = window.location;
+				window.location.replace(
+					"intent://" +
+						l.host +
+						l.pathname +
+						l.search +
+						l.hash +
+						"#Intent;scheme=https;package=com.android.chrome;" +
+						"S.browser_fallback_url=" +
+						encodeURIComponent(l.href) +
+						";end",
+				);
+			})();
+		</script>
+		<script type="module" crossorigin src="/colimp/assets/index-BtsOzbeJ.js"></script>
 		<link rel="modulepreload" crossorigin href="/colimp/assets/react-BQLdkzUh.js">
 		<link rel="modulepreload" crossorigin href="/colimp/assets/vendor-CbhwrdH8.js">
 		<link rel="stylesheet" crossorigin href="/colimp/assets/vendor-DYlWTKI7.css">
-		<link rel="stylesheet" crossorigin href="/colimp/assets/index-CKEMqq4J.css">
+		<link rel="stylesheet" crossorigin href="/colimp/assets/index-6LjoLXdd.css">
 	</head>
 	<body>
 		<div id="root"><main style="max-width:64rem;margin:0 auto;padding:2rem 1rem;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#2b364a"><h1>Elizabeth Loretta Willyanta</h1><p><a href="/colimp/universitas/Universitas%20Indonesia">Universitas Indonesia</a></p><h2>Perolehan Medali</h2><ul><li>ONMIPA-PT 2026 Matematika — Medali Perunggu (Universitas Indonesia)</li><li>ONMIPA-PT 2025 Matematika — Medali Perunggu (Universitas Indonesia)</li></ul><nav><a href="/colimp/">Beranda</a> · <a href="/colimp/onmipa">Soal ONMIPA-PT</a> · <a href="/colimp/pemenang">Medalis ONMIPA-PT</a> · <a href="/colimp/IMC">Soal IMC</a></nav></main></div>

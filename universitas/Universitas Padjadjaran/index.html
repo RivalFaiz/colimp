@@ -64,11 +64,52 @@
 				}
 			})(window.location);
 		</script>
-		<script type="module" crossorigin src="/colimp/assets/index-DJ5b4fO7.js"></script>
+
+		<script>
+			// Keluar dari peramban bawaan Instagram (khusus Android).
+			//
+			// Link di bio Instagram dibuka di webview milik aplikasinya, dan
+			// tidak ada link yang bisa melarang itu — aplikasinya yang
+			// menentukan. Yang bisa dilakukan hanyalah melompat keluar dari
+			// dalam halaman: di Android, alamat "intent://" meminta sistem
+			// membuka Chrome. `browser_fallback_url` menjaga pengunjung tanpa
+			// Chrome tetap di halaman yang sama, bukan berakhir di layar
+			// kosong.
+			//
+			// Di iPhone tidak ada jalan pintas yang bisa diandalkan; petunjuk
+			// manualnya ditampilkan oleh komponen BanderolBrowser.
+			//
+			// Hanya berjalan sekali per sesi dan hanya untuk pengunjung yang
+			// user agent-nya memuat "Instagram" — mesin pencari dan browser
+			// biasa tidak tersentuh sama sekali.
+			(function () {
+				var ua = navigator.userAgent || "";
+				if (!/Instagram/i.test(ua) || !/Android/i.test(ua)) return;
+				try {
+					if (sessionStorage.getItem("colimp:keluar-ig")) return;
+					sessionStorage.setItem("colimp:keluar-ig", "1");
+				} catch (e) {
+					return;
+				}
+				var l = window.location;
+				window.location.replace(
+					"intent://" +
+						l.host +
+						l.pathname +
+						l.search +
+						l.hash +
+						"#Intent;scheme=https;package=com.android.chrome;" +
+						"S.browser_fallback_url=" +
+						encodeURIComponent(l.href) +
+						";end",
+				);
+			})();
+		</script>
+		<script type="module" crossorigin src="/colimp/assets/index-BtsOzbeJ.js"></script>
 		<link rel="modulepreload" crossorigin href="/colimp/assets/react-BQLdkzUh.js">
 		<link rel="modulepreload" crossorigin href="/colimp/assets/vendor-CbhwrdH8.js">
 		<link rel="stylesheet" crossorigin href="/colimp/assets/vendor-DYlWTKI7.css">
-		<link rel="stylesheet" crossorigin href="/colimp/assets/index-CKEMqq4J.css">
+		<link rel="stylesheet" crossorigin href="/colimp/assets/index-6LjoLXdd.css">
 	</head>
 	<body>
 		<div id="root"><main style="max-width:64rem;margin:0 auto;padding:2rem 1rem;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#2b364a"><h1>Universitas Padjadjaran</h1><p>Universitas Padjadjaran: 20 medali ONMIPA-PT (1 emas, 2 perak, 9 perunggu, 8 honorable mention) dari 13 mahasiswa, 2013–2026. Daftar medalis per bidang, perolehan per tahun, dan delegasi IMC di Colimp.</p><h2>Medalis ONMIPA-PT</h2><ul><li><a href="/colimp/profil/Dida%20Ridwan%20Taufiq">Dida Ridwan Taufiq</a></li><li><a href="/colimp/profil/Fahmi%20Nur%20Alim">Fahmi Nur Alim</a></li><li><a href="/colimp/profil/Hafizh%20Hadian%20Perdana">Hafizh Hadian Perdana</a></li><li><a href="/colimp/profil/Haris%20Hidayat">Haris Hidayat</a></li><li><a href="/colimp/profil/Jelang%20Muhammad%20Dirgantara">Jelang Muhammad Dirgantara</a></li><li><a href="/colimp/profil/Kindi%20Farabi">Kindi Farabi</a></li><li><a href="/colimp/profil/Muhammad%20Diki%20Permana">Muhammad Diki Permana</a></li><li><a href="/colimp/profil/Muhammad%20Hartsa%20Adnan">Muhammad Hartsa Adnan</a></li><li><a href="/colimp/profil/Muhammad%20Novrizal%20Akmal">Muhammad Novrizal Akmal</a></li><li><a href="/colimp/profil/Rio%20Permana">Rio Permana</a></li><li><a href="/colimp/profil/Rizky%20Rafi%20Rahmawan">Rizky Rafi Rahmawan</a></li><li><a href="/colimp/profil/Syafrul%20Azid">Syafrul Azid</a></li><li><a href="/colimp/profil/Vidia%20Afina%20Nuraini">Vidia Afina Nuraini</a></li></ul><nav><a href="/colimp/">Beranda</a> · <a href="/colimp/onmipa">Soal ONMIPA-PT</a> · <a href="/colimp/pemenang">Medalis ONMIPA-PT</a> · <a href="/colimp/IMC">Soal IMC</a></nav></main></div>
