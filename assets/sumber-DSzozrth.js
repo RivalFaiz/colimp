@@ -1,0 +1,1 @@
+function o(n){return(n||"").split(" — ")[0].trim()}function r(n){return(n||"").split(" — ").slice(1).join(" — ").trim()}function e(n){const t=o(n);return t===""||t==="Note"?"Lainnya":t}function s(n){return(n||"").split(",")[0].trim()||n||""}function u(n){const t=s(o(n)),i=r(n);return t?i?`${t} — ${i}`:t:i}export{e as k,s as p,u as s};
