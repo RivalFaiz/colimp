@@ -65,11 +65,46 @@
 			})(window.location);
 		</script>
 
-		<script type="module" crossorigin src="/colimp/assets/index-CMOY8AFG.js"></script>
+		<script>
+			// Tema gelap dipasang SEBELUM halaman dilukis.
+			//
+			// Kelasnya sebetulnya diurus src/lib/tema.js, tapi React baru
+			// jalan setelah bundel-nya diunduh dan dijalankan. Tanpa blok
+			// kecil ini, pembaca bertema gelap melihat kilatan halaman putih
+			// dulu setiap kali membuka tautan — paling menyilaukan justru di
+			// malam hari, saat tema gelap paling dipakai.
+			//
+			// Kunci penyimpanannya harus sama persis dengan KUNCI_TEMA di
+			// src/lib/tema.js.
+			(function () {
+				// try HANYA membungkus pembacaan penyimpanan. Kalau ia juga
+				// membungkus pemeriksaan preferensi sistem, penyimpanan yang
+				// diblokir (mode penyamaran, cookie pihak ketiga dimatikan)
+				// akan ikut membatalkan tema gelap otomatis — padahal
+				// preferensi sistem sama sekali tidak butuh penyimpanan.
+				var t = null;
+				try {
+					t = localStorage.getItem("colimp-tema");
+				} catch (e) {
+					// Tidak bisa diingat; pilihan manual diabaikan saja.
+				}
+				var gelap =
+					t === "gelap" ||
+					(t !== "terang" &&
+						window.matchMedia("(prefers-color-scheme: dark)").matches);
+				if (gelap) {
+					document.documentElement.classList.add("dark");
+					var meta = document.querySelector('meta[name="theme-color"]');
+					if (meta) meta.setAttribute("content", "#1c222c");
+				}
+			})();
+		</script>
+
+		<script type="module" crossorigin src="/colimp/assets/index-DGxlE0mw.js"></script>
 		<link rel="modulepreload" crossorigin href="/colimp/assets/react-DavCdv8e.js">
-		<link rel="stylesheet" crossorigin href="/colimp/assets/index-DDy38UeN.css">
+		<link rel="stylesheet" crossorigin href="/colimp/assets/index-DC1eofap.css">
 	</head>
 	<body>
-		<div id="root"><main style="max-width:64rem;margin:0 auto;padding:2rem 1rem;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#2b364a"><h1>Stefanus Ng</h1><p><a href="/colimp/universitas/Universitas%20Indonesia">Universitas Indonesia</a></p><h2>Perolehan Medali</h2><ul><li>ONMIPA-PT 2018 Matematika — Honorable Mention (Universitas Indonesia)</li><li>ONMIPA-PT 2017 Matematika — Medali Perunggu (Universitas Indonesia)</li><li>ONMIPA-PT 2016 Matematika — Honorable Mention (Universitas Indonesia)</li></ul><nav><a href="/colimp/">Beranda</a> · <a href="/colimp/onmipa">Soal ONMIPA-PT</a> · <a href="/colimp/pemenang">Medalis ONMIPA-PT</a> · <a href="/colimp/IMC">Soal IMC</a></nav></main></div>
+		<div id="root"><main style="max-width:64rem;margin:0 auto;padding:2rem 1rem;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#2b364a"><h1>Stefanus Ng</h1><p><a href="/colimp/universitas/Universitas%20Indonesia">Universitas Indonesia</a></p><h2>Perolehan Medali</h2><ul><li>ONMIPA-PT 2018 Matematika — Honorable Mention (Universitas Indonesia)</li><li>ONMIPA-PT 2017 Matematika — Medali Perunggu (Universitas Indonesia)</li><li>ONMIPA-PT 2016 Matematika — Honorable Mention (Universitas Indonesia)</li></ul><nav><a href="/colimp/">Beranda</a> · <a href="/colimp/onmipa">Soal ONMIPA-PT</a> · <a href="/colimp/pemenang">Medalis ONMIPA-PT</a> · <a href="/colimp/IMC">Soal IMC</a></nav></main></div>
 	</body>
 </html>
