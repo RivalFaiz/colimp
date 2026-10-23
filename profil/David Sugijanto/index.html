@@ -66,43 +66,53 @@
 		</script>
 
 		<script>
-			// Tema gelap dipasang SEBELUM halaman dilukis.
+			// Preferensi tampilan dipasang SEBELUM halaman dilukis.
 			//
-			// Kelasnya sebetulnya diurus src/lib/tema.js, tapi React baru
-			// jalan setelah bundel-nya diunduh dan dijalankan. Tanpa blok
-			// kecil ini, pembaca bertema gelap melihat kilatan halaman putih
-			// dulu setiap kali membuka tautan — paling menyilaukan justru di
-			// malam hari, saat tema gelap paling dipakai.
+			// Sebetulnya ini tugas src/lib/tampilan.js, tapi React baru jalan
+			// setelah bundelnya diunduh. Tanpa blok kecil ini, pembaca bertema
+			// gelap melihat kilatan halaman putih dulu setiap membuka tautan, dan
+			// pembaca berukuran teks besar melihat seluruh halaman melompat
+			// ukuran begitu React selesai dimuat.
 			//
-			// Kunci penyimpanannya harus sama persis dengan KUNCI_TEMA di
-			// src/lib/tema.js.
+			// Kunci dan bentuk datanya harus sama persis dengan tampilan.js.
 			(function () {
 				// try HANYA membungkus pembacaan penyimpanan. Kalau ia juga
 				// membungkus pemeriksaan preferensi sistem, penyimpanan yang
-				// diblokir (mode penyamaran, cookie pihak ketiga dimatikan)
-				// akan ikut membatalkan tema gelap otomatis — padahal
-				// preferensi sistem sama sekali tidak butuh penyimpanan.
-				var t = null;
+				// diblokir (mode penyamaran, cookie pihak ketiga dimatikan) akan
+				// ikut membatalkan tema gelap otomatis — padahal preferensi sistem
+				// sama sekali tidak butuh penyimpanan.
+				var p = {};
 				try {
-					t = localStorage.getItem("colimp-tema");
+					p = JSON.parse(localStorage.getItem("colimp-tampilan")) || {};
+					// Kunci lama, dari sebelum ukuran dan huruf ikut diatur.
+					if (!p.tema) p.tema = localStorage.getItem("colimp-tema");
 				} catch (e) {
 					// Tidak bisa diingat; pilihan manual diabaikan saja.
 				}
+				var akar = document.documentElement;
+
+				// Hanya gelap kalau DIMINTA: dipilih sendiri, atau dipilih
+				// "sistem" dan sistemnya memang gelap. Tanpa pilihan tersimpan,
+				// situs ini terang — bawaannya tidak mengintip setelan perangkat.
 				var gelap =
-					t === "gelap" ||
-					(t !== "terang" &&
+					p.tema === "gelap" ||
+					(p.tema === "sistem" &&
 						window.matchMedia("(prefers-color-scheme: dark)").matches);
 				if (gelap) {
-					document.documentElement.classList.add("dark");
+					akar.classList.add("dark");
 					var meta = document.querySelector('meta[name="theme-color"]');
 					if (meta) meta.setAttribute("content", "#1c222c");
 				}
+
+				var skala = { kecil: "93.75%", besar: "112.5%", "sangat-besar": "125%" };
+				if (skala[p.ukuran]) akar.style.fontSize = skala[p.ukuran];
+				if (p.huruf === "sans") akar.dataset.huruf = "sans";
 			})();
 		</script>
 
-		<script type="module" crossorigin src="/colimp/assets/index-DGxlE0mw.js"></script>
+		<script type="module" crossorigin src="/colimp/assets/index-w5tplJcm.js"></script>
 		<link rel="modulepreload" crossorigin href="/colimp/assets/react-DavCdv8e.js">
-		<link rel="stylesheet" crossorigin href="/colimp/assets/index-DC1eofap.css">
+		<link rel="stylesheet" crossorigin href="/colimp/assets/index-CkPjSmhE.css">
 	</head>
 	<body>
 		<div id="root"><main style="max-width:64rem;margin:0 auto;padding:2rem 1rem;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#2b364a"><h1>David Sugijanto</h1><p><a href="/colimp/universitas/Institut%20Teknologi%20Bandung">Institut Teknologi Bandung</a></p><h2>Perolehan Medali</h2><ul><li>ONMIPA-PT 2022 Fisika — Honorable Mention (Institut Teknologi Bandung)</li></ul><nav><a href="/colimp/">Beranda</a> · <a href="/colimp/onmipa">Soal ONMIPA-PT</a> · <a href="/colimp/pemenang">Medalis ONMIPA-PT</a> · <a href="/colimp/IMC">Soal IMC</a></nav></main></div>
