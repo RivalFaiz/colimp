@@ -10,6 +10,17 @@
 		     sama persis dengan lencana di Navbar. -->
 		<link rel="icon" type="image/svg+xml" href="/colimp/icon.svg" />
 
+		<!-- Jabat tangan ke Supabase dimulai BERBARENGAN dengan unduhan JS,
+		     bukan sesudahnya. Setiap halaman berdata memanggil Supabase sebagai
+		     permintaan pertamanya begitu bundel selesai dijalankan; tanpa ini,
+		     DNS + TLS + TCP baru mulai pada saat itu juga dan menambah satu
+		     perjalanan bolak-balik penuh sebelum data pertama datang. Di
+		     localhost efeknya nol, di jaringan seluler biasanya 100-300ms. -->
+		<link rel="preconnect" href="https://gexbownhpxmjkxzudbnk.supabase.co" />
+		<link
+			rel="dns-prefetch"
+			href="https://gexbownhpxmjkxzudbnk.supabase.co" />
+
 		<!-- Judul, deskripsi, canonical, dan og:* di bawah ini ditimpa per
 		     halaman oleh scripts/prerender.mjs saat build (sumber teksnya:
 		     src/lib/seo.js). Pola tag-nya jangan diubah tanpa menyesuaikan
@@ -107,12 +118,13 @@
 				var skala = { kecil: "93.75%", besar: "112.5%", "sangat-besar": "125%" };
 				if (skala[p.ukuran]) akar.style.fontSize = skala[p.ukuran];
 				if (p.huruf === "sans") akar.dataset.huruf = "sans";
+				if (p.bahasa === "en") akar.lang = "en";
 			})();
 		</script>
 
-		<script type="module" crossorigin src="/colimp/assets/index-w5tplJcm.js"></script>
+		<script type="module" crossorigin src="/colimp/assets/index-CkcWYT-n.js"></script>
 		<link rel="modulepreload" crossorigin href="/colimp/assets/react-DavCdv8e.js">
-		<link rel="stylesheet" crossorigin href="/colimp/assets/index-CkPjSmhE.css">
+		<link rel="stylesheet" crossorigin href="/colimp/assets/index-ly3hgVgO.css">
 	</head>
 	<body>
 		<div id="root"><main style="max-width:64rem;margin:0 auto;padding:2rem 1rem;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#2b364a"><h1>Universitas Pembangunan Nasional Veteran Jakarta</h1><p>Universitas Pembangunan Nasional Veteran Jakarta: 1 medali ONMIPA-PT (1 honorable mention) dari 1 mahasiswa, 2025. Daftar medalis per bidang, perolehan per tahun, dan delegasi IMC di Colimp.</p><h2>Medalis ONMIPA-PT</h2><ul><li><a href="/colimp/profil/Alifya%20Rayyani%20Shofiy">Alifya Rayyani Shofiy</a></li></ul><nav><a href="/colimp/">Beranda</a> · <a href="/colimp/onmipa">Soal ONMIPA-PT</a> · <a href="/colimp/pemenang">Medalis ONMIPA-PT</a> · <a href="/colimp/IMC">Soal IMC</a></nav></main></div>

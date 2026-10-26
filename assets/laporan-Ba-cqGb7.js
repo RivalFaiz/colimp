@@ -1,0 +1,1 @@
+const a=["soal","solusi","rumus","lainnya"],i=["nama","medali","universitas","tahun","ganda","lainnya"],n={soal:"Soal keliru",solusi:"Solusi keliru",rumus:"Rumus tidak tampil",nama:"Nama keliru",medali:"Medali/peringkat keliru",universitas:"Universitas keliru",tahun:"Tahun/bidang keliru",ganda:"Data ganda",lainnya:"Lainnya"};export{a as J,n as L,i as a};
