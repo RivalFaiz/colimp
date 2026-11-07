@@ -7,8 +7,21 @@
 		<!-- Nama file sengaja diganti tiap kali desainnya berubah supaya
 		     browser yang menyimpan cache favicon lama, yang terkenal sangat
 		     sulit di-refresh, dipaksa mengambil versi baru. Glyph "C"-nya
-		     sama persis dengan lencana di Navbar. -->
+		     sama persis dengan lencana di Navbar.
+
+		     SVG untuk peramban modern (tajam di layar resolusi tinggi),
+		     TAPI Google Search TIDAK mendukung SVG sebagai favicon — daftar
+		     resminya cuma BMP, GIF, ICO, PNG, JPEG, PPM, TIFF (dicek langsung
+		     ke developers.google.com/search/docs/appearance/favicon-in-search,
+		     2026-11-07). Tanpa link PNG/ICO ini, Google tidak punya format
+		     yang bisa dipakainya sama sekali dari halaman ini. favicon.ico
+		     didaftarkan juga lewat rel="shortcut icon" untuk sistem lama yang
+		     masih mencarinya dengan nama rel itu, bukan "icon". -->
 		<link rel="icon" type="image/svg+xml" href="/colimp/icon.svg" />
+		<link rel="icon" type="image/png" sizes="192x192" href="/colimp/icon-192.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/colimp/icon-512.png" />
+		<link rel="shortcut icon" href="/colimp/favicon.ico" />
+		<link rel="apple-touch-icon" href="/colimp/apple-touch-icon.png" />
 
 		<!-- Jabat tangan ke Supabase dimulai BERBARENGAN dengan unduhan JS,
 		     bukan sesudahnya. Setiap halaman berdata memanggil Supabase sebagai
