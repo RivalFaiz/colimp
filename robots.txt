@@ -6,4 +6,4 @@ User-agent: *
 Allow: /
 Disallow: /admin
 
-Sitemap: https://rivalfaiz.github.io/colimp/sitemap.xml
+Sitemap: https://colimp.id/sitemap.xml

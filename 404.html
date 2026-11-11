@@ -5,14 +5,15 @@
 		<title>COLIMP</title>
 		<script>
 			// GitHub Pages tidak punya rewrite rule, sehingga URL seperti
-			// /colimp/pemenang selalu jatuh ke file 404 ini.
+			// /pemenang selalu jatuh ke file 404 ini.
 			//
-			// Script ini mengubahnya jadi /colimp/?/pemenang lalu mengalihkan.
+			// Script ini mengubahnya jadi /?/pemenang lalu mengalihkan.
 			// index.html punya pasangannya yang mengembalikan URL asli
 			// sebelum React Router membaca lokasi.
 			//
-			// pathSegmentsToKeep = 1 karena situs berada di sub-path /colimp/.
-			var pathSegmentsToKeep = 1;
+			// pathSegmentsToKeep = 0 karena situs berada di akar domain
+			// (colimp.id). Dulu 1, saat masih di sub-path /colimp/.
+			var pathSegmentsToKeep = 0;
 			var l = window.location;
 			l.replace(
 				l.protocol +
