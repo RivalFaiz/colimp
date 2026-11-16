@@ -1,1 +1,0 @@
-function c(t,a){const n=t||"",r=a||"",o=n.match(/^(.*?)(\d+)$/),e=r.match(/^(.*?)(\d+)$/);return!o||!e?n.localeCompare(r):o[1]!==e[1]?o[1].localeCompare(e[1]):Number(o[2])-Number(e[2])}export{c as b};
