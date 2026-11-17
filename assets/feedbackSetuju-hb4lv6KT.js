@@ -1,0 +1,3 @@
+const e="Tidak ada catatan apapun dari admin.",n="Admin sedikit mengganti kata/kalimat pada solusi",u=", dengan rincian sebagai berikut:",s="Solusimu disetujui dan sudah terbit. Terima kasih!";function r({tulisanAdmin:i,adaPerubahan:a}){const t=(i||"").trim();return a?t?`${n}${u}
+
+${t}`:`${n}.`:t||e}function c(i){const a=(i||"").trim();if(!a||a===e||a===s)return{catatan:!1,pembuka:e,admin:null};if(/klaim solusimu/i.test(a))return{catatan:!1,pembuka:a,admin:null};if(a.startsWith(n)){const t=a.slice(n.length).replace(/^\s*,?\s*dengan rincian sebagai berikut\s*:?/i,"").replace(/^\s*\./,"").trim();return t?{catatan:!0,pembuka:`${n}${u}`,admin:t}:{catatan:!0,pembuka:`${n}.`,admin:null}}return{catatan:!0,pembuka:null,admin:a}}export{r as s,c as u};
