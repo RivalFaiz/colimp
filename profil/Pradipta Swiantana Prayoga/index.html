@@ -143,12 +143,38 @@
 			})();
 		</script>
 
-		<script type="module" crossorigin src="/assets/index-DYZYJzs4.js"></script>
+		<script>
+			/* Layar pembuka sebelum React jalan.
+			 *
+			 * Halaman hasil build berisi ringkasan teks polos untuk mesin
+			 * pencari di dalam #root (lihat scripts/prerender.mjs). Tanpa
+			 * layar ini, teks mentah itu terlihat sekejap tiap kali situs
+			 * dibuka. Lapisan ini menutupinya — teksnya tetap ada di HTML
+			 * untuk crawler — dan ikut hilang begitu React mengganti isi
+			 * #root. Kalau JavaScript gagal sama sekali, lapisan memudar
+			 * sendiri setelah 8 detik supaya isinya tetap bisa dibaca.
+			 *
+			 * Tampilannya sama dengan MemuatHalaman di src/App.jsx. Warna
+			 * ditulis langsung karena CSS situs belum termuat di titik ini.
+			 *
+			 * Dipasang lewat skrip, bukan tag <style> biasa: Vite di Windows
+			 * gagal memproses <style> inline di index.html ("No matching HTML
+			 * proxy module") karena beda huruf besar-kecil drive D: dan d:. */
+			(function () {
+				var s = document.createElement("style");
+				s.textContent =
+					".colimp-pembuka { position: fixed; inset: 0; z-index: 2147483000; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #f7f9fc; font-family: \"Plus Jakarta Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif; animation: colimp-pembuka-pergi 0.4s ease 8s forwards; } .dark .colimp-pembuka { background: #1c222c; } .colimp-pembuka-isi { display: flex; flex-direction: column; align-items: center; opacity: 0; animation: colimp-pembuka-muncul 0.35s ease 0.15s forwards; } .colimp-pembuka img { width: 72px; height: 72px; border-radius: 22px; box-shadow: 0 18px 40px -12px rgba(27, 36, 52, 0.35); animation: colimp-pembuka-napas 2.4s ease-in-out infinite; } .colimp-pembuka p { margin: 22px 0 0; font-size: 32px; font-weight: 300; letter-spacing: -0.02em; color: #2b364a; } .colimp-pembuka p span { color: #1a63b0; font-weight: 500; } .dark .colimp-pembuka img { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 18px 40px -12px rgba(0, 0, 0, 0.6); } .dark .colimp-pembuka p { color: #e1e6ed; } .dark .colimp-pembuka p span { color: #6fb4f2; } @keyframes colimp-pembuka-muncul { to { opacity: 1; } } @keyframes colimp-pembuka-napas { 50% { transform: scale(1.06); } } @keyframes colimp-pembuka-pergi { to { opacity: 0; visibility: hidden; } } @media (prefers-reduced-motion: reduce) { .colimp-pembuka img { animation: none; } }";
+				document.head.appendChild(s);
+			})();
+		</script>
+		<script type="module" crossorigin src="/assets/index-DndByaW-.js"></script>
 		<link rel="modulepreload" crossorigin href="/assets/react-C7wYa_pA.js">
 		<link rel="modulepreload" crossorigin href="/assets/supabase-Dx0atVpp.js">
-		<link rel="stylesheet" crossorigin href="/assets/index-DR4467ix.css">
+		<link rel="stylesheet" crossorigin href="/assets/index-aV9NcxJ_.css">
 	</head>
 	<body>
-		<div id="root"><main style="max-width:64rem;margin:0 auto;padding:2rem 1rem;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#2b364a"><h1>Pradipta Swiantana Prayoga</h1><p><a href="/universitas/Universitas%20Pendidikan%20Indonesia">Universitas Pendidikan Indonesia</a></p><h2>Perolehan Medali</h2><ul><li>IMC 2020 — Certificate (Universitas Pendidikan Indonesia)</li></ul><nav><a href="/">Beranda</a> · <a href="/onmipa">Soal ONMIPA-PT</a> · <a href="/medalis">Medalis ONMIPA-PT</a> · <a href="/IMC">Soal IMC</a></nav></main></div>
+		<!-- Penanda "/pembuka" dipakai scripts/prerender.mjs untuk menaruh
+		     ringkasan isi halaman tepat sesudah layar pembuka. -->
+		<div id="root"><div class="colimp-pembuka" aria-hidden="true"><div class="colimp-pembuka-isi"><img src="/icon.svg" alt="" width="72" height="72" /><p>Colimp<span>.</span></p></div></div><!--/pembuka--><main style="max-width:64rem;margin:0 auto;padding:2rem 1rem;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#2b364a"><h1>Pradipta Swiantana Prayoga</h1><p><a href="/universitas/Universitas%20Pendidikan%20Indonesia">Universitas Pendidikan Indonesia</a></p><h2>Perolehan Medali</h2><ul><li>IMC 2020 — Certificate (Universitas Pendidikan Indonesia)</li></ul><nav><a href="/">Beranda</a> · <a href="/onmipa">Soal ONMIPA-PT</a> · <a href="/medalis">Medalis ONMIPA-PT</a> · <a href="/IMC">Soal IMC</a></nav></main></div>
 	</body>
 </html>
